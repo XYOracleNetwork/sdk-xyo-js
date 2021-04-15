@@ -11,6 +11,9 @@
     "url": "https://xyo.network",
     "email": "support@xyo.network"
   },
+  "files": [
+    "./build"
+  ],
   "license": "LGPL-3.0",
   "private": false,
   "version": "2.0.4",
