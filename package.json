@@ -1,6 +1,6 @@
 {
-  "name": "sdk-xyo-js",
-  "version": "2.0.1",
+  "name": "@xyo-network/sdk-xyo-js",
+  "version": "2.0.2",
   "main": "./build/index.cjs.js",
   "module": "./build/index.esm.js",
   "types": "./build/index.d.js",
