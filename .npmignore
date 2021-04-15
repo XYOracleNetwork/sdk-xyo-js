@@ -2,3 +2,5 @@
 src
 tsconfig.json
 rollup.config.ts
+.eslintrc
+.prettierrc
