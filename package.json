@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "main": "./build/index.cjs.js",
   "module": "./build/index.esm.js",
   "types": "./build/index.d.js",
@@ -10,8 +10,9 @@
     "rollbar": "^2.21.1"
   },
   "scripts": {
-    "build": "yarn version --patch --no-git-tag-version -d && yarn build:ci",
+    "build": "yarn build:ci",
     "build:ci": "yarn lint && rollup -c rollup.config.ts",
+    "deploy": "yarn version --patch && yarn publish --access public",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx ./src --fix",
     "clean": "rm -f *.tsbuildinfo && rm -r -f ./build",
