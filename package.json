@@ -12,7 +12,7 @@
     "email": "support@xyo.network"
   },
   "files": [
-    "./build"
+    "./build/*"
   ],
   "license": "LGPL-3.0",
   "private": false,
