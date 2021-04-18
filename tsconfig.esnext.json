@@ -6,7 +6,6 @@
     "allowSyntheticDefaultImports": true,
     "downlevelIteration": true,
     "target": "ESNext",
-    "lib": ["ESNext"],
     "esModuleInterop": true,
     "alwaysStrict": true,
     "strict": true,
