@@ -4,7 +4,8 @@
     "outDir": "dist",
     "rootDir": "src",
     "lib": ["DOM", "ESNext"],
+    "module": "CommonJS"
   },
-  "include": ["src/**/*.ts"],
-  "exclude": ["src/**/*.spec.ts"]
+  "include": ["src/**/*.spec.ts"],
+  "exclude": ["src/**/*.ts"]
 }
