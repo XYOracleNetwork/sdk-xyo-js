@@ -1,9 +1,8 @@
 {
-  "extends": "./tsconfig.esnext.json",
+  "extends": "./tsconfig.es6.json",
   "compilerOptions": {
     "outDir": ".",
-    "rootDir": "src",
-    "lib": ["ESNext"]
+    "rootDir": "src"
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.spec.ts"]
