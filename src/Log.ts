@@ -1,22 +1,28 @@
 import Rollbar from 'rollbar'
 
+interface LogConfig {
+  commitHash?: string
+  devMode?: boolean
+  rollbarToken?: string
+}
+
 class Log {
   private rollbar?: Rollbar
   private devMode?: boolean
 
-  constructor(commitHash: string, devMode: boolean, rollbarToken?: string) {
-    this.devMode = devMode
+  constructor(config: LogConfig) {
+    this.devMode = config.devMode ?? false
 
-    if (rollbarToken) {
+    if (config.rollbarToken) {
       this.rollbar = new Rollbar({
-        accessToken: rollbarToken,
+        accessToken: config.rollbarToken,
         captureUncaught: true,
         captureUnhandledRejections: true,
-        codeVersion: commitHash,
-        code_version: commitHash,
+        codeVersion: config.commitHash,
+        code_version: config.commitHash,
         payload: {
-          codeVersion: commitHash,
-          code_version: commitHash,
+          codeVersion: config.commitHash,
+          code_version: config.commitHash,
           environment: this.devMode ? 'development' : 'production',
         },
         sendConfig: true,
