@@ -8,7 +8,6 @@
     "sort-keys-fix",
     "typescript-sort-keys",
     "json",
-    "workspaces",
     "import",
     "simple-import-sort",
     "no-secrets"
@@ -20,12 +19,11 @@
     "plugin:import/typescript",
     "plugin:@typescript-eslint/recommended",
     "plugin:json/recommended",
-    "plugin:prettier/recommended",
-    "plugin:workspaces/recommended"
+    "plugin:prettier/recommended"
   ],
   "settings": {
     "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+      "@typescript-eslint/parser": [".ts", ".tsx", ".spec.ts", ".spec.tsx"]
     }
   },
   "rules": {
@@ -77,8 +75,6 @@
     "import/no-cycle": ["warn"],
     "import/no-useless-path-segments": ["warn"],
     "simple-import-sort/imports": ["warn"],
-    "simple-import-sort/exports": ["warn"],
-    "workspaces/no-relative-imports": ["off"],
-    "workspaces/no-absolute-imports": ["off"]
+    "simple-import-sort/exports": ["warn"]
   }
 }
