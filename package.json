@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
   },
-  "version": "2.1.3",
+  "version": "2.1.4",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.js",
@@ -32,7 +32,7 @@
   "scripts": {
     "build": "yarn deps && yarn lint && yarn compile",
     "compile": "rollup -c rollup.config.ts",
-    "deploy": "yarn version --patch && yarn cp package.json ./dist && cp -R ./src ./dist/src && yarn publish ./dist --access public",
+    "deploy": "yarn version --patch && cp package.json ./dist && cp -R ./src ./dist/src && yarn publish ./dist --access public",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
     "test": "jest",
