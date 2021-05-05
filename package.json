@@ -18,11 +18,11 @@
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
   },
   "version": "2.1.4",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.esm.js",
-  "types": "./dist/index.d.js",
+  "main": "./index.cjs.js",
+  "module": "./index.esm.js",
+  "types": "./index.d.js",
   "exports": {
-    ".": "./dist/index.esm.js"
+    ".": "./index.esm.js"
   },
   "sideEffects": false,
   "dependencies": {
@@ -30,9 +30,10 @@
     "rollbar": "^2.21.1"
   },
   "scripts": {
-    "build": "yarn deps && yarn lint && yarn compile",
+    "build": "rm -r -f dist && yarn deps && yarn lint && yarn compile && yarn copy-src",
+    "copy-src": "cp package.json ./dist && cp -R ./src ./dist/src",
     "compile": "rollup -c rollup.config.ts",
-    "deploy": "yarn version --patch && cp package.json ./dist && cp -R ./src ./dist/src && yarn publish ./dist --access public",
+    "deploy": "yarn version --patch && yarn build && yarn publish ./dist --access public",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
     "test": "jest",
