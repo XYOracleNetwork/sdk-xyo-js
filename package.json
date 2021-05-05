@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
   },
-  "version": "2.1.2",
+  "version": "2.1.3",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.js",
@@ -32,11 +32,11 @@
   "scripts": {
     "build": "yarn deps && yarn lint && yarn compile",
     "compile": "rollup -c rollup.config.ts",
-    "deploy": "yarn version --patch && yarn publish --access public",
+    "deploy": "yarn version --patch && yarn cp package.json ./dist && cp -R ./src ./dist/src && yarn publish ./dist --access public",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
     "test": "jest",
-    "clean": "rm -f *.tsbuildinfo && rm -r -f ./dist",
+    "clean": "rm -f *.tsbuildinfo && rm -r -f ./dist && rm -r -f ./build",
     "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install && yarn outdated",
     "tsprune": "yarn ts-prune",
     "deps": "yarn depcheck --ignores \"vue, @types/jest, ts-node\""
