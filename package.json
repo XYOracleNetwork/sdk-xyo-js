@@ -19,13 +19,14 @@
   },
   "version": "2.1.6",
   "main": "./index.cjs.js",
-  "module": "./index.esm.js",
+  "module": "./index.js",
   "types": "./index.d.js",
   "exports": {
-    ".": "./index.esm.js"
+    ".": "./index.js",
+    "./assertEx": "./assertEx.js"
   },
   "sideEffects": false,
-  "dependencies": {
+  "peerDependencies": {
     "axios": "^0.21.1",
     "rollbar": "^2.21.1"
   },
