@@ -26,8 +26,10 @@
     "./assertEx": "./assertEx.js"
   },
   "sideEffects": false,
-  "peerDependencies": {
-    "axios": "^0.21.1",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "optionalDependencies": {
     "rollbar": "^2.21.1"
   },
   "scripts": {
