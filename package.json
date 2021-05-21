@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
   },
-  "version": "2.1.10",
+  "version": "2.1.11",
   "main": "./index.cjs.js",
   "module": "./index.mjs.js",
   "types": "./index.d.ts",
@@ -44,10 +44,10 @@
     "deps": "yarn depcheck --ignores \"vue, npm-package-json-lint-config-default, ts-jest, @types/jest, ts-node\""
   },
   "devDependencies": {
+    "@rollup/plugin-typescript": "^8.2.1",
     "@types/jest": "^26.0.23",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
-    "@rollup/plugin-typescript": "^8.2.1",
     "depcheck": "^1.4.0",
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.1.0",
