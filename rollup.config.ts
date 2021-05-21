@@ -7,13 +7,13 @@ export default [
     output: [
       {
         exports: 'auto',
-        file: './dist/index.cjs.js',
+        file: './dist/index.cjs',
         format: 'cjs',
         sourcemap: true,
       },
       {
         exports: 'auto',
-        file: './dist/index.js',
+        file: './dist/index.mjs',
         format: 'es',
         sourcemap: true,
       },
@@ -26,7 +26,13 @@ export default [
     output: [
       {
         exports: 'auto',
-        file: './dist/assertEx.js',
+        file: './dist/assertEx.cjs',
+        format: 'cjs',
+        sourcemap: true,
+      },
+      {
+        exports: 'auto',
+        file: './dist/assertEx.mjs',
         format: 'es',
         sourcemap: true,
       },
