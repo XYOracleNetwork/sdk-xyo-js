@@ -17,7 +17,7 @@
     "type": "git",
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
   },
-  "version": "2.1.11",
+  "version": "2.1.12",
   "main": "./index.cjs.js",
   "module": "./index.mjs.js",
   "types": "./index.d.ts",
