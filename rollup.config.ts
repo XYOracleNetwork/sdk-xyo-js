@@ -11,7 +11,7 @@ export default [
         sourcemap: true,
       },
       {
-        file: 'dist/index.mjs.js',
+        file: 'dist/index.js',
         format: 'es',
         sourcemap: true,
       },
