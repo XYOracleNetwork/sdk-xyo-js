@@ -27,7 +27,8 @@
     "axios": "^0.21.1"
   },
   "optionalDependencies": {
-    "rollbar": "^2.21.1"
+    "rollbar": "^2.21.1",
+    "tslib": "^2.2.0"
   },
   "scripts": {
     "build": "rm -r -f dist && yarn deps && yarn lint && yarn compile && yarn copy-src",
@@ -67,8 +68,7 @@
     "ts-jest": "^27.0.0",
     "ts-node": "^10.0.0",
     "ts-prune": "^0.9.0",
-    "tslib": "^2.2.0",
-    "typescript": "~4.2.2",
+    "typescript": "^4.3.2",
     "vue": "^3.0.11"
   }
 }

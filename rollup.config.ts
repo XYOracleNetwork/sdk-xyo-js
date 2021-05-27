@@ -2,7 +2,7 @@ import typescript from '@rollup/plugin-typescript'
 
 export default [
   {
-    external: ['axios', 'rollbar'],
+    external: ['rollbar', 'tslib'],
     input: 'src/index.ts',
     output: [
       {
