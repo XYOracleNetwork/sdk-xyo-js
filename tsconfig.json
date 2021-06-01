@@ -1,7 +1,8 @@
 {
   "extends": "./tsconfig.es6.json",
   "compilerOptions": {
-    "outDir": "."
+    "outDir": ".",
+    "sourceMap": true
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.spec.ts"]
