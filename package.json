@@ -5,6 +5,9 @@
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
     "email": "support@xyo.network"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
   "author": {
     "name": "XYO Development Team",
@@ -17,10 +20,21 @@
     "type": "git",
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
   },
-  "version": "2.1.15",
-  "main": "./index.cjs",
-  "module": "./index.js",
-  "types": "./index.d.ts",
+  "files": [
+    "dist",
+    "types",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "xyo",
+    "utility",
+    "typescript"
+  ],
+  "version": "2.1.16",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "sideEffects": false,
   "dependencies": {
@@ -31,10 +45,9 @@
     "tslib": "^2.2.0"
   },
   "scripts": {
-    "build": "rm -r -f dist && yarn deps && yarn lint && yarn compile && yarn copy-src",
-    "copy-src": "cp package.json ./dist",
+    "build": "rm -r -f dist && yarn deps && yarn lint && yarn compile",
     "compile": "rollup -c rollup.config.ts",
-    "deploy": "yarn version --patch && yarn build && yarn publish ./dist --access public",
+    "deploy": "yarn version --patch && yarn build && yarn publish",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "lint-pkg": "npmPkgJsonLint .",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
