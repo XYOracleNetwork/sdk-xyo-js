@@ -7,11 +7,11 @@ export default [
     output: [
       {
         exports: 'auto',
-        file: 'dist/index.cjs',
+        file: 'dist/index.cjs.js',
         format: 'cjs',
       },
       {
-        file: 'dist/index.js',
+        file: 'dist/index.mjs.js',
         format: 'es',
       },
     ],
