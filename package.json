@@ -31,7 +31,7 @@
     "utility",
     "typescript"
   ],
-  "version": "2.1.18",
+  "version": "2.1.19",
   "main": "./dist/index.cjs.js",
   "module": "./dist/index.mjs.js",
   "types": "./dist/index.d.ts",
