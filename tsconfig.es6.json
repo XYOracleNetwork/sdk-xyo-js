@@ -9,6 +9,7 @@
     "strict": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
+    "esModuleInterop": true,
     "strictNullChecks": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
