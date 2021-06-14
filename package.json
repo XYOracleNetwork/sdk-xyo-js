@@ -40,13 +40,16 @@
     "axios": "^0.21.1"
   },
   "optionalDependencies": {
-    "rollbar": "^2.21.1",
-    "tslib": "^2.2.0"
+    "rollbar": "^2.21.1"
+  },
+  "peerDependencies": {
+    "tslib": ">=2.3.0"
   },
   "scripts": {
-    "build": "rm -r -f dist && yarn deps && yarn lint && yarn compile",
-    "compile": "rollup -c rollup.config.ts",
-    "deploy": "yarn version --patch && yarn build && yarn publish",
+    "build": "rm -r -f dist && yarn deps && yarn lint && yarn compile && yarn copy-src",
+    "copy-src": "mkdir -p dist && cp package.json dist && cp README.md dist && cp LICENSE dist && cp -R src/* dist",
+    "compile": "tsc && rollup -c rollup.config.ts",
+    "deploy": "yarn version --patch && yarn build && yarn publish ./dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "lint-pkg": "npmPkgJsonLint .",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
@@ -59,11 +62,11 @@
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
     "@types/jest": "^26.0.23",
-    "@types/node": "^15.6.1",
-    "@typescript-eslint/eslint-plugin": "^4.22.1",
-    "@typescript-eslint/parser": "^4.22.1",
+    "@types/node": "^15.12.2",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
     "depcheck": "^1.4.0",
-    "eslint": "^7.24.0",
+    "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-json": "^3.0.0",
@@ -72,15 +75,16 @@
     "eslint-plugin-simple-import-sort": "^7.0.0",
     "eslint-plugin-sort-keys-fix": "^1.1.1",
     "eslint-plugin-typescript-sort-keys": "^1.6.0",
-    "jest": "^27.0.1",
+    "jest": "^27.0.3",
     "npm-package-json-lint": "^5.1.0",
     "npm-package-json-lint-config-default": "^3.0.0",
-    "prettier": "^2.2.1",
-    "rollup": "^2.50.1",
+    "prettier": "^2.3.1",
+    "rollup": "^2.51.2",
     "ts-jest": "^27.0.1",
     "ts-node": "^10.0.0",
     "ts-prune": "^0.9.0",
+    "tslib": "^2.3.0",
     "typescript": "^4.3.2",
-    "vue": "^3.0.11"
+    "vue": "^3.1.1"
   }
 }
