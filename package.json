@@ -26,9 +26,9 @@
     "typescript"
   ],
   "version": "2.1.22",
-  "main": "./dist/index.cjs.js",
-  "module": "./dist/index.mjs.js",
-  "types": "./dist/index.d.ts",
+  "main": "./index.cjs",
+  "module": "./index.js",
+  "types": "./index.d.ts",
   "sideEffects": false,
   "dependencies": {
     "axios": "^0.21.1"
