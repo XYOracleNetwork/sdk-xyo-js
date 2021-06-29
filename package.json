@@ -25,7 +25,7 @@
     "utility",
     "typescript"
   ],
-  "version": "2.1.25",
+  "version": "2.1.26",
   "main": "./index.cjs",
   "module": "./index.js",
   "types": "./index.d.ts",
