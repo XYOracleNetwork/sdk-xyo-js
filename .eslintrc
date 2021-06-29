@@ -2,11 +2,6 @@
   "root": true,
   "ignorePatterns": ["node_modules/", "build/", "dist/"],
   "extends": [
-    "./src/eslint"
-  ],
-  "settings": {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx", ".spec.ts", ".spec.tsx"]
-    }
-  },
+    "@xyo-network"
+  ]
 }
