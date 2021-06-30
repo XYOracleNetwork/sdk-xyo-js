@@ -30,14 +30,14 @@ class Log {
     }
   }
 
-  public error(message: string, data?: any) {
+  public error(message: string, data?: unknown) {
     console.error(message, data ?? '')
     if (this.devMode) {
       this.rollbar?.error(`${message}:${JSON.stringify(data)}`)
     }
   }
 
-  public warn(message: string, data?: any) {
+  public warn(message: string, data?: unknown) {
     if (this.devMode) {
       console.warn(message, data ?? '')
     } else {
@@ -45,19 +45,19 @@ class Log {
     }
   }
 
-  public info(message: string, data?: any) {
+  public info(message: string, data?: unknown) {
     if (this.devMode) {
       console.info(message, data ?? '')
     }
   }
 
-  public debug(message: string, data?: any) {
+  public debug(message: string, data?: unknown) {
     if (this.devMode) {
       console.debug(message, data ?? '')
     }
   }
 
-  public log(message: string, data?: any) {
+  public log(message: string, data?: unknown) {
     if (this.devMode) {
       console.log(message, data ?? '')
     }
