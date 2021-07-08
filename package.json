@@ -49,6 +49,9 @@
     "tsprune": "yarn ts-prune",
     "deps": "yarn depcheck"
   },
+  "resolutions": {
+    "uuid": "^8"
+  },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
     "@xylabs/eslint-config": "^2.0.3",
