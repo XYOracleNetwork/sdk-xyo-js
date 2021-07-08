@@ -2,6 +2,6 @@
   "root": true,
   "ignorePatterns": ["node_modules/", "build/", "dist/"],
   "extends": [
-    "@xyo-network"
+    "@xylabs"
   ]
 }

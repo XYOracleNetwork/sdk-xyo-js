@@ -1,18 +1,4 @@
 ignores: [
-  "@typescript-eslint/eslint-plugin",
-  "@types/jest",
-  "@types/node",
-  "@typescript-eslint/parser",
-  "eslint-config-prettier",
-  "eslint-plugin-import",
-  "eslint-plugin-json",
-  "eslint-plugin-no-secrets",
-  "eslint-plugin-prettier",
-  "eslint-plugin-simple-import-sort",
-  "eslint-plugin-sort-keys-fix",
-  "eslint-plugin-typescript-sort-keys",
   "npm-package-json-lint-config-default",
-  "prettier",
-  "ts-node",
   "vue"
 ]
