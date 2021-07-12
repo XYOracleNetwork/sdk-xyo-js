@@ -883,9 +883,9 @@
   integrity sha512-6O45kZAmkLvzGLToBxEz4lR2W6kXohCtebV2UxjH9GXjd8X9AhEn68FN9eNanFtWNzvgw1hqd6HkPRVQalqf7Q==
 
 "@xylabs/eslint-config@^2.0.3":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@xylabs/eslint-config/-/eslint-config-2.0.5.tgz#d0d6f21926db8f5f3ea97ab4acab4d1059d4bf91"
-  integrity sha512-sdI8BmZq8FVR9zFxtlxPBRVSjH8OutKIYy9ecH7yDMnq9q93BJQCr5Qa3uHwHFv21JI5BHzBnkfN9er3nYqbDw==
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@xylabs/eslint-config/-/eslint-config-2.0.6.tgz#e6455ea53ad8088aebe9e1187f7e8e9f49790861"
+  integrity sha512-ILxHAvxkhWqnVBJO5TH5+BlWIbmctsTO6bpYvHsDeLhnVDkslapfhENHfjJkqt/EMPSVH/jl0Tjh2hEtRbMAeg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.26.1"
     "@typescript-eslint/parser" "^4.26.1"
