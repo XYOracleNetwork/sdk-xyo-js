@@ -36,7 +36,7 @@
   },
   "scripts": {
     "build": "rm -r -f dist && yarn deps && yarn lint && yarn lint-pkg && yarn compile && yarn copy-src",
-    "copy-src": "mkdir -p dist && cp package.json dist && cp README.md dist && cp LICENSE dist && cp -R src/* dist",
+    "copy-src": "cp package.json dist && cp README.md dist && cp LICENSE dist && cp -R src/* dist",
     "compile": "tsc -p tsconfig.build.json && rollup -c rollup.config.ts",
     "deploy": "yarn version --patch && yarn build && yarn publish ./dist",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
@@ -54,7 +54,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.1",
-    "@xylabs/eslint-config": "^2.0.3",
+    "@xylabs/eslint-config": "^2.0.7",
     "depcheck": "^1.4.0",
     "jest": "^27.0.3",
     "npm-package-json-lint": "^5.1.0",
