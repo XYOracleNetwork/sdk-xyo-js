@@ -4,6 +4,7 @@ interface LogConfig {
   commitHash?: string
   devMode?: boolean
   rollbarToken?: string
+  payload?: Record<string, unknown>
 }
 
 class Log {
@@ -21,9 +22,17 @@ class Log {
         codeVersion: config.commitHash,
         code_version: config.commitHash,
         payload: {
+          client: {
+            javascript: {
+              code_version: config.commitHash,
+              guess_uncaught_frames: true,
+              source_map_enabled: true,
+            },
+          },
           codeVersion: config.commitHash,
           code_version: config.commitHash,
           environment: this.devMode ? 'development' : 'production',
+          ...config.payload,
         },
         sendConfig: true,
       })
