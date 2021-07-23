@@ -39,36 +39,40 @@ class Log {
     }
   }
 
-  public error(message: string, data?: unknown) {
-    console.error(message, data ?? '')
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public error(...params: any[]) {
+    console.error(params)
     if (this.devMode) {
-      this.rollbar?.error(`${message}:${JSON.stringify(data)}`)
+      this.rollbar?.error(params)
     }
   }
 
-  public warn(message: string, data?: unknown) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public warn(...params: any[]) {
+    console.warn(params)
     if (this.devMode) {
-      console.warn(message, data ?? '')
-    } else {
-      this.rollbar?.warn(`${message}:${JSON.stringify(data)}`)
+      this.rollbar?.warn(params)
     }
   }
 
-  public info(message: string, data?: unknown) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public info(...params: any[]) {
     if (this.devMode) {
-      console.info(message, data ?? '')
+      console.info(params)
     }
   }
 
-  public debug(message: string, data?: unknown) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public debug(...params: any[]) {
     if (this.devMode) {
-      console.debug(message, data ?? '')
+      console.debug(params)
     }
   }
 
-  public log(message: string, data?: unknown) {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  public log(...params: any[]) {
     if (this.devMode) {
-      console.log(message, data ?? '')
+      console.log(params)
     }
   }
 }
