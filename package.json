@@ -37,7 +37,7 @@
   "scripts": {
     "build": "rm -r -f dist && yarn deps && yarn lint && yarn lint-pkg && yarn compile",
     "compile": "tsc -p tsconfig.build.json && rollup -c rollup.config.ts",
-    "deploy": "yarn version --patch && yarn build && yarn publish",
+    "deploy": "yarn build && yarn version --patch && yarn publish",
     "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "lint-pkg": "npmPkgJsonLint .",
     "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
