@@ -3,5 +3,18 @@
   "ignorePatterns": ["node_modules/", "build/", "dist/"],
   "extends": [
     "@xylabs"
-  ]
+  ],
+  "plugins": [
+    "eslint-plugin-tsdoc"
+  ],
+  "rules": {
+    "import/no-internal-modules": [
+      "warn", {
+        "allow": [
+
+        ]
+      }
+    ],
+    "tsdoc/syntax": "warn"
+  }
 }
