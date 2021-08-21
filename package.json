@@ -25,7 +25,7 @@
     "utility",
     "typescript"
   ],
-  "version": "2.1.36",
+  "version": "2.1.38",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -35,7 +35,17 @@
     "rollbar": "^2.24.0"
   },
   "bin": {
-    "compile": "bin/compile.js"
+    "build": "bin/build.js",
+    "clean": "bin/clean.js",
+    "compile": "bin/compile.js",
+    "cycle": "bin/cycle.js",
+    "dead": "bin/dead.js",
+    "deploy": "bin/deploy.js",
+    "fix": "bin/fix.js",
+    "lint": "bin/lint.js",
+    "reinstall": "bin/reinstall.js",
+    "up": "bin/up.js",
+    "updo": "bin/updo.js"
   },
   "scripts": {
     "build": "rm -r -f dist && yarn deps && yarn lint && yarn lint-pkg && yarn compile && yarn compile-scripts",
