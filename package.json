@@ -34,53 +34,20 @@
     "axios": "^0.21.1",
     "rollbar": "^2.24.0"
   },
-  "bin": {
-    "build": "bin/build.js",
-    "clean": "bin/clean.js",
-    "compile": "bin/compile.js",
-    "cycle": "bin/cycle.js",
-    "dead": "bin/dead.js",
-    "deploy": "bin/deploy.js",
-    "fix": "bin/fix.js",
-    "lint": "bin/lint.js",
-    "reinstall": "bin/reinstall.js",
-    "up": "bin/up.js",
-    "updo": "bin/updo.js"
-  },
   "scripts": {
-    "build": "rm -r -f dist && yarn deps && yarn lint && yarn lint-pkg && yarn compile && yarn compile-scripts",
-    "compile": "tsc -p tsconfig.build.json && rollup -c rollup.config.ts",
-    "compile-scripts": "tsc -p ./scripts/tsconfig.json",
-    "deploy": "yarn build && yarn version --patch && yarn publish",
-    "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
     "lint-pkg": "npmPkgJsonLint .",
-    "fix": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src --fix",
-    "cycle": "NODE_ENV=--max-old-space-size=8092 eslint --rule 'import/no-cycle: [1, { maxDepth: 10 }]' ./src",
-    "test": "jest",
-    "clean": "rm -f *.tsbuildinfo && rm -r -f ./dist && rm -r -f ./build",
-    "reinstall": "rm -r -f ./node_modules && rm -f ./yarn.lock && rm -f ./yarn-error.log && yarn install && yarn outdated",
-    "dead": "yarn ts-prune",
-    "up": "yarn ncu",
-    "updo": "yarn install && yarn upgrade && yarn ncu -u && yarn reinstall",
-    "deps": "yarn depcheck"
+    "test": "jest"
   },
   "resolutions": {
     "uuid": "^8"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
-    "@xylabs/eslint-config": "^2.0.16",
-    "depcheck": "^1.4.2",
-    "eslint": "^7.32.0",
+    "@xylabs/ts-scripts": "^1.0.2",
     "eslint-plugin-tsdoc": "^0.2.14",
     "jest": "^27.0.6",
-    "npm-check-updates": "^11.8.3",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-default": "^3.0.0",
-    "rollup": "^2.56.2",
     "ts-jest": "^27.0.5",
-    "ts-prune": "^0.9.3",
-    "tslib": "^2.3.1",
     "typescript": "^4.3.5"
   }
 }
