@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["node_modules/", "build/", "dist/"],
+  "ignorePatterns": ["node_modules/", "build/", "dist/", "bin/"],
   "extends": [
     "@xylabs"
   ],
