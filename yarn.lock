@@ -935,10 +935,10 @@
     prettier "^2.3.1"
     typescript "^4.3.4"
 
-"@xylabs/ts-scripts@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@xylabs/ts-scripts/-/ts-scripts-1.0.2.tgz#0e85d04cf3cbda2aacd38f79b9d89ce7e133c0b8"
-  integrity sha512-l7PdFtLASzgKikhxAqkLo2+PhHClIWW54s9z2ShzK8b/hQJ0kzedp9ym5SG9RIxrUTBF3CgGdfCdwZ34Y44LIw==
+"@xylabs/ts-scripts@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@xylabs/ts-scripts/-/ts-scripts-1.0.3.tgz#3ad4d88fcf0d290121acf14ab903d9e95412161e"
+  integrity sha512-RWq8jAJEsBhe2Z2bVqAIz28f7dBnSaZb5Rk9CkWBf2zdkCqFWY7wlA4yZSKCgwDX5fzdtPE6qvmZHksYmRNk2A==
   dependencies:
     "@rollup/plugin-typescript" "^8.2.5"
     "@xylabs/eslint-config" "^2.0.16"
