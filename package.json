@@ -39,15 +39,17 @@
     "test": "jest"
   },
   "resolutions": {
-    "uuid": "^8"
+    "uuid": "^8",
+    "typescript": "4.3.5"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts": "^1.0.3",
-    "eslint-plugin-tsdoc": "^0.2.14",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "@xylabs/eslint-config": "2.0.20",
+    "@xylabs/ts-scripts": "^1.0.8",
     "jest": "^27.0.6",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-default": "^3.0.0",
     "ts-jest": "^27.0.5",
-    "typescript": "^4.3.5"
+    "typescript": "4.3.5"
   }
 }
