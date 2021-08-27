@@ -4,9 +4,6 @@
   "extends": [
     "@xylabs"
   ],
-  "plugins": [
-    "eslint-plugin-tsdoc"
-  ],
   "rules": {
     "import/no-internal-modules": [
       "warn", {
@@ -14,7 +11,6 @@
 
         ]
       }
-    ],
-    "tsdoc/syntax": "warn"
+    ]
   }
 }
