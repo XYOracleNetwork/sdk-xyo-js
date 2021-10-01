@@ -44,7 +44,7 @@
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.5",
-    "@xylabs/eslint-config": "2.0.20",
+    "@xylabs/eslint-config": "2.0.21",
     "@xylabs/ts-scripts": "^1.0.8",
     "axios": "^0.21.1",
     "eslint": "^7.32.0",
