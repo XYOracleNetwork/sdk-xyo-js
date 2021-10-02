@@ -12,7 +12,7 @@ class ApiEndpoint<T> {
   }
 
   private get headers() {
-    return this.config.token ? { Authorization: this.config.token } : {}
+    return this.config.token ? { Authorization: this.config.token } : undefined
   }
 
   private get url() {
