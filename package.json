@@ -31,7 +31,7 @@
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "peerDependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0",
     "rollbar": "^2.24.0"
   },
   "scripts": {
@@ -39,14 +39,13 @@
     "test": "jest"
   },
   "resolutions": {
-    "uuid": "^8",
-    "typescript": "4.3.5"
+    "uuid": "^8"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "^8.2.5",
-    "@xylabs/eslint-config": "2.0.20",
-    "@xylabs/ts-scripts": "^1.0.8",
-    "axios": "^0.21.1",
+    "@xylabs/eslint-config": "2.0.21",
+    "@xylabs/ts-scripts": "^1.0.11",
+    "axios": "^0.22.0",
     "eslint": "^7.32.0",
     "jest": "^27.1.0",
     "npm-package-json-lint": "^5.2.3",
@@ -55,6 +54,6 @@
     "rollup": "^2.58.0",
     "ts-jest": "^27.0.5",
     "tslib": "^2.3.1",
-    "typescript": "4.3.5"
+    "typescript": "4.4.3"
   }
 }
