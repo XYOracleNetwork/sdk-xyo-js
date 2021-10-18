@@ -2,6 +2,7 @@ ignores: [
   "@xylabs/ts-scripts",
   "@xylabs/eslint-config",
   "@rollup/plugin-typescript",
+  "@types/mocha",
   "eslint",
   "npm-package-json-lint-config-default"
 ]

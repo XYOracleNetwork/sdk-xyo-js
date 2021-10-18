@@ -7,6 +7,6 @@ describe('delay', () => {
     await delay(testInterval)
     const passedTime = Date.now() - startTime
     expect(passedTime).toBeGreaterThan(testInterval)
-    expect(passedTime).toBeLessThan(testInterval * 1.01)
+    expect(passedTime).toBeLessThan(testInterval * 1.05)
   })
 })
