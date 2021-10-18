@@ -30,7 +30,7 @@
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "peerDependencies": {
+  "dependencies": {
     "axios": "^0",
     "rollbar": "^2.24.0"
   },
@@ -47,15 +47,12 @@
     "@xylabs/ts-scripts": "^1.0.11",
     "@types/jest": "^27",
     "@types/mocha": "^9",
-    "axios": "^0.22.0",
-    "eslint": "^7.32.0",
     "jest": "^27.1.0",
     "npm-package-json-lint": "^5.2.3",
     "npm-package-json-lint-config-default": "^3.0.0",
-    "rollbar": "^2.24.0",
     "rollup": "^2.58.0",
     "ts-jest": "^27.0.5",
     "tslib": "^2.3.1",
-    "typescript": "4.4.3"
+    "typescript": "^4"
   }
 }
