@@ -45,7 +45,7 @@
     "@rollup/plugin-typescript": "^8.2.5",
     "@types/jest": "^27",
     "@types/mocha": "^9",
-    "@xylabs/eslint-config": "2.0.21",
+    "@xylabs/eslint-config": "2.0.24",
     "@xylabs/ts-scripts": "^1.0.11",
     "jest": "^27.1.0",
     "npm-package-json-lint": "^5.2.3",
