@@ -25,7 +25,7 @@
     "utility",
     "typescript"
   ],
-  "version": "2.1.47",
+  "version": "2.1.48",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,16 +42,16 @@
     "uuid": "^8"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
+    "@rollup/plugin-typescript": "^8.3.0",
     "@types/jest": "^27",
     "@types/mocha": "^9",
-    "@xylabs/eslint-config": "2.0.24",
-    "@xylabs/ts-scripts": "^1.0.14",
+    "@xylabs/eslint-config": "2.0.30",
+    "@xylabs/ts-scripts": "^1.0.15",
     "jest": "^27.3.1",
-    "npm-package-json-lint": "^5.2.3",
+    "npm-package-json-lint": "^5.4.1",
     "npm-package-json-lint-config-default": "^3.0.0",
-    "rollup": "^2.58.0",
-    "ts-jest": "^27.0.5",
+    "rollup": "^2.59.0",
+    "ts-jest": "^27.0.7",
     "tslib": "^2.3.1",
     "typescript": "^4"
   }
