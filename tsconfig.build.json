@@ -3,5 +3,6 @@
   "compilerOptions": {
     "lib": ["ESNext"],
     "rootDir": "src"
-  }
+  },
+  "exclude": ["src/**/*.spec.ts"]
 }
