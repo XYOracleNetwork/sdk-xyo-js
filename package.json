@@ -23,18 +23,22 @@
   "keywords": [
     "xyo",
     "utility",
-    "typescript"
+    "typescript",
+    "esm"
   ],
   "version": "2.1.48",
-  "main": "dist/index.cjs",
+  "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "dependencies": {
-    "axios": "^0",
+  "peerDependencies": {
+    "axios": "^0"
+  },
+  "optionalDependencies": {
     "rollbar": "^2.24.0"
   },
   "scripts": {
+    "build": "tsc -p tsconfig.build.json",
     "lint-pkg": "npmPkgJsonLint .",
     "test": "jest"
   },
@@ -42,15 +46,17 @@
     "uuid": "^8"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.3.0",
     "@types/jest": "^27",
     "@types/mocha": "^9",
-    "@xylabs/eslint-config": "2.0.30",
-    "@xylabs/ts-scripts": "^1.0.15",
+    "@xylabs/eslint-config": "2.0.31",
+    "@xylabs/ts-scripts": "^1.0.16",
+    "axios": "^0.24.0",
+    "eslint": "^7",
     "jest": "^27.3.1",
     "npm-package-json-lint": "^5.4.1",
     "npm-package-json-lint-config-default": "^3.0.0",
-    "rollup": "^2.59.0",
+    "prettier": "^2.4.1",
+    "rollbar": "^2.24.0",
     "ts-jest": "^27.0.7",
     "tslib": "^2.3.1",
     "typescript": "^4"
