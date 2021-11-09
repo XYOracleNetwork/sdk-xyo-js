@@ -39,9 +39,9 @@ class EthAddress {
     }
   }
 
-  static parse(value: unknown) {
+  static parse(value: unknown, base?: number) {
     if (typeof value === 'string') {
-      return this.fromString(value)
+      return this.fromString(value, base)
     }
   }
 
