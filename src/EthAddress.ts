@@ -29,10 +29,10 @@ class EthAddress {
     return false
   }
 
-  static fromString(value?: string) {
+  static fromString(value?: string, base = 16) {
     if (value) {
       if (value.startsWith('0x')) {
-        const bn = new BigNumber(value.toLowerCase())
+        const bn = new BigNumber(value.substr(2), base)
         return new EthAddress(bn)
       }
       throw Error(`Invalid Address: ${value}`)
