@@ -31,11 +31,8 @@ class EthAddress {
 
   static fromString(value?: string, base = 16) {
     if (value) {
-      if (value.startsWith('0x')) {
-        const bn = new BigNumber(value.substr(2), base)
-        return new EthAddress(bn)
-      }
-      throw Error(`Invalid Address: ${value}`)
+      const bn = new BigNumber(value.startsWith('0x') ? value.substr(2) : value, base)
+      return new EthAddress(bn)
     }
   }
 
