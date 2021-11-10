@@ -26,15 +26,15 @@
     "typescript",
     "esm"
   ],
-  "version": "2.2.6",
+  "version": "2.2.7",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "peerDependencies": {
+    "@types/bn.js": "^5",
     "axios": "^0",
-    "bn.js": "^5",
-    "@types/bn.js": "^5"
+    "bn.js": "^5"
   },
   "optionalDependencies": {
     "rollbar": "^2.24.0"
