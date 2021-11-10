@@ -1,6 +1,5 @@
-import BigNumber from 'bn.js'
-
 import assertEx from './assertEx'
+import BigNumber from './BigNumber'
 import padHex from './padHex'
 
 export const isEthAddress = (obj: { type: string }) => obj?.type === EthAddress.type

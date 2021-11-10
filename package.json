@@ -33,7 +33,8 @@
   "sideEffects": false,
   "peerDependencies": {
     "axios": "^0",
-    "bn.js": "^5"
+    "bn.js": "^5",
+    "@types/bn.js": "^5"
   },
   "optionalDependencies": {
     "rollbar": "^2.24.0"
