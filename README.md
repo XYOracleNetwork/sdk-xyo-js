@@ -33,15 +33,15 @@ See the [LICENSE](LICENSE) file for license details
 
 ## Credits
 
-Made with 🔥and ❄️ by [XYO](https://xyo.network)
+[Made with 🔥 and ❄️ by XYO](https://xyo.network)
 
 [logo]: https://cdn.xy.company/img/brand/XYO_full_colored.png
 
 [main-build]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/build-main.yml/badge.svg
 [main-build-link]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/build-main.yml
 
-[beta-build]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/build-beta.yml/badge.svg
-[beta-build-link]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/build-beta.yml
+[beta-build]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/build-beta.yml/badge.svg
+[beta-build-link]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/build-beta.yml
 
 [npm-badge]: https://img.shields.io/npm/v/@xyo-network/sdk-xyo-js.svg
 [npm-link]: https://www.npmjs.com/package/@xyo-network/sdk-xyo-js
