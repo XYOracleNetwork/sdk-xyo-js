@@ -1,6 +1,8 @@
+/* eslint-disable @delagen/deprecation/deprecation */
 /**
  * Error object thrown by assertEx
  */
+/** @deprecated use @xylabs/sdk-js instead */
 class AssertExError extends Error {}
 
 /**
@@ -12,6 +14,7 @@ class AssertExError extends Error {}
  * @throws AssertExError
  * @returns Value of expression
  */
+/** @deprecated use @xylabs/sdk-js instead */
 const assertEx = <T>(expr?: T | null, message?: string): T => {
   if (expr) return expr
   throw new AssertExError(message)

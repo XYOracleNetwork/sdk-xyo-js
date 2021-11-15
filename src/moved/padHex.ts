@@ -1,3 +1,5 @@
+/* eslint-disable @delagen/deprecation/deprecation */
+/** @deprecated use @xylabs/sdk-js instead */
 const padHex = (hex: string, byteCount?: number) => {
   let result = hex
   if (hex.length % 2 !== 0) {

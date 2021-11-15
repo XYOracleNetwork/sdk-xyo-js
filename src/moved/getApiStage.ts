@@ -1,5 +1,7 @@
+/* eslint-disable @delagen/deprecation/deprecation */
 import ApiStage from './ApiStage'
 
+/** @deprecated use @xylabs/sdk-js instead */
 const getApiStage = (hostname: string) => {
   if (hostname.startsWith('localhost')) {
     return ApiStage.Local

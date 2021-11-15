@@ -1,5 +1,7 @@
+/* eslint-disable @delagen/deprecation/deprecation */
 import Rollbar from 'rollbar'
 
+/** @deprecated use @xylabs/sdk-js instead */
 interface LogConfig {
   commitHash?: string
   devMode?: boolean
@@ -7,6 +9,7 @@ interface LogConfig {
   payload?: Record<string, unknown>
 }
 
+/** @deprecated use @xylabs/sdk-js instead */
 class Log {
   private rollbar?: Rollbar
   private devMode?: boolean
