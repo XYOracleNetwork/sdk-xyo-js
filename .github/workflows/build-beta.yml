@@ -3,7 +3,7 @@ name: Build (beta)
 on:
   push:
     branches:
-      - develop
+      - beta
 
 jobs:
   deploy:
