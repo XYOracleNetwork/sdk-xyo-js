@@ -1,9 +1,9 @@
-name: Build (develop)
+name: Build
 
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   deploy:

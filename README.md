@@ -37,16 +37,16 @@ Made with 🔥and ❄️ by [XYO](https://xyo.network)
 
 [logo]: https://cdn.xy.company/img/brand/XYO_full_colored.png
 
-[main-build]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/master-build.yml/badge.svg
-[main-build-link]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/master-build.yml
+[main-build]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/build-main.yml/badge.svg
+[main-build-link]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/build-main.yml
 
-[beta-build]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/develop-build.yml/badge.svg
-[beta-build-link]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/develop-build.yml
+[beta-build]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/build-beta.yml/badge.svg
+[beta-build-link]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/build-beta.yml
 
 [npm-badge]: https://img.shields.io/npm/v/@xyo-network/sdk-xyo-js.svg
 [npm-link]: https://www.npmjs.com/package/@xyo-network/sdk-xyo-js
 
-[bch-badge]: https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-xyo-js?branch=master
+[bch-badge]: https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-xyo-js?branch=main
 [bch-link]: https://bettercodehub.com/results/XYOracleNetwork/sdk-xyo-js
 
 [codacy-badge]: https://app.codacy.com/project/badge/Grade/5615b4dadee142f6b9a063e49637401f
