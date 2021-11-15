@@ -1,7 +1,9 @@
+/* eslint-disable @delagen/deprecation/deprecation */
 import axios from 'axios'
 
 import XyoWorldApiConfig from './ApiConfig'
 
+/** @deprecated use @xylabs/sdk-js instead */
 class ApiEndpoint<T> {
   private config: XyoWorldApiConfig
   private path: string

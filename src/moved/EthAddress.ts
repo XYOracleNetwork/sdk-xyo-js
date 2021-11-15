@@ -1,9 +1,12 @@
+/* eslint-disable @delagen/deprecation/deprecation */
+import BigNumber from 'bn.js'
+
 import assertEx from './assertEx'
-import BigNumber from './BigNumber'
 import padHex from './padHex'
 
 export const isEthAddress = (obj: { type: string }) => obj?.type === EthAddress.type
 
+/** @deprecated use @xylabs/sdk-js instead */
 class EthAddress {
   public type = EthAddress.type
 

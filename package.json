@@ -26,7 +26,7 @@
     "typescript",
     "esm"
   ],
-  "version": "2.2.7",
+  "version": "2.3.0",
   "main": "dist/index.js",
   "module": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -40,7 +40,7 @@
     "rollbar": "^2.24.0"
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json",
+    "compile": "tsc -p tsconfig.build.json",
     "lint-pkg": "npmPkgJsonLint .",
     "test": "jest"
   },
@@ -51,18 +51,17 @@
     "@types/bn.js": "^5.1.0",
     "@types/jest": "^27",
     "@types/mocha": "^9",
-    "@xylabs/eslint-config": "2.0.31",
-    "@xylabs/ts-scripts": "^1.0.16",
+    "@xylabs/eslint-config": "2.0.33",
+    "@xylabs/ts-scripts": "^1.0.17",
     "axios": "^0.24.0",
     "bn.js": "^5.2.0",
-    "eslint": "^7",
+    "eslint": "^8",
     "jest": "^27.3.1",
-    "npm-package-json-lint": "^5.4.1",
+    "npm-package-json-lint": "^5.4.2",
     "npm-package-json-lint-config-default": "^3.0.0",
     "prettier": "^2.4.1",
     "rollbar": "^2.24.0",
     "ts-jest": "^27.0.7",
-    "tslib": "^2.3.1",
     "typescript": "^4"
   }
 }

@@ -1,7 +1,9 @@
 [![logo][]](https://xyo.network)
 
-# sdk-xyo-js
+# @xyo-network/sdk-xyo-js
 
+[![main-build][]][master-build-link]
+[![beta-build][]][develop-build-link]
 [![npm-badge][]][npm-link]
 [![bch-badge][]][bch-link]
 [![codacy-badge][]][codacy-link]
@@ -12,7 +14,6 @@
 
 ## Table of Contents
 
--   [Title](#sdk-xyo-js)
 -   [Description](#description)
 -   [Maintainers](#maintainers)
 -   [License](#license)
@@ -24,7 +25,7 @@ SDK for base code for XYO Javascript Libraries.
 
 ## Maintainers
 
--   Arie Trouw
+-   [Arie Trouw](https://github.com/arietrouw) (https://arietrouw.com)
 
 ## License
 
@@ -36,14 +37,20 @@ Made with 🔥and ❄️ by [XYO](https://xyo.network)
 
 [logo]: https://cdn.xy.company/img/brand/XYO_full_colored.png
 
+[main-build]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/master-build.yml/badge.svg
+[main-build-link]: https://github.com/XYOracleNetwork/sdk-xyo-js/actions/workflows/master-build.yml
+
+[beta-build]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/develop-build.yml/badge.svg
+[beta-build-link]: https://github.com/xylabs/sdk-xyo-js/actions/workflows/develop-build.yml
+
 [npm-badge]: https://img.shields.io/npm/v/@xyo-network/sdk-xyo-js.svg
 [npm-link]: https://www.npmjs.com/package/@xyo-network/sdk-xyo-js
 
 [bch-badge]: https://bettercodehub.com/edge/badge/XYOracleNetwork/sdk-xyo-js?branch=master
 [bch-link]: https://bettercodehub.com/results/XYOracleNetwork/sdk-xyo-js
 
-[codacy-badge]: https://app.codacy.com/project/badge/Grade/5f9e25b90de7473fa9239bcf7ccf9a32
-[codacy-link]: https://www.codacy.com/gh/XYOracleNetwork/sdk-xyo-js/dashboard?utm_source=github.com&utm_medium=referral&utm_content=XYOracleNetwork/sdk-xyo-js&utm_campaign=Badge_Grade
+[codacy-badge]: https://app.codacy.com/project/badge/Grade/5615b4dadee142f6b9a063e49637401f
+[codacy-link]: https://www.codacy.com/gh/XYOracleNetwork/sdk-xyo-js/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=XYOracleNetwork/sdk-xyo-js&amp;utm_campaign=Badge_Grade
 
 [codeclimate-badge]: https://api.codeclimate.com/v1/badges/2763b2f223ba8822d0f6/maintainability
 [codeclimate-link]: https://codeclimate.com/github/XYOracleNetwork/sdk-xyo-js/maintainability
