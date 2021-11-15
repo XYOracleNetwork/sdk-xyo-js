@@ -1,25 +1,21 @@
-name: Build sdk-xyo-js
+name: Build (develop)
 
 on:
   push:
     branches:
-      - master
+      - develop
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v2
         with:
           ref: master
       - uses: actions/setup-node@v2-beta
         with:
-          node-version: "14"
+          node-version: "16"
       - name: install
         run: yarn install
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
       - name: build
         run: yarn build
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
