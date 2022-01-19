@@ -53,7 +53,7 @@
     "@types/mocha": "^9",
     "@xylabs/eslint-config": "2.0.33",
     "@xylabs/ts-scripts": "^1.0.17",
-    "axios": "^0.24.0",
+    "axios": "^0.25.0",
     "bn.js": "^5.2.0",
     "eslint": "^8",
     "jest": "^27.3.1",
