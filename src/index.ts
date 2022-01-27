@@ -1,1 +1,3 @@
-export * from './moved'
+const stub = 'This is a stub'
+
+export { stub }
