@@ -1,8 +1,10 @@
 ignores: [
+  "@types/jest",
+  "@types/mocha",
   "@xylabs/ts-scripts",
   "@xylabs/eslint-config",
-  "@rollup/plugin-typescript",
-  "@types/mocha",
-  "eslint",
-  "npm-package-json-lint-config-default"
+  "@xylabs/tsconfig",
+  "npm-package-json-lint-config-default",
+  "ts-jest",
+  "tslib"
 ]

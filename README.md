@@ -10,7 +10,8 @@
 [![codeclimate-badge][]][codeclimate-link]
 [![snyk-badge][]][snyk-link]
 
-> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses. We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production.
+> The XYO Foundation provides this source code available in our efforts to advance the understanding of the XYO Procotol and its possible uses.
+> We continue to maintain this software in the interest of developer education. Usage of this source code is not intended for production.
 
 ## Table of Contents
 
@@ -25,7 +26,7 @@ SDK for base code for XYO Javascript Libraries.
 
 ## Maintainers
 
--   [Arie Trouw](https://github.com/arietrouw) (https://arietrouw.com)
+-   [Arie Trouw](https://github.com/arietrouw) (<https://arietrouw.com>)
 
 ## License
 
