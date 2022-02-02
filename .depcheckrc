@@ -6,5 +6,6 @@ ignores: [
   "@xylabs/tsconfig",
   "npm-package-json-lint-config-default",
   "ts-jest",
-  "tslib"
+  "tslib",
+  "typescript"
 ]
