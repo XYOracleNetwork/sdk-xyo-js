@@ -8,7 +8,6 @@
     "project": "tsconfig.json"
   },
   "rules": {
-    "import/no-default-export": ["warn"],
     "import/no-internal-modules": [
       "warn", {
         "allow": [
