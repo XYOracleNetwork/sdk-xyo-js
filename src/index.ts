@@ -1,3 +1,2 @@
-const stub = 'This is a stub'
-
-export { stub }
+export * from './GeoJson'
+export * from './mercator'

@@ -46,8 +46,13 @@
   "resolutions": {
     "uuid": "^8"
   },
+  "dependencies": {
+    "geojson": "^0.5.0",
+    "mapbox-gl": "^2.7.0"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
+    "@types/mapbox-gl": "^2.6.1",
     "@types/mocha": "^9.1.0",
     "@xylabs/eslint-config": "^2.3.17",
     "@xylabs/rollup-config": "^1.1.7",
