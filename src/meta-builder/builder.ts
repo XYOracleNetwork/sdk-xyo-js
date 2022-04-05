@@ -27,5 +27,17 @@ export const metaBuilder = (html: string, meta: Meta) => {
       addMetaToHead($, `og:${key}`, value)
     })
   }
+  if (meta.twitter) {
+    Object.entries(meta.twitter).map(([key, value]) => {
+      addMetaToHead($, `twitter:${key}`, value)
+    })
+  }
+  if (meta.description) {
+    addMetaToHead($, 'description', meta.description)
+  }
+  if (meta.title) {
+    addMetaToHead($, 'title', meta.title)
+    $('head title').html(meta.title)
+  }
   return $.html()
 }
