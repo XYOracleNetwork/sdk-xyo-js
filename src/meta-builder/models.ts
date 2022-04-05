@@ -36,11 +36,13 @@ export interface TwitterApp {
 export type OpenGraphStructuredProperty = string | OpenGraphStructured | (string | OpenGraphStructured)[]
 
 export interface Meta {
+  title?: string
+  description?: string
   og?: {
-    title: string
-    type: string
-    image: OpenGraphStructuredProperty
-    url: string
+    title?: string
+    type?: string
+    image?: OpenGraphStructuredProperty
+    url?: string
     audio?: OpenGraphStructuredProperty
     description?: string
     determiner?: string
