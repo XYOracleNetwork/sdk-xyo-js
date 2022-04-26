@@ -12,8 +12,8 @@ const generateJestConfig = ({ esModules }) => {
     preset: 'ts-jest/presets/default-esm',
     testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
     transform: {
-      [`(${esModuleslist}).+\\.js$`]: 'babel-jest',
-      '^.+\\.tsx?$': 'ts-jest',
+      [`(${esModuleslist}).+\\.[jt]s$`]: 'babel-jest',
+      '^.+\\.tsx?$': 'ts-jest/legacy',
     },
     transformIgnorePatterns: [`./node_modules/(?!${esModuleslist})`],
   }
