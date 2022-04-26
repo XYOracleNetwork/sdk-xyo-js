@@ -24,14 +24,15 @@
     "typescript",
     "esm"
   ],
-  "esm5": "dist/esm5/index.js",
+  "browser": "dist/index.js",
+  "esm5": "dist/bundle/esm5/index.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
-      "esm5": "./dist/esm5/index.js",
+      "esm5": "./dist/bundle/esm5/index.js",
       "node": {
-        "import": "./dist/node-esm/index.js",
-        "require": "./dist/node/index.js"
+        "import": "./dist/bundle/node-esm/index.js",
+        "require": "./dist/bundle/node/index.js"
       },
       "default": "./dist/index.js"
     },
@@ -41,7 +42,7 @@
     "./package.json": "./package.json"
   },
   "license": "LGPL-3.0",
-  "main": "dist/node/index.js",
+  "main": "dist/bundle/node/index.js",
   "module": "dist/index.js",
   "scripts": {
     "deploy": "yarn deploy3",
@@ -56,18 +57,18 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.10",
     "geojson": "^0.5.0",
-    "mapbox-gl": "^2.8.1"
+    "mapbox-gl": "^2.8.2"
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/mapbox-gl": "^2.7.0",
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",
-    "@xylabs/rollup-config": "^1.1.15",
+    "@xylabs/rollup-config": "^1.1.17",
     "@xylabs/ts-scripts": "^1.0.53",
     "@xylabs/tsconfig": "^1.0.13",
     "copyfiles": "^2.4.1",
-    "eslint": "^8.13.0",
+    "eslint": "^8.14.0",
     "jest": "^27.5.1",
     "npm-package-json-lint": "^6.3.0",
     "npm-package-json-lint-config-default": "^5.0.0",
