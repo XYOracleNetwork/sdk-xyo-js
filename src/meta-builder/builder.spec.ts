@@ -4,52 +4,72 @@ import { Meta } from './models'
 const meta: Meta = {
   description: 'Updated description',
   og: {
+    // audio: {
+    //   alt: 'og.audio.alt',
+    //   height: 111,
+    //   secure_url: 'https://og.com/audio',
+    //   type: 'og.audio.type',
+    //   url: 'http://og.com/audio',
+    //   width: 222,
+    // },
+    description: '',
+    determiner: '',
     image: 'https://example.com/image.jpg',
+    locale: '',
+    site_name: '',
     title: 'Example Open Graph Meta',
     type: 'website',
     url: 'https://example.com',
+    // video: {
+    //   alt: 'og.video.alt',
+    //   height: 333,
+    //   secure_url: 'https://og.com/video',
+    //   type: 'og.video.type',
+    //   url: 'http://og.com/video',
+    //   width: 444,
+    // },
   },
   title: 'Updated title',
   twitter: {
     app: {
       id: {
-        googleplay: '',
-        ipad: '',
-        iphone: '',
+        googleplay: 'twitter.app.id.googleplay',
+        ipad: 'twitter.app.id.ipad',
+        iphone: 'twitter.app.id.iphone',
       },
       name: {
-        googleplay: '',
-        ipad: '',
-        iphone: '',
+        googleplay: 'twitter.app.name.googleplay',
+        ipad: 'twitter.app.name.ipad',
+        iphone: 'twitter.app.name.iphone',
       },
       url: {
-        googleplay: '',
-        ipad: '',
-        iphone: '',
+        googleplay: 'https://www.twitter.com/url/googleplay',
+        ipad: 'https://www.twitter.com/url/ipad',
+        iphone: 'https://www.twitter.com/url/iphone',
       },
     },
     card: 'summary',
     creator: {
-      id: 'id',
-      username: 'username',
+      id: 'twitter.creator.id',
+      username: 'twitter.creator.username',
     },
     desription: 'desription',
     image: {
       alt: 'alt',
-      url: 'url',
+      url: 'https://www.twitter.com/image/url',
     },
     // player: {
     //   alt: '',
-    //   height: 111,
+    //   height: 555,
     //   stream: '',
     //   url: '',
-    //   width: 222,
+    //   width: 666,
     // },
     site: {
-      id: '',
-      username: '',
+      id: 'twitter.site.id',
+      username: 'twitter.site.username',
     },
-    title: 'title',
+    title: 'twitter.title',
   },
 }
 
@@ -136,7 +156,7 @@ describe('builder', () => {
         </style>
         <script defer=\\"defer\\" src=\\"/static/js/main.ae7f7033.js\\"></script>
         <link href=\\"/static/css/main.026e3fe6.css\\" rel=\\"stylesheet\\">
-      <meta property=\\"og:image\\" content=\\"https://example.com/image.jpg\\"><meta property=\\"og:title\\" content=\\"Example Open Graph Meta\\"><meta property=\\"og:type\\" content=\\"website\\"><meta property=\\"og:url\\" content=\\"https://example.com\\"><meta property=\\"twitter:app:id:googleplay\\" content=\\"\\"><meta property=\\"twitter:app:id:ipad\\" content=\\"\\"><meta property=\\"twitter:app:id:iphone\\" content=\\"\\"><meta property=\\"twitter:app:name:googleplay\\" content=\\"\\"><meta property=\\"twitter:app:name:ipad\\" content=\\"\\"><meta property=\\"twitter:app:name:iphone\\" content=\\"\\"><meta property=\\"twitter:app:googleplay\\" content=\\"\\"><meta property=\\"twitter:app:ipad\\" content=\\"\\"><meta property=\\"twitter:app:iphone\\" content=\\"\\"><meta property=\\"twitter:card\\" content=\\"summary\\"><meta property=\\"twitter:creator:id\\" content=\\"id\\"><meta property=\\"twitter:creator:username\\" content=\\"username\\"><meta property=\\"twitter:desription\\" content=\\"desription\\"><meta property=\\"twitter:image:alt\\" content=\\"alt\\"><meta property=\\"twitter:image\\" content=\\"url\\"><meta property=\\"twitter:site:id\\" content=\\"\\"><meta property=\\"twitter:site:username\\" content=\\"\\"><meta property=\\"twitter:title\\" content=\\"title\\"><meta property=\\"description\\" content=\\"Updated description\\"><meta property=\\"title\\" content=\\"Updated title\\"></head>
+      <meta property=\\"og:description\\" content=\\"\\"><meta property=\\"og:determiner\\" content=\\"\\"><meta property=\\"og:image\\" content=\\"https://example.com/image.jpg\\"><meta property=\\"og:locale\\" content=\\"\\"><meta property=\\"og:site_name\\" content=\\"\\"><meta property=\\"og:title\\" content=\\"Example Open Graph Meta\\"><meta property=\\"og:type\\" content=\\"website\\"><meta property=\\"og:url\\" content=\\"https://example.com\\"><meta property=\\"twitter:app:id:googleplay\\" content=\\"twitter.app.id.googleplay\\"><meta property=\\"twitter:app:id:ipad\\" content=\\"twitter.app.id.ipad\\"><meta property=\\"twitter:app:id:iphone\\" content=\\"twitter.app.id.iphone\\"><meta property=\\"twitter:app:name:googleplay\\" content=\\"twitter.app.name.googleplay\\"><meta property=\\"twitter:app:name:ipad\\" content=\\"twitter.app.name.ipad\\"><meta property=\\"twitter:app:name:iphone\\" content=\\"twitter.app.name.iphone\\"><meta property=\\"twitter:app:googleplay\\" content=\\"https://www.twitter.com/url/googleplay\\"><meta property=\\"twitter:app:ipad\\" content=\\"https://www.twitter.com/url/ipad\\"><meta property=\\"twitter:app:iphone\\" content=\\"https://www.twitter.com/url/iphone\\"><meta property=\\"twitter:card\\" content=\\"summary\\"><meta property=\\"twitter:creator:id\\" content=\\"twitter.creator.id\\"><meta property=\\"twitter:creator:username\\" content=\\"twitter.creator.username\\"><meta property=\\"twitter:desription\\" content=\\"desription\\"><meta property=\\"twitter:image:alt\\" content=\\"alt\\"><meta property=\\"twitter:image\\" content=\\"https://www.twitter.com/image/url\\"><meta property=\\"twitter:site:id\\" content=\\"twitter.site.id\\"><meta property=\\"twitter:site:username\\" content=\\"twitter.site.username\\"><meta property=\\"twitter:title\\" content=\\"twitter.title\\"><meta property=\\"description\\" content=\\"Updated description\\"><meta property=\\"title\\" content=\\"Updated title\\"></head>
 
       <body style=\\"padding:0;margin:0;overflow-x:hidden\\"><noscript><iframe
             src=\\"https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL\\" height=\\"0\\" width=\\"0\\"
