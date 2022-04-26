@@ -1,17 +1,18 @@
 import { metaBuilder } from './builder'
 import { Meta } from './models'
 
+const meta: Meta = {
+  og: {
+    image: 'https://example.com/image.jpg',
+    title: 'Example Open Graph Meta',
+    type: 'website',
+    url: 'https://example.com',
+  },
+}
+
 describe('builder', () => {
   it('Generates head meta', () => {
     const html = '<html/>'
-    const meta: Meta = {
-      og: {
-        image: 'https://example.com/image.jpg',
-        title: 'Example Open Graph Meta',
-        type: 'website',
-        url: 'https://example.com',
-      },
-    }
     const output = metaBuilder(html, meta)
     expect(output).toBeDefined()
   })
@@ -60,14 +61,6 @@ describe('builder', () => {
 
 </html>
     `
-    const meta: Meta = {
-      og: {
-        image: 'https://example.com/image.jpg',
-        title: 'Example Open Graph Meta',
-        type: 'website',
-        url: 'https://example.com',
-      },
-    }
     const output = metaBuilder(html, meta)
     expect(output).toMatchInlineSnapshot(`
       "<!DOCTYPE html><html lang=\\"en\\"><head>
