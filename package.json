@@ -34,5 +34,5 @@
     "test": "yarn workspaces foreach run xylabs-test",
     "deps": "yarn workspaces foreach run xylabs-deps"
   },
-  "version": "2.6.1"
+  "version": "2.6.2"
 }
