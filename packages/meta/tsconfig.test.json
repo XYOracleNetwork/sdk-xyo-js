@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "outDir": "dist",
+    "typeRoots": ["../../node_modules/@types"]
+  },
+  "exclude": ["dist/**/*"],
+  "extends": "@xylabs/tsconfig",
+  "include": ["**/*.spec.ts"]
+}
