@@ -1,9 +1,14 @@
 {
+  "name": "@xyo-network/sdk-xyo-js",
   "packageManager": "yarn@3.2.0",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "@xyo-network/xyo-geo-js": "workspace:^",
+    "@xyo-network/xyo-meta-js": "workspace:^"
+  },
   "devDependencies": {
     "@types/jest": "^27.4.1",
     "@types/mocha": "^9.1.1",
@@ -25,14 +30,16 @@
   },
   "scripts": {
     "xylabs-build": "echo Building all",
-    "build": "yarn workspaces foreach run xylabs-build",
-    "deploy3": "yarn cycle && yarn build && yarn prep-version",
-    "prep-version": "yarn workspaces foreach run version apply --all && yarn workspaces foreach run version patch --deferred",
+    "build": "yarn workspaces foreach run xylabs-build && yarn workspaces foreach version patch --deferred",
+    "deploy3": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach run xylabs-deploy3",
+    "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy3",
+    "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy3",
+    "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy3",
     "cycle": "yarn workspaces foreach run xylabs-cycle",
     "lint": "yarn workspaces foreach run xylabs-lint",
     "fix": "yarn workspaces foreach run xylabs-fix",
     "test": "yarn workspaces foreach run xylabs-test",
     "deps": "yarn workspaces foreach run xylabs-deps"
   },
-  "version": "2.6.2"
+  "version": "2.6.4"
 }
