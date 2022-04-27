@@ -38,7 +38,7 @@
   "scripts": {
     "xylabs-build": "echo Building all",
     "build": "yarn workspaces foreach run xylabs-build",
-    "deploy3": "yarn workspaces foreach run xylabs-deploy3",
+    "deploy3": "yarn cycle && yarn build && yarn version apply --all && yarn version patch --deferred",
     "cycle": "yarn workspaces foreach run xylabs-cycle",
     "lint": "yarn workspaces foreach run xylabs-lint",
     "fix": "yarn workspaces foreach run xylabs-fix",
@@ -49,5 +49,6 @@
   "main": "dist/bundle/node/index.js",
   "module": "dist/index.js",
   "sideEffects": false,
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "version": "2.6.0"
 }
