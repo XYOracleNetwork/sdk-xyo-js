@@ -47,7 +47,7 @@
   "scripts": {
     "deploy": "yarn deploy3",
     "lint-pkg": "npmPkgJsonLint .",
-    "build": "yarn xylabs-build && yarn gen:docs",
+    "build": "yarn xylabs-build && yarn gen:docs && yarn version patch --deferred",
     "gen:docs": "typedoc ./src/index.ts --json ./dist/docs.json --tsconfig ./tsconfig.build.json",
     "test": "jest ./src"
   },

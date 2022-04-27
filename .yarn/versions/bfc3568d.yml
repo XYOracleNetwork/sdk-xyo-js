@@ -1,2 +1,5 @@
 releases:
+  "@xyo-network/sdk-xyo-js": patch
+  "@xyo-network/xyo-geo-js": patch
+  "@xyo-network/xyo-meta-js": patch
   root-workspace-0b6124: patch

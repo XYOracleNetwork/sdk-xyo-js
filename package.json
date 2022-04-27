@@ -1,5 +1,6 @@
 {
   "packageManager": "yarn@3.2.0",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -22,33 +23,16 @@
     "typedoc": "^0.22.15",
     "typescript": "^4.6.3"
   },
-  "browser": "dist/index.js",
-  "esm5": "dist/bundle/esm5/index.js",
-  "exports": {
-    ".": {
-      "esm5": "./dist/bundle/esm5/index.js",
-      "node": {
-        "import": "./dist/bundle/node-esm/index.js",
-        "require": "./dist/bundle/node/index.js"
-      },
-      "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
     "xylabs-build": "echo Building all",
     "build": "yarn workspaces foreach run xylabs-build",
-    "deploy3": "yarn cycle && yarn build && yarn version apply --all && yarn version patch --deferred",
+    "deploy3": "yarn cycle && yarn build && yarn prep-version",
+    "prep-version": "yarn workspaces foreach run version apply --all && yarn workspaces foreach run version patch --deferred",
     "cycle": "yarn workspaces foreach run xylabs-cycle",
     "lint": "yarn workspaces foreach run xylabs-lint",
     "fix": "yarn workspaces foreach run xylabs-fix",
     "test": "yarn workspaces foreach run xylabs-test",
     "deps": "yarn workspaces foreach run xylabs-deps"
   },
-  "license": "LGPL-3.0",
-  "main": "dist/bundle/node/index.js",
-  "module": "dist/index.js",
-  "sideEffects": false,
-  "types": "dist/index.d.ts",
-  "version": "2.6.0"
+  "version": "2.6.1"
 }
