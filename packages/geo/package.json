@@ -64,7 +64,7 @@
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",
     "@xylabs/rollup-config": "^1.1.17",
-    "@xylabs/ts-scripts": "^1.0.54",
+    "@xylabs/ts-scripts": "^1.0.55",
     "@xylabs/tsconfig": "^1.0.13",
     "babel-jest": "^28.0.2",
     "copyfiles": "^2.4.1",

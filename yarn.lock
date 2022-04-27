@@ -1678,9 +1678,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/ts-scripts@npm:^1.0.54":
-  version: 1.0.54
-  resolution: "@xylabs/ts-scripts@npm:1.0.54"
+"@xylabs/ts-scripts@npm:^1.0.55":
+  version: 1.0.55
+  resolution: "@xylabs/ts-scripts@npm:1.0.55"
   dependencies:
     "@xylabs/eslint-config": ^2.3.20
     copyfiles: ^2.4.1
@@ -1724,6 +1724,8 @@ __metadata:
     xylabs-compile: bin/compile.js
     xylabs-cycle: bin/cycle.js
     xylabs-dead: bin/dead.js
+    xylabs-deploy: bin/deploy.js
+    xylabs-deploy3: bin/deploy3.js
     xylabs-deps: bin/deps.js
     xylabs-fix: bin/fix.js
     xylabs-gitlint: bin/gitlint.js
@@ -1738,7 +1740,7 @@ __metadata:
     xylabs-up3: bin/up3.js
     xylabs-updo: bin/updo.js
     xylabs-updo3: bin/updo3.js
-  checksum: a9bb49ffa071f0601a2ca1759fd82de3bb2ee9b2c053af871c94eb623204def4f97ab551a15e676ef07200104114738ea3349ed0b8a8568f325fdbb2d4a7b01b
+  checksum: 14843a48eead6a9162d1f7374107c26487247cd04e305f91fe7ec96a855a7b61c2eb965aa4e09b95770165e990427964dec57443e49d6f095fe6eca8601e8b47
   languageName: node
   linkType: hard
 
@@ -1759,7 +1761,7 @@ __metadata:
     "@types/mocha": ^9.1.1
     "@xylabs/eslint-config": ^2.3.22
     "@xylabs/rollup-config": ^1.1.17
-    "@xylabs/ts-scripts": ^1.0.54
+    "@xylabs/ts-scripts": ^1.0.55
     "@xylabs/tsconfig": ^1.0.13
     "@xyo-network/xyo-geo-js": "workspace:^"
     "@xyo-network/xyo-meta-js": "workspace:^"
@@ -1788,7 +1790,7 @@ __metadata:
     "@types/mocha": ^9.1.1
     "@xylabs/eslint-config": ^2.3.22
     "@xylabs/rollup-config": ^1.1.17
-    "@xylabs/ts-scripts": ^1.0.54
+    "@xylabs/ts-scripts": ^1.0.55
     "@xylabs/tsconfig": ^1.0.13
     babel-jest: ^28.0.2
     copyfiles: ^2.4.1
@@ -1816,7 +1818,7 @@ __metadata:
     "@types/mocha": ^9.1.1
     "@xylabs/eslint-config": ^2.3.22
     "@xylabs/rollup-config": ^1.1.17
-    "@xylabs/ts-scripts": ^1.0.54
+    "@xylabs/ts-scripts": ^1.0.55
     "@xylabs/tsconfig": ^1.0.13
     babel-jest: ^28.0.2
     cheerio: ^1.0.0-rc.10
@@ -9268,7 +9270,7 @@ __metadata:
     "@types/mocha": ^9.1.1
     "@xylabs/eslint-config": ^2.3.22
     "@xylabs/rollup-config": ^1.1.17
-    "@xylabs/ts-scripts": ^1.0.54
+    "@xylabs/ts-scripts": ^1.0.55
     "@xylabs/tsconfig": ^1.0.13
     babel-jest: ^28.0.2
     copyfiles: ^2.4.1
