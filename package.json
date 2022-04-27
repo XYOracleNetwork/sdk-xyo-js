@@ -72,7 +72,6 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "xylabs-build": "echo Building all",
     "build": "yarn workspaces foreach run xylabs-build && yarn workspaces foreach version patch --deferred",
     "deploy3": "yarn deploy-patch",
     "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy-common",
