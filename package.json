@@ -1,7 +1,50 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
+  "homepage": "https://xyo.network",
+  "bugs": {
+    "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
+    "email": "support@xyo.network"
+  },
+  "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
+  "author": {
+    "name": "XYO Development Team",
+    "url": "https://xyo.network",
+    "email": "support@xyo.network"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "xyo",
+    "utility",
+    "typescript",
+    "esm"
+  ],
+  "browser": "dist/index.js",
+  "esm5": "dist/bundle/esm5/index.js",
+  "docs": "dist/docs.json",
+  "exports": {
+    ".": {
+      "esm5": "./dist/bundle/esm5/index.js",
+      "node": {
+        "import": "./dist/bundle/node-esm/index.js",
+        "require": "./dist/bundle/node/index.js"
+      },
+      "default": "./dist/index.js"
+    },
+    "./dist/docs.json": {
+      "default": "./dist/docs.json"
+    },
+    "./package.json": "./package.json"
+  },
+  "license": "LGPL-3.0",
+  "main": "dist/bundle/node/index.js",
+  "module": "dist/index.js",
   "packageManager": "yarn@3.2.0",
-  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -31,15 +74,18 @@
   "scripts": {
     "xylabs-build": "echo Building all",
     "build": "yarn workspaces foreach run xylabs-build && yarn workspaces foreach version patch --deferred",
-    "deploy3": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach run xylabs-deploy3",
-    "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy3",
-    "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy3",
-    "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy3",
+    "deploy3": "yarn deploy-patch",
+    "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy-common",
+    "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy-common",
+    "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy-common",
+    "deploy-common": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach run xylabs-deploy3",
     "cycle": "yarn workspaces foreach run xylabs-cycle",
     "lint": "yarn workspaces foreach run xylabs-lint",
     "fix": "yarn workspaces foreach run xylabs-fix",
     "test": "yarn workspaces foreach run xylabs-test",
     "deps": "yarn workspaces foreach run xylabs-deps"
   },
-  "version": "2.6.4"
+  "sideEffects": false,
+  "types": "dist/index.d.ts",
+  "version": "2.6.6"
 }
