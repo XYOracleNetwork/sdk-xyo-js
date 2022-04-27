@@ -8,7 +8,6 @@ ignores: [
   "copyfiles",
   "depcheck",
   "eslint",
-  "jest",
   "rimraf",
   "rollup",
   "typedoc",
