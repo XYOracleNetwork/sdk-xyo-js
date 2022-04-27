@@ -77,7 +77,7 @@
     "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy-common",
     "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy-common",
     "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy-common",
-    "deploy-common": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach run yarn npm publish",
+    "deploy-common": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach npm publish",
     "cycle": "yarn workspaces foreach run xylabs-cycle",
     "lint": "yarn workspaces foreach run xylabs-lint",
     "fix": "yarn workspaces foreach run xylabs-fix",
