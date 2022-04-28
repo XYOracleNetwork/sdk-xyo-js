@@ -49,10 +49,11 @@
     "packages/*"
   ],
   "dependencies": {
-    "@xyo-network/xyo-geo-js": "workspace:^",
-    "@xyo-network/xyo-meta-js": "workspace:^"
+    "@xyo-network/sdk-geo": "workspace:^",
+    "@xyo-network/sdk-meta": "workspace:^"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@types/jest": "^27.4.1",
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",

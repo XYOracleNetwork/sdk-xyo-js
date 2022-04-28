@@ -1,5 +1,5 @@
 {
-  "name": "@xyo-network/xyo-geo-js",
+  "name": "@xyo-network/sdk-geo",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -25,11 +25,9 @@
     "esm"
   ],
   "browser": "dist/index.js",
-  "esm5": "dist/bundle/esm5/index.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
-      "esm5": "./dist/bundle/esm5/index.js",
       "node": {
         "import": "./dist/bundle/node-esm/index.js",
         "require": "./dist/bundle/node/index.js"
@@ -59,6 +57,7 @@
     "mapbox-gl": "^2.8.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@types/jest": "^27.4.1",
     "@types/mapbox-gl": "^2.7.0",
     "@types/mocha": "^9.1.1",

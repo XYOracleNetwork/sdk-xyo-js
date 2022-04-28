@@ -1,5 +1,5 @@
 {
-  "name": "@xyo-network/xyo-meta-js",
+  "name": "@xyo-network/sdk-meta",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -25,11 +25,9 @@
     "esm"
   ],
   "browser": "dist/index.js",
-  "esm5": "dist/bundle/esm5/index.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
-      "esm5": "./dist/bundle/esm5/index.js",
       "node": {
         "import": "./dist/bundle/node-esm/index.js",
         "require": "./dist/bundle/node/index.js"
@@ -58,6 +56,7 @@
     "cheerio": "^1.0.0-rc.10"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@types/jest": "^27.4.1",
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",
