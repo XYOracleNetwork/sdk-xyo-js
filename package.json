@@ -1,14 +1,64 @@
 {
+  "name": "@xyo-network/sdk-xyo-js",
+  "homepage": "https://xyo.network",
+  "bugs": {
+    "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
+    "email": "support@xyo.network"
+  },
+  "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
+  "author": {
+    "name": "XYO Development Team",
+    "url": "https://xyo.network",
+    "email": "support@xyo.network"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XYOracleNetwork/sdk-xyo-js.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "xyo",
+    "utility",
+    "typescript",
+    "esm"
+  ],
+  "browser": "dist/index.js",
+  "esm5": "dist/bundle/esm5/index.js",
+  "docs": "dist/docs.json",
+  "exports": {
+    ".": {
+      "esm5": "./dist/bundle/esm5/index.js",
+      "node": {
+        "import": "./dist/bundle/node-esm/index.js",
+        "require": "./dist/bundle/node/index.js"
+      },
+      "default": "./dist/index.js"
+    },
+    "./dist/docs.json": {
+      "default": "./dist/docs.json"
+    },
+    "./package.json": "./package.json"
+  },
+  "license": "LGPL-3.0",
+  "main": "dist/bundle/node/index.js",
+  "module": "dist/index.js",
   "packageManager": "yarn@3.2.0",
   "workspaces": [
     "packages/*"
   ],
+  "dependencies": {
+    "@xyo-network/sdk-geo": "workspace:^",
+    "@xyo-network/sdk-meta": "workspace:^"
+  },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@types/jest": "^27.4.1",
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",
     "@xylabs/rollup-config": "^1.1.17",
-    "@xylabs/ts-scripts": "^1.0.54",
+    "@xylabs/ts-scripts": "^1.0.55",
     "@xylabs/tsconfig": "^1.0.13",
     "babel-jest": "^28.0.2",
     "copyfiles": "^2.4.1",
@@ -22,32 +72,20 @@
     "typedoc": "^0.22.15",
     "typescript": "^4.6.3"
   },
-  "browser": "dist/index.js",
-  "esm5": "dist/bundle/esm5/index.js",
-  "exports": {
-    ".": {
-      "esm5": "./dist/bundle/esm5/index.js",
-      "node": {
-        "import": "./dist/bundle/node-esm/index.js",
-        "require": "./dist/bundle/node/index.js"
-      },
-      "default": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "scripts": {
-    "xylabs-build": "echo Building all",
-    "build": "yarn workspaces foreach run xylabs-build",
-    "deploy3": "yarn workspaces foreach run xylabs-deploy3",
-    "cycle": "yarn workspaces foreach run xylabs-cycle",
-    "lint": "yarn workspaces foreach run xylabs-lint",
-    "fix": "yarn workspaces foreach run xylabs-fix",
-    "test": "yarn workspaces foreach run xylabs-test",
-    "deps": "yarn workspaces foreach run xylabs-deps"
+    "build": "yarn workspaces foreach run build && yarn workspaces foreach version patch --deferred",
+    "deploy3": "yarn deploy-patch",
+    "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy-common",
+    "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy-common",
+    "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy-common",
+    "deploy-common": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach npm publish",
+    "cycle": "yarn workspaces foreach run cycle",
+    "lint": "yarn workspaces foreach run lint",
+    "fix": "yarn workspaces foreach run fix",
+    "test": "yarn workspaces foreach run test",
+    "deps": "yarn workspaces foreach run deps"
   },
-  "license": "LGPL-3.0",
-  "main": "dist/bundle/node/index.js",
-  "module": "dist/index.js",
   "sideEffects": false,
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "version": "2.6.14"
 }

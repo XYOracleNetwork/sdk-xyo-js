@@ -1,5 +1,5 @@
 {
-  "name": "@xyo-network/xyo-geo-js",
+  "name": "@xyo-network/sdk-geo",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -25,11 +25,9 @@
     "esm"
   ],
   "browser": "dist/index.js",
-  "esm5": "dist/bundle/esm5/index.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
-      "esm5": "./dist/bundle/esm5/index.js",
       "node": {
         "import": "./dist/bundle/node-esm/index.js",
         "require": "./dist/bundle/node/index.js"
@@ -47,7 +45,7 @@
   "scripts": {
     "deploy": "yarn deploy3",
     "lint-pkg": "npmPkgJsonLint .",
-    "build": "yarn xylabs-build && yarn gen:docs",
+    "build": "yarn xylabs-build && yarn gen:docs && yarn version patch --deferred",
     "gen:docs": "typedoc ./src/index.ts --json ./dist/docs.json --tsconfig ./tsconfig.build.json",
     "test": "jest ./src"
   },
@@ -59,12 +57,13 @@
     "mapbox-gl": "^2.8.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
     "@types/jest": "^27.4.1",
     "@types/mapbox-gl": "^2.7.0",
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",
     "@xylabs/rollup-config": "^1.1.17",
-    "@xylabs/ts-scripts": "^1.0.54",
+    "@xylabs/ts-scripts": "^1.0.55",
     "@xylabs/tsconfig": "^1.0.13",
     "babel-jest": "^28.0.2",
     "copyfiles": "^2.4.1",
@@ -82,6 +81,6 @@
   },
   "sideEffects": false,
   "types": "dist/index.d.ts",
-  "version": "2.5.6",
+  "version": "2.6.11",
   "packageManager": "yarn@3.2.0"
 }
