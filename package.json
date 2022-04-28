@@ -73,19 +73,19 @@
     "typescript": "^4.6.3"
   },
   "scripts": {
-    "build": "yarn workspaces foreach run xylabs-build && yarn workspaces foreach version patch --deferred",
+    "build": "yarn workspaces foreach run build && yarn workspaces foreach version patch --deferred",
     "deploy3": "yarn deploy-patch",
     "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy-common",
     "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy-common",
     "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy-common",
     "deploy-common": "yarn cycle && yarn workspaces foreach run xylabs-build && yarn version apply --all && yarn workspaces foreach npm publish",
-    "cycle": "yarn workspaces foreach run xylabs-cycle",
-    "lint": "yarn workspaces foreach run xylabs-lint",
-    "fix": "yarn workspaces foreach run xylabs-fix",
-    "test": "yarn workspaces foreach run xylabs-test",
-    "deps": "yarn workspaces foreach run xylabs-deps"
+    "cycle": "yarn workspaces foreach run cycle",
+    "lint": "yarn workspaces foreach run lint",
+    "fix": "yarn workspaces foreach run fix",
+    "test": "yarn workspaces foreach run test",
+    "deps": "yarn workspaces foreach run deps"
   },
   "sideEffects": false,
   "types": "dist/index.d.ts",
-  "version": "2.6.13"
+  "version": "2.6.14"
 }
