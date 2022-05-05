@@ -84,6 +84,6 @@
     "deps": "yarn workspaces foreach run deps"
   },
   "sideEffects": false,
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "version": "2.6.16"
 }
