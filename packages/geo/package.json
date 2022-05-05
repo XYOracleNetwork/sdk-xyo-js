@@ -24,29 +24,33 @@
     "typescript",
     "esm"
   ],
-  "browser": "dist/index.js",
+  "browser": "dist/esm/browserIndex.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
       "node": {
-        "import": "./dist/bundle/node-esm/index.js",
-        "require": "./dist/bundle/node/index.js"
+        "import": "./dist/esm/nodeIndex.js",
+        "require": "./dist/cjs/nodeIndex.js"
       },
-      "default": "./dist/index.js"
+      "browser": {
+        "import": "./dist/esm/browserIndex.js",
+        "require": "./dist/esm/browserIndex.js"
+      },
+      "default": "./dist/esm/index.js"
     },
     "./dist/docs.json": {
       "default": "./dist/docs.json"
     },
     "./package.json": "./package.json"
   },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "license": "LGPL-3.0",
-  "main": "dist/bundle/node/index.js",
-  "module": "dist/index.js",
   "scripts": {
     "deploy": "yarn deploy3",
     "lint-pkg": "npmPkgJsonLint .",
-    "build": "yarn xylabs-build && yarn gen:docs && yarn version patch --deferred",
-    "gen:docs": "typedoc ./src/index.ts --json ./dist/docs.json --tsconfig ./tsconfig.build.json",
+    "build": "yarn clean && tsc -p tsconfig.build.cjs.json && tsc -p tsconfig.build.esm.json && yarn gen:docs && yarn version patch --deferred",
+    "gen:docs": "typedoc ./src/index.ts --json ./dist/docs.json --tsconfig ./tsconfig.json",
     "test": "jest ./src"
   },
   "resolutions": {
@@ -57,30 +61,30 @@
     "mapbox-gl": "^2.8.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@types/jest": "^27.4.1",
-    "@types/mapbox-gl": "^2.7.0",
+    "@babel/core": "^7.17.10",
+    "@types/jest": "^27.5.0",
+    "@types/mapbox-gl": "^2.7.1",
     "@types/mocha": "^9.1.1",
     "@xylabs/eslint-config": "^2.3.22",
     "@xylabs/rollup-config": "^1.1.17",
-    "@xylabs/ts-scripts": "^1.0.55",
+    "@xylabs/ts-scripts": "^1.0.65",
     "@xylabs/tsconfig": "^1.0.13",
-    "babel-jest": "^28.0.2",
+    "babel-jest": "^28.0.3",
     "copyfiles": "^2.4.1",
     "depcheck": "^1.4.3",
     "eslint": "^8.14.0",
-    "jest": "^28.0.2",
+    "jest": "^28.0.3",
     "npm-package-json-lint": "^6.3.0",
     "npm-package-json-lint-config-default": "^5.0.0",
     "rimraf": "^3.0.2",
-    "rollup": "^2.70.2",
-    "ts-jest": "^28.0.0-next.1",
+    "rollup": "^2.72.0",
+    "ts-jest": "^28.0.1",
     "tslib": "^2.4.0",
     "typedoc": "^0.22.15",
-    "typescript": "^4.6.3"
+    "typescript": "^4.6.4"
   },
   "sideEffects": false,
-  "types": "dist/index.d.ts",
+  "types": "dist/esm/index.d.ts",
   "version": "2.6.12",
   "packageManager": "yarn@3.2.0"
 }
