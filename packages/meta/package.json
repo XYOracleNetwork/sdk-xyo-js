@@ -24,17 +24,17 @@
     "typescript",
     "esm"
   ],
-  "browser": "dist/esm/browserIndex.js",
+  "browser": "dist/esm/index.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
       "node": {
-        "import": "./dist/esm/nodeIndex.js",
-        "require": "./dist/cjs/nodeIndex.js"
+        "import": "./dist/esm/index.js",
+        "require": "./dist/cjs/index.js"
       },
       "browser": {
-        "import": "./dist/esm/browserIndex.js",
-        "require": "./dist/esm/browserIndex.js"
+        "import": "./dist/esm/index.js",
+        "require": "./dist/cjs/index.js"
       },
       "default": "./dist/esm/index.js"
     },
