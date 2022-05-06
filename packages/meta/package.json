@@ -34,7 +34,7 @@
       },
       "browser": {
         "import": "./dist/esm/index.js",
-        "require": "./dist/esm/index.js"
+        "require": "./dist/cjs/index.js"
       },
       "default": "./dist/esm/index.js"
     },
