@@ -1,0 +1,6 @@
+releases:
+  "@xyo-network/sdk-xyo-js": patch
+
+undecided:
+  - "@xyo-network/sdk-geo"
+  - "@xyo-network/sdk-meta"
