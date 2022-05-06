@@ -32,7 +32,7 @@
       },
       "browser": {
         "import": "./dist/esm/browserIndex.js",
-        "require": "./dist/esm/browserIndex.js"
+        "require": "./dist/cjs/browserIndex.js"
       },
       "default": "./dist/esm/index.js"
     },
