@@ -1,0 +1,5 @@
+releases:
+  "@xyo-network/ethers-wrappers": patch
+  "@xyo-network/sdk-geo": patch
+  "@xyo-network/sdk-meta": patch
+  "@xyo-network/sdk-xyo-js": patch
