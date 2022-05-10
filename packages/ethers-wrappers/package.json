@@ -1,11 +1,11 @@
 {
-  "name": "@xyo-network/sdk-xyo-js",
+  "name": "@xyo-network/ethers-wrappers",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
     "email": "support@xyo.network"
   },
-  "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
+  "description": "Ethers wrappers for basic contracts",
   "author": {
     "name": "XYO Development Team",
     "url": "https://xyo.network",
@@ -21,10 +21,12 @@
   "keywords": [
     "xyo",
     "utility",
+    "ethers",
     "typescript",
     "esm"
   ],
   "browser": "dist/esm/index.js",
+  "docs": "dist/docs.json",
   "exports": {
     ".": {
       "node": {
@@ -37,19 +39,28 @@
       },
       "default": "./dist/esm/index.js"
     },
+    "./dist/docs.json": {
+      "default": "./dist/docs.json"
+    },
     "./package.json": "./package.json"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "license": "LGPL-3.0",
-  "packageManager": "yarn@3.2.0",
-  "workspaces": [
-    "packages/*"
-  ],
+  "scripts": {
+    "deploy": "yarn deploy3",
+    "lint-pkg": "npmPkgJsonLint .",
+    "build": "yarn clean && tsc -p tsconfig.build.cjs.json && tsc -p tsconfig.build.esm.json && yarn gen:docs && yarn version patch --deferred",
+    "gen:docs": "typedoc ./src/index.ts --json ./dist/docs.json --tsconfig ./tsconfig.json",
+    "test": "jest ./src"
+  },
+  "resolutions": {
+    "uuid": "^8"
+  },
   "dependencies": {
-    "@xyo-network/ethers-wrappers": "workspace:^",
-    "@xyo-network/sdk-geo": "workspace:^",
-    "@xyo-network/sdk-meta": "workspace:^"
+    "@xylabs/sdk-js": "^2.5.5",
+    "@xyo-network/sdk-xyo-typechain": "^1.0.2",
+    "ethers": "^5.6.5"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
@@ -64,6 +75,8 @@
     "depcheck": "^1.4.3",
     "eslint": "^8.15.0",
     "jest": "^28.1.0",
+    "npm-package-json-lint": "^6.3.0",
+    "npm-package-json-lint-config-default": "^5.0.0",
     "rimraf": "^3.0.2",
     "rollup": "^2.72.1",
     "ts-jest": "^28.0.2",
@@ -71,21 +84,8 @@
     "typedoc": "^0.22.15",
     "typescript": "^4.6.4"
   },
-  "scripts": {
-    "build-all": "yarn workspaces foreach run build && yarn workspaces foreach version patch --deferred",
-    "build": "yarn clean && tsc -p tsconfig.build.cjs.json && tsc -p tsconfig.build.esm.json && yarn version patch --deferred",
-    "deploy3": "yarn deploy-patch",
-    "deploy-major": "yarn workspaces foreach version major --deferred && yarn deploy-common",
-    "deploy-minor": "yarn workspaces foreach version minor --deferred && yarn deploy-common",
-    "deploy-patch": "yarn workspaces foreach version patch --deferred && yarn deploy-common",
-    "deploy-common": "yarn cycle && yarn workspaces foreach run build && yarn version apply --all && yarn workspaces foreach npm publish",
-    "cycle": "yarn workspaces foreach run cycle",
-    "lint": "yarn workspaces foreach run lint",
-    "fix": "yarn workspaces foreach run fix",
-    "test": "yarn workspaces foreach run test",
-    "deps": "yarn workspaces foreach run deps"
-  },
   "sideEffects": false,
   "types": "dist/esm/index.d.ts",
-  "version": "2.6.19"
+  "version": "2.6.16",
+  "packageManager": "yarn@3.2.0"
 }
