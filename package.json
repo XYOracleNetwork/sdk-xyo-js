@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
-  "version": "2.6.20",
+  "version": "2.6.21",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -84,7 +84,7 @@
     "deploy-major": "yarn workspaces foreach --all version major --deferred && yarn deploy-common",
     "deploy-minor": "yarn workspaces foreach --all version minor --deferred && yarn deploy-common",
     "deploy-patch": "yarn workspaces foreach --all version patch --deferred && yarn deploy-common",
-    "deploy-common": "yarn build && yarn gen:docs && yarn version apply --all && yarn workspaces foreach -ptv npm publish",
+    "deploy-common": "yarn lint && yarn build && yarn gen:docs && yarn version apply --all && yarn workspaces foreach -ptv npm publish",
     "clean": "yarn workspaces foreach -pRtv run clean:package",
     "deps": "yarn workspaces foreach -pRtv run deps:package",
     "lint": "yarn workspaces foreach -pRtv run lint:package",
