@@ -52,7 +52,7 @@ export interface Meta {
   }
   twitter?: {
     card?: 'summary' | 'summary_large_image' | 'app' | 'player'
-    desription?: string
+    description?: string
     title?: string
     image?: {
       url?: string
