@@ -54,7 +54,7 @@
     "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/providers": "^5.7.1",
     "@xylabs/sdk-js": "^2.6.9",
-    "@xyo-network/sdk-xyo-typechain": "^1.0.4"
+    "@xyo-network/sdk-xyo-typechain": "^2.0.4"
   },
   "devDependencies": {
     "tslib": "^2.4.0"
