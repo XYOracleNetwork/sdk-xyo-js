@@ -5,13 +5,38 @@ import { GeoJSONSourceRaw, LngLat } from 'mapbox-gl'
 import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator'
 
 class GeoJson {
+  private _lngLat?: LngLat
+  private _point?: Point
+  private _polygon?: Polygon
+  private _zoom?: number
+
   private quadkey: string
 
   constructor(quadkey: string) {
     this.quadkey = quadkey
   }
 
-  private _lngLat?: LngLat
+  public static featureCollection(features: Feature[]): FeatureCollection {
+    return {
+      features,
+      type: 'FeatureCollection',
+    }
+  }
+
+  public static featuresSource(data: FeatureCollection): GeoJSONSourceRaw {
+    return {
+      data,
+      type: 'geojson',
+    }
+  }
+
+  public static geometryFeature(geometry: Geometry): Feature {
+    return {
+      geometry,
+      properties: {},
+      type: 'Feature',
+    }
+  }
 
   public center(): LngLat {
     if (!this._lngLat) {
@@ -23,8 +48,6 @@ class GeoJson {
     return this._lngLat
   }
 
-  private _point?: Point
-
   public point(): Point {
     if (!this._point) {
       this._point = {
@@ -35,14 +58,20 @@ class GeoJson {
     return this._point
   }
 
-  private _zoom?: number
-
-  public zoom(): number {
-    this._zoom = this._zoom ?? tileFromQuadkey(this.quadkey)[2]
-    return this._zoom
+  public pointFeature(): Feature {
+    return GeoJson.geometryFeature(this.point())
   }
 
-  private _polygon?: Polygon
+  public pointFeatureCollection(): FeatureCollection {
+    return GeoJson.featureCollection([this.pointFeature()])
+  }
+
+  public pointSource(): GeoJSONSourceRaw {
+    return {
+      data: this.pointFeatureCollection(),
+      type: 'geojson',
+    }
+  }
 
   public polygon(): Polygon {
     if (!this._polygon) {
@@ -51,53 +80,21 @@ class GeoJson {
     return this._polygon
   }
 
-  public static geometryFeature(geometry: Geometry): Feature {
-    return {
-      geometry,
-      properties: {},
-      type: 'Feature',
-    }
-  }
-
   public polygonFeature(): Feature {
     return GeoJson.geometryFeature(this.polygon())
-  }
-
-  public pointFeature(): Feature {
-    return GeoJson.geometryFeature(this.point())
-  }
-
-  public static featureCollection(features: Feature[]): FeatureCollection {
-    return {
-      features,
-      type: 'FeatureCollection',
-    }
   }
 
   public polygonFeatureCollection(): FeatureCollection {
     return GeoJson.featureCollection([this.polygonFeature()])
   }
 
-  public pointFeatureCollection(): FeatureCollection {
-    return GeoJson.featureCollection([this.pointFeature()])
-  }
-
-  public static featuresSource(data: FeatureCollection): GeoJSONSourceRaw {
-    return {
-      data,
-      type: 'geojson',
-    }
-  }
-
   public polygonSource(): GeoJSONSourceRaw {
     return GeoJson.featuresSource(this.polygonFeatureCollection())
   }
 
-  public pointSource(): GeoJSONSourceRaw {
-    return {
-      data: this.pointFeatureCollection(),
-      type: 'geojson',
-    }
+  public zoom(): number {
+    this._zoom = this._zoom ?? tileFromQuadkey(this.quadkey)[2]
+    return this._zoom
   }
 }
 

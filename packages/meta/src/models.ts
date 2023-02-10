@@ -1,72 +1,74 @@
 export interface OpenGraphStructured {
-  url?: string
+  alt?: string
+  height?: number
   secure_url?: string
   type?: string
+  url?: string
   width?: number
-  height?: number
-  alt?: string
 }
 
 export interface TwitterPlayer {
-  url?: string
-  stream?: string
-  width?: number
-  height?: number
   alt?: string
+  height?: number
+  stream?: string
+  url?: string
+  width?: number
 }
 
 export interface TwitterApp {
-  name?: {
-    iphone?: string
-    ipad?: string
-    googleplay?: string
-  }
   id?: {
-    iphone?: string
-    ipad?: string
     googleplay?: string
+    ipad?: string
+    iphone?: string
   }
-  url?: {
-    iphone?: string
-    ipad?: string
+  name?: {
     googleplay?: string
+    ipad?: string
+    iphone?: string
+  }
+
+  url?: {
+    googleplay?: string
+    ipad?: string
+    iphone?: string
   }
 }
 
 export type OpenGraphStructuredProperty = string | OpenGraphStructured | (string | OpenGraphStructured)[]
 
 export interface Meta {
-  title?: string
   description?: string
+
   og?: {
-    title?: string
-    type?: string
-    image?: OpenGraphStructuredProperty
-    url?: string
     audio?: OpenGraphStructuredProperty
     description?: string
     determiner?: string
+    image?: OpenGraphStructuredProperty
     locale?: string | string[]
     site_name?: string
+    title?: string
+    type?: string
+    url?: string
     video?: OpenGraphStructuredProperty
   }
+  title?: string
   twitter?: {
+    app?: TwitterApp
     card?: 'summary' | 'summary_large_image' | 'app' | 'player'
+    creator?: {
+      id?: string
+      username?: string
+    }
     description?: string
-    title?: string
     image?: {
-      url?: string
       alt?: string
+      url?: string
     }
     player?: TwitterPlayer
     site?: {
-      username?: string
       id?: string
-    }
-    creator?: {
       username?: string
-      id?: string
     }
-    app?: TwitterApp
+    title?: string
   }
 }
