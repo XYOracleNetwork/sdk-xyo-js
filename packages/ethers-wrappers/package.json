@@ -52,12 +52,14 @@
   "dependencies": {
     "@ethersproject/abstract-signer": "^5.7.0",
     "@ethersproject/bignumber": "^5.7.0",
-    "@ethersproject/providers": "^5.7.1",
-    "@xylabs/sdk-js": "^2.6.9",
-    "@xyo-network/sdk-xyo-typechain": "^1.0.4"
+    "@ethersproject/providers": "^5.7.2",
+    "@xylabs/sdk-js": "^2.7.1",
+    "@xyo-network/typechain": "^2.1.4"
   },
   "devDependencies": {
-    "tslib": "^2.4.0"
+    "@xylabs/ts-scripts-yarn3": "^2.14.3",
+    "@xylabs/tsconfig": "^2.14.3",
+    "ethers": "^5"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0"

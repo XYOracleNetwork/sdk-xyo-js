@@ -10,8 +10,6 @@ export abstract class LayerBase<T extends AnyLayer> {
     this.source = source
   }
 
-  abstract buildLayer(): T
-
   update(map: Map, show = true) {
     if (map.getLayer(this.id)) {
       map.removeLayer(this.id)
@@ -20,4 +18,6 @@ export abstract class LayerBase<T extends AnyLayer> {
       map.addLayer(this.buildLayer())
     }
   }
+
+  abstract buildLayer(): T
 }

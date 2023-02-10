@@ -1,9 +1,8 @@
 {
   "compilerOptions": {
-    "outDir": "dist",
-    "typeRoots": ["./node_modules/@types"]
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
-  "exclude": ["dist/**/*"],
-  "extends": "@xylabs/tsconfig",
-  "include": ["**/*.spec.ts"]
+  "extends": "@xylabs/tsconfig-jest",
+  "include": ["**/*.spec.ts", "**/*.d.ts"]
 }

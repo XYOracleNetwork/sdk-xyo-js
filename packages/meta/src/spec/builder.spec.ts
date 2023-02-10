@@ -1,5 +1,5 @@
-import { metaBuilder } from './builder'
-import { Meta } from './models'
+import { metaBuilder } from '../builder'
+import { Meta } from '../models'
 
 const meta: Meta = {
   description: 'Updated description',
@@ -53,7 +53,7 @@ const meta: Meta = {
       id: 'twitter.creator.id',
       username: 'twitter.creator.username',
     },
-    desription: 'desription',
+    description: 'description',
     image: {
       alt: 'alt',
       url: 'https://www.twitter.com/image/url',
@@ -128,18 +128,18 @@ describe('builder', () => {
     expect(output).toContain(meta.description)
     expect(output).toContain(`<title>${meta.title}</title>`)
     expect(output).toMatchInlineSnapshot(`
-      "<!DOCTYPE html><html lang=\\"en\\"><head>
-        <meta charset=\\"utf-8\\">
-        <link rel=\\"icon\\" href=\\"/favicon.ico\\">
-        <meta name=\\"viewport\\" content=\\"width=device-width,initial-scale=1\\">
-        <meta name=\\"theme-color\\" content=\\"#000000\\">
-        <meta name=\\"description\\" content=\\"Own your piece of XYO's Decentralized Digital World!\\">
-        <link rel=\\"apple-touch-icon\\" href=\\"/apple-touch-icon.png\\">
-        <link rel=\\"manifest\\" href=\\"/manifest.json\\">
+      "<!DOCTYPE html><html lang="en"><head>
+        <meta charset="utf-8">
+        <link rel="icon" href="/favicon.ico">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="Own your piece of XYO's Decentralized Digital World!">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="manifest" href="/manifest.json">
         <title>Updated title</title>
-        <link href=\\"https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap\\" rel=\\"stylesheet\\">
-        <script async=\\"\\" src=\\"https://www.googletagmanager.com/gtag/js?id=G-795QBPW744\\"></script>
-        <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag(\\"js\\", new Date), gtag(\\"config\\", \\"G-795QBPW744\\")</script>
+        <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap" rel="stylesheet">
+        <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-795QBPW744"></script>
+        <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-795QBPW744")</script>
         <style>
           html {
             overflow-y: auto;
@@ -154,15 +154,15 @@ describe('builder', () => {
             padding: 0
           }
         </style>
-        <script defer=\\"defer\\" src=\\"/static/js/main.ae7f7033.js\\"></script>
-        <link href=\\"/static/css/main.026e3fe6.css\\" rel=\\"stylesheet\\">
-      <meta property=\\"og:description\\" content=\\"\\"><meta property=\\"og:determiner\\" content=\\"\\"><meta property=\\"og:image\\" content=\\"https://example.com/image.jpg\\"><meta property=\\"og:locale\\" content=\\"\\"><meta property=\\"og:site_name\\" content=\\"\\"><meta property=\\"og:title\\" content=\\"Example Open Graph Meta\\"><meta property=\\"og:type\\" content=\\"website\\"><meta property=\\"og:url\\" content=\\"https://example.com\\"><meta property=\\"twitter:app:id:googleplay\\" content=\\"twitter.app.id.googleplay\\"><meta property=\\"twitter:app:id:ipad\\" content=\\"twitter.app.id.ipad\\"><meta property=\\"twitter:app:id:iphone\\" content=\\"twitter.app.id.iphone\\"><meta property=\\"twitter:app:name:googleplay\\" content=\\"twitter.app.name.googleplay\\"><meta property=\\"twitter:app:name:ipad\\" content=\\"twitter.app.name.ipad\\"><meta property=\\"twitter:app:name:iphone\\" content=\\"twitter.app.name.iphone\\"><meta property=\\"twitter:app:googleplay\\" content=\\"https://www.twitter.com/url/googleplay\\"><meta property=\\"twitter:app:ipad\\" content=\\"https://www.twitter.com/url/ipad\\"><meta property=\\"twitter:app:iphone\\" content=\\"https://www.twitter.com/url/iphone\\"><meta property=\\"twitter:card\\" content=\\"summary\\"><meta property=\\"twitter:creator:id\\" content=\\"twitter.creator.id\\"><meta property=\\"twitter:creator:username\\" content=\\"twitter.creator.username\\"><meta property=\\"twitter:desription\\" content=\\"desription\\"><meta property=\\"twitter:image:alt\\" content=\\"alt\\"><meta property=\\"twitter:image\\" content=\\"https://www.twitter.com/image/url\\"><meta property=\\"twitter:site:id\\" content=\\"twitter.site.id\\"><meta property=\\"twitter:site:username\\" content=\\"twitter.site.username\\"><meta property=\\"twitter:title\\" content=\\"twitter.title\\"><meta property=\\"description\\" content=\\"Updated description\\"><meta property=\\"title\\" content=\\"Updated title\\"></head>
+        <script defer="defer" src="/static/js/main.ae7f7033.js"></script>
+        <link href="/static/css/main.026e3fe6.css" rel="stylesheet">
+      <meta property="og:description" content=""><meta property="og:determiner" content=""><meta property="og:image" content="https://example.com/image.jpg"><meta property="og:locale" content=""><meta property="og:site_name" content=""><meta property="og:title" content="Example Open Graph Meta"><meta property="og:type" content="website"><meta property="og:url" content="https://example.com"><meta property="twitter:app:id:googleplay" content="twitter.app.id.googleplay"><meta property="twitter:app:id:ipad" content="twitter.app.id.ipad"><meta property="twitter:app:id:iphone" content="twitter.app.id.iphone"><meta property="twitter:app:name:googleplay" content="twitter.app.name.googleplay"><meta property="twitter:app:name:ipad" content="twitter.app.name.ipad"><meta property="twitter:app:name:iphone" content="twitter.app.name.iphone"><meta property="twitter:app:googleplay" content="https://www.twitter.com/url/googleplay"><meta property="twitter:app:ipad" content="https://www.twitter.com/url/ipad"><meta property="twitter:app:iphone" content="https://www.twitter.com/url/iphone"><meta property="twitter:card" content="summary"><meta property="twitter:creator:id" content="twitter.creator.id"><meta property="twitter:creator:username" content="twitter.creator.username"><meta property="twitter:description" content="description"><meta property="twitter:image:alt" content="alt"><meta property="twitter:image" content="https://www.twitter.com/image/url"><meta property="twitter:site:id" content="twitter.site.id"><meta property="twitter:site:username" content="twitter.site.username"><meta property="twitter:title" content="twitter.title"><meta property="description" content="Updated description"><meta property="title" content="Updated title"></head>
 
-      <body style=\\"padding:0;margin:0;overflow-x:hidden\\"><noscript><iframe
-            src=\\"https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL\\" height=\\"0\\" width=\\"0\\"
-            style=\\"display:none;visibility:hidden\\"></iframe></noscript><noscript>You need to enable JavaScript to run this
+      <body style="padding:0;margin:0;overflow-x:hidden"><noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript><noscript>You need to enable JavaScript to run this
           app.</noscript>
-        <div id=\\"root\\"></div>
+        <div id="root"></div>
 
 
 

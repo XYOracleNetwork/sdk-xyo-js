@@ -46,13 +46,14 @@
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "license": "LGPL-3.0",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12"
   },
   "devDependencies": {
-    "tslib": "^2.4.0"
+    "@xylabs/ts-scripts-yarn3": "^2.14.3",
+    "@xylabs/tsconfig": "^2.14.3"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0"
