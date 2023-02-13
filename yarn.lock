@@ -3234,13 +3234,20 @@ __metadata:
   linkType: hard
 
 "@xylabs/tsconfig-jest@npm:^2.14.3":
-  version: 2.14.3
-  resolution: "@xylabs/tsconfig-jest@npm:2.14.3"
+  version: 2.14.11
+  resolution: "@xylabs/tsconfig-jest@npm:2.14.11"
   dependencies:
-    "@xylabs/tsconfig": ^2.14.3
+    "@xylabs/tsconfig": ^2.14.11
   peerDependencies:
     typescript: ^4
-  checksum: d6c8fa3a715a9127f7c01e311248ad37cb971386ff5cabeb02743455d1f27913a88d5f6e38f98c132311bc0035bed10a45a492146868326fcfde3073139c66ff
+  checksum: 7abc1627fda66d8e4fcdbf3baee67f6f963582eb295ee893c3f0ae568f1317b00f8f02291aa03d6c3d7ee9d35514bd12794a2da2a4cc6d10c8c95afa1688d7de
+  languageName: node
+  linkType: hard
+
+"@xylabs/tsconfig@npm:^2.14.11":
+  version: 2.14.11
+  resolution: "@xylabs/tsconfig@npm:2.14.11"
+  checksum: 4682ff8cb7ceeda2a8856fa055f73892b4d87137339895d2fea9cff898a8cdfb2eab0fb9fe9ace96e795d3f8f28452d18efe3692708c82e3555264fe2a1e6ab5
   languageName: node
   linkType: hard
 
