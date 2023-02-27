@@ -3033,35 +3033,35 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/api@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/api@npm:2.7.1"
+"@xylabs/api@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/api@npm:2.7.4"
   dependencies:
-    axios: ^1.3.2
-  checksum: aaf0f16197d72cd3c3a1ab8cd777c3ff165d25cdc90e9c9390c6e2d9fe032dfff5f87c43efacd5d50d5dbe1405b825ed681e4f8ae72ebdd715bd45b16f6dd8a2
+    axios: ^1.3.4
+  checksum: 1e2098b1d12b8bfc291ca97971343555a61706a8ac46b14c86fa6ab97f7da0eb852fa5a7ec13c4174cb674158b006501f965e102710c12eb3603f5c47ccb0fc3
   languageName: node
   linkType: hard
 
-"@xylabs/assert@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/assert@npm:2.7.1"
-  checksum: 05afdc2c2ed641643bf99655afcbacd8b2690d1b7e60ebaa99d9b111431b2f9a00bca852e5e264e841add12a4f7551e188d483c68db0879f64231fa80be09ca2
+"@xylabs/assert@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/assert@npm:2.7.4"
+  checksum: 3ed5166bfc157e82c874ce2485cb83b1647ee85d57a7b89d6e4e48162431c6df707efe86f396b44ee9ca8f421b7619619500ce5f49e64f61e99b712ab1c7eabd
   languageName: node
   linkType: hard
 
-"@xylabs/bignumber@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/bignumber@npm:2.7.1"
+"@xylabs/bignumber@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/bignumber@npm:2.7.4"
   dependencies:
     bn.js: ^5.2.1
-  checksum: 4e7affc98470053571de6e59fae5c833a20dcd183d78155251ac1b384581034733328cf7b9462d206b75f114eb01f3992906237bd4774b8ec39b5a70c100b0bd
+  checksum: 334d4b18a1635567149dc227bb79d028383730d81806114f6fae2d5fb0b73d650e30fae9d9c3ea2bde717990c7a164c46e94ff928c3515656cf5e8fb8f051f8c
   languageName: node
   linkType: hard
 
-"@xylabs/delay@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/delay@npm:2.7.1"
-  checksum: 6325cc59fe1135caa53c1c2d45a986078ae3f89b98fde44bc7bdd63ece42b49fc95eeffa23b2e724cfc4f2c7f209cf6af1816d6083e4f0a0e0b78569bd73a24c
+"@xylabs/delay@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/delay@npm:2.7.4"
+  checksum: a7f0a5dab545356c325189d0949e9f2905fe4a9beb181f42f536229d9dcd6a4d07c829ea55d33b9f998d79dde1ac9292cdd251e192805682d7a2a62df7bfc8d8
   languageName: node
   linkType: hard
 
@@ -3095,54 +3095,54 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/eth-address@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/eth-address@npm:2.7.1"
+"@xylabs/eth-address@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/eth-address@npm:2.7.4"
   dependencies:
-    "@xylabs/assert": ^2.7.1
-    "@xylabs/bignumber": ^2.7.1
-  checksum: 51bd6a0dcde1539a16fc0ef37e6aedc60795433b554390148d3d8b33edcb70db12b7e0eba7a1923c4fc1dfb7f544c902865522710e7c780da7facb04acea8e82
+    "@xylabs/assert": ^2.7.4
+    "@xylabs/bignumber": ^2.7.4
+  checksum: 49c06a0ea4a40a8dd8dfaf4c468654847824af8c149488cf447e25ec9e68eb6e754d13c0b2129dc01fa61f0c5e221ce6080cf585eb613f88761a0aaaf62eb97d
   languageName: node
   linkType: hard
 
-"@xylabs/exists@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/exists@npm:2.7.1"
-  checksum: c614f52275e87019fea7b1f35f0661ce2274a4d89541d01ba85d6bb73bb9fb51d7a485b70d520c27ab32dc8ceccc5785ad9d89e4a8304a5ba669e5e0019e8536
+"@xylabs/exists@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/exists@npm:2.7.4"
+  checksum: 6697e6ff7be0fa79a6126e5403597de51292e84fc591c2f400aa7db9bb7c848bc6f10b818e0dec2e44a42b1de25cb97ac19ca4336d0547ba4821583031befbf0
   languageName: node
   linkType: hard
 
-"@xylabs/forget@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/forget@npm:2.7.1"
+"@xylabs/forget@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/forget@npm:2.7.4"
   dependencies:
-    "@xylabs/delay": ^2.7.1
-  checksum: afd0502cc920ca1009352864b91a7cab690891323266ed8ccb68c11d0aa22d7bbd3502d0b23dc81e44ef883e2c6b4b46e076be81d4095404ef5103f9bee91cba
+    "@xylabs/delay": ^2.7.4
+  checksum: cf3c768d66447336d379184d3f306e1297948405c08644813c29be54cdedc39ec7666d3b41dd19b8571b4a8426e0515e8827e69dc2da486b929b57f578b9b4db
   languageName: node
   linkType: hard
 
-"@xylabs/log@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/log@npm:2.7.1"
+"@xylabs/log@npm:^2.7.4":
+  version: 2.7.4
+  resolution: "@xylabs/log@npm:2.7.4"
   dependencies:
     rollbar: ^2.26.1
-  checksum: f6afcf45b1ebfcc53406807ca48319d98a258ec209211e7c51beeedd917148a9e8db4bfa7d1b1ca9e92a536f8245a386033502f98fa43c0bd64f3621f068cd45
+  checksum: cc87cfa42d6357b294b8dbb65cc17d1d4d7117fd9d6ca62f5f72c2867ff38c53de96ccb1c5ecf18f8bbeb4dc93d68d375a499362c309bfe554e1ae3f8da6d45e
   languageName: node
   linkType: hard
 
 "@xylabs/sdk-js@npm:^2.7.1":
-  version: 2.7.1
-  resolution: "@xylabs/sdk-js@npm:2.7.1"
+  version: 2.7.4
+  resolution: "@xylabs/sdk-js@npm:2.7.4"
   dependencies:
-    "@xylabs/api": ^2.7.1
-    "@xylabs/assert": ^2.7.1
-    "@xylabs/bignumber": ^2.7.1
-    "@xylabs/delay": ^2.7.1
-    "@xylabs/eth-address": ^2.7.1
-    "@xylabs/exists": ^2.7.1
-    "@xylabs/forget": ^2.7.1
-    "@xylabs/log": ^2.7.1
-  checksum: 19bc76cb1ca0dec60b5e315b5c6c057ef8f4d152d86e90e72ee254985d2b3b260360169253c9f3b658550240874c957cb9a483436805299ab44951c7ea5c6184
+    "@xylabs/api": ^2.7.4
+    "@xylabs/assert": ^2.7.4
+    "@xylabs/bignumber": ^2.7.4
+    "@xylabs/delay": ^2.7.4
+    "@xylabs/eth-address": ^2.7.4
+    "@xylabs/exists": ^2.7.4
+    "@xylabs/forget": ^2.7.4
+    "@xylabs/log": ^2.7.4
+  checksum: ffeaebd5a0e37504dca9ab0803994afddae63487f8c7f278fd5c1304e8b306515daa16a3ee6a66f7313d6616f2592a5be3adfc8e3bbe13528618f5643262562d
   languageName: node
   linkType: hard
 
@@ -3736,14 +3736,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.3.2":
-  version: 1.3.2
-  resolution: "axios@npm:1.3.2"
+"axios@npm:^1.3.4":
+  version: 1.3.4
+  resolution: "axios@npm:1.3.4"
   dependencies:
     follow-redirects: ^1.15.0
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 9791af75a6df137b15ef45d13ad11eb357b3860d2496347ee18778db9d0abc2320362a4452f1e070e3160f1dbcc518fcefdc9e005be097e7db39acb22cf608e5
+  checksum: 7440edefcf8498bc3cdf39de00443e8101f249972c83b739c6e880d9d669fea9486372dbe8739e88b3bf8bb1ad15f6106693f206f078f4516fe8fd47b1c3093c
   languageName: node
   linkType: hard
 
