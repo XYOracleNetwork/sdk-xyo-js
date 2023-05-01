@@ -50,12 +50,12 @@
   "license": "LGPL-3.0",
   "dependencies": {
     "geojson": "^0.5.0",
-    "mapbox-gl": "^2.12.1"
+    "mapbox-gl": "^2.14.1"
   },
   "devDependencies": {
-    "@types/mapbox-gl": "^2.7.10",
-    "@xylabs/ts-scripts-yarn3": "^2.14.3",
-    "@xylabs/tsconfig": "^2.14.3"
+    "@types/mapbox-gl": "^2.7.11",
+    "@xylabs/ts-scripts-yarn3": "^2.17.6",
+    "@xylabs/tsconfig": "^2.17.6"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0"
