@@ -4,7 +4,7 @@ bin
 .DS_Store
 *.log
 .rollup.cache
-
+docs
 .pnp.*
 .yarn/*
 !.yarn/patches
