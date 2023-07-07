@@ -1,4 +1,5 @@
 export interface OpenGraphStructured {
+  ''?: string
   alt?: string
   height?: number
   secure_url?: string
@@ -42,7 +43,6 @@ export interface TwitterApp {
     ipad?: string
     iphone?: string
   }
-
   url?: {
     googleplay?: string
     ipad?: string
@@ -84,7 +84,7 @@ export interface Meta {
       /**
        * The @username of content creator. Used with summary_large_image cards
        */
-      '': string
+      ''?: string
       /**
        * Twitter user ID of content creator. Used with summary,
        * summary_large_image cards
@@ -103,7 +103,7 @@ export interface Meta {
        * an animated GIF will be used. SVG is not supported. Used with summary,
        * summary_large_image, player cards. Fallback: og:image
        */
-      '': string
+      ''?: string
       /**
        * A text description of the image conveying the essential nature of
        * an image to users who are visually impaired. Maximum 420
@@ -117,16 +117,15 @@ export interface Meta {
      * required. Used with summary, summary_large_image, app, player
      * cards
      */
-    site?:
-      | string
-      | {
-          /**
-           * Same as twitter:site, but the user’s Twitter ID. Either
-           * twitter:site or twitter:site:id is required. Used with
-           * summary, summary_large_image, player cards
-           */
-          id?: string
-        }
+    site?: {
+      ''?: string
+      /**
+       * Same as twitter:site, but the user’s Twitter ID. Either
+       * twitter:site or twitter:site:id is required. Used with
+       * summary, summary_large_image, player cards
+       */
+      id?: string
+    }
     /**
      * Title of content (max 70 characters). Used with summary,
      * summary_large_image, player cards. Fallback: og:title.
