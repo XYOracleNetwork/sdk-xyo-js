@@ -19,76 +19,65 @@ const createMetaPropertiesDict = (obj: StringIndexable, parentKey = ''): StringI
   }
   return flatRecord
 }
-
+const title = 'Death Valley Wilderness: Wilderness Light'
+const description =
+  'Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w...'
 const meta: Meta = {
-  description: 'Updated description',
+  description,
   og: {
-    // audio: {
-    //   alt: 'og.audio.alt',
-    //   height: 111,
-    //   secure_url: 'https://og.com/audio',
-    //   type: 'og.audio.type',
-    //   url: 'http://og.com/audio',
-    //   width: 222,
-    // },
-    description: '',
-    determiner: '',
-    image: 'https://example.com/image.jpg',
-    locale: '',
-    site_name: '',
-    title: 'Example Open Graph Meta',
-    type: 'website',
-    url: 'https://example.com',
-    // video: {
-    //   alt: 'og.video.alt',
-    //   height: 333,
-    //   secure_url: 'https://og.com/video',
-    //   type: 'og.video.type',
-    //   url: 'http://og.com/video',
-    //   width: 444,
-    // },
+    description,
+    image: {
+      '': 'https://i.ytimg.com/vi/Kauv7MVPcsA/maxresdefault.jpg',
+      height: 720,
+      width: 1280,
+    },
+    site_name: 'YouTube',
+    title,
+    type: 'video.other',
+    url: 'https://www.youtube.com/watch?v=Kauv7MVPcsA',
+    video: {
+      height: 720,
+      secure_url: 'https://www.youtube.com/embed/Kauv7MVPcsA',
+      // TODO: Multiple tags
+      // tag: ['Light', 'Death Valley'],
+      type: 'text/html',
+      url: 'https://www.youtube.com/embed/Kauv7MVPcsA',
+      width: 1280,
+    },
   },
-  title: 'Updated title',
+  title,
   twitter: {
     app: {
       id: {
-        googleplay: 'twitter.app.id.googleplay',
-        ipad: 'twitter.app.id.ipad',
-        iphone: 'twitter.app.id.iphone',
+        googleplay: 'com.google.android.youtube',
+        ipad: '544007664',
+        iphone: '544007664',
       },
       name: {
-        googleplay: 'twitter.app.name.googleplay',
-        ipad: 'twitter.app.name.ipad',
-        iphone: 'twitter.app.name.iphone',
+        googleplay: 'YouTube',
+        ipad: 'YouTube',
+        iphone: 'YouTube',
       },
       url: {
-        googleplay: 'https://www.twitter.com/url/googleplay',
-        ipad: 'https://www.twitter.com/url/ipad',
-        iphone: 'https://www.twitter.com/url/iphone',
+        googleplay: 'https://www.youtube.com/watch?v=Kauv7MVPcsA',
+        ipad: 'vnd.youtube://www.youtube.com/watch?v=Kauv7MVPcsA&amp;feature=applinks',
+        iphone: 'vnd.youtube://www.youtube.com/watch?v=Kauv7MVPcsA&amp;feature=applinks',
       },
     },
     card: 'summary',
-    creator: {
-      id: 'twitter.creator.id',
-      username: 'twitter.creator.username',
-    },
-    description: 'description',
+    description,
     image: {
-      alt: 'alt',
-      url: 'https://www.twitter.com/image/url',
+      '': 'https://www.twitter.com/image/url',
     },
-    // player: {
-    //   alt: '',
-    //   height: 555,
-    //   stream: '',
-    //   url: '',
-    //   width: 666,
-    // },
+    player: {
+      '': 'https://www.youtube.com/watch?v=Kauv7MVPcsA',
+      height: 555,
+      width: 666,
+    },
     site: {
-      id: 'twitter.site.id',
-      username: 'twitter.site.username',
+      '': '@youtube',
     },
-    title: 'twitter.title',
+    title,
   },
 }
 
@@ -172,7 +161,7 @@ describe('builder', () => {
       },
       twitter: {
         image: {
-          url: newImage,
+          '': newImage,
         },
       },
     }
