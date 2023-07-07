@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`builder Adds OG & Twitter data 1`] = `
+exports[`builder Adds meta Open Graph (OG) 1`] = `
 "<!DOCTYPE html><html lang="en"><head>
   <meta charset="utf-8">
   <link rel="icon" href="/favicon.ico">
@@ -9,7 +9,7 @@ exports[`builder Adds OG & Twitter data 1`] = `
   <meta name="description" content="Own your piece of XYO's Decentralized Digital World!">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/manifest.json">
-  <title>Updated title</title>
+  <title>Death Valley Wilderness: Wilderness Light</title>
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap" rel="stylesheet">
   <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-795QBPW744"></script>
   <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-795QBPW744")</script>
@@ -29,7 +29,7 @@ exports[`builder Adds OG & Twitter data 1`] = `
   </style>
   <script defer="defer" src="/static/js/main.ae7f7033.js"></script>
   <link href="/static/css/main.026e3fe6.css" rel="stylesheet">
-<meta property="og:description" content=""><meta property="og:determiner" content=""><meta property="og:image" content="https://example.com/image.jpg"><meta property="og:locale" content=""><meta property="og:site_name" content=""><meta property="og:title" content="Example Open Graph Meta"><meta property="og:type" content="website"><meta property="og:url" content="https://example.com"><meta property="twitter:app:id:googleplay" content="twitter.app.id.googleplay"><meta property="twitter:app:id:ipad" content="twitter.app.id.ipad"><meta property="twitter:app:id:iphone" content="twitter.app.id.iphone"><meta property="twitter:app:name:googleplay" content="twitter.app.name.googleplay"><meta property="twitter:app:name:ipad" content="twitter.app.name.ipad"><meta property="twitter:app:name:iphone" content="twitter.app.name.iphone"><meta property="twitter:app:googleplay" content="https://www.twitter.com/url/googleplay"><meta property="twitter:app:ipad" content="https://www.twitter.com/url/ipad"><meta property="twitter:app:iphone" content="https://www.twitter.com/url/iphone"><meta property="twitter:card" content="summary"><meta property="twitter:creator:id" content="twitter.creator.id"><meta property="twitter:creator:username" content="twitter.creator.username"><meta property="twitter:description" content="description"><meta property="twitter:image:alt" content="alt"><meta property="twitter:image" content="https://www.twitter.com/image/url"><meta property="twitter:site:id" content="twitter.site.id"><meta property="twitter:site:username" content="twitter.site.username"><meta property="twitter:title" content="twitter.title"><meta property="description" content="Updated description"><meta property="title" content="Updated title"></head>
+<meta property="description" content="Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w..."><meta property="title" content="Death Valley Wilderness: Wilderness Light"><meta property="image" content="https://i.ytimg.com/vi/Kauv7MVPcsA/maxresdefault.jpg"><meta property="image:height" content="720"><meta property="image:width" content="1280"><meta property="site_name" content="YouTube"><meta property="type" content="video.other"><meta property="url" content="https://www.youtube.com/watch?v=Kauv7MVPcsA"><meta property="video:height" content="720"><meta property="video:secure_url" content="https://www.youtube.com/embed/Kauv7MVPcsA"><meta property="video:type" content="text/html"><meta property="video:url" content="https://www.youtube.com/embed/Kauv7MVPcsA"><meta property="video:width" content="1280"></head>
 
 <body style="padding:0;margin:0;overflow-x:hidden"><noscript><iframe
       src="https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL" height="0" width="0"
@@ -38,11 +38,51 @@ exports[`builder Adds OG & Twitter data 1`] = `
   <div id="root"></div>
 
 
-
-    </body></html>"
+</body></html>"
 `;
 
-exports[`builder Overwrites the existing values with the new value 1`] = `
+exports[`builder Adds meta Twitter 1`] = `
+"<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#000000">
+  <meta name="description" content="Own your piece of XYO's Decentralized Digital World!">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>Death Valley Wilderness: Wilderness Light</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap" rel="stylesheet">
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-795QBPW744"></script>
+  <script>function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-795QBPW744")</script>
+  <style>
+    html {
+      overflow-y: auto;
+      overflow-x: hidden
+    }
+
+    #root,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0
+    }
+  </style>
+  <script defer="defer" src="/static/js/main.ae7f7033.js"></script>
+  <link href="/static/css/main.026e3fe6.css" rel="stylesheet">
+<meta property="description" content="Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w..."><meta property="title" content="Death Valley Wilderness: Wilderness Light"><meta property="app:id:googleplay" content="com.google.android.youtube"><meta property="app:id:ipad" content="544007664"><meta property="app:id:iphone" content="544007664"><meta property="app:name:googleplay" content="YouTube"><meta property="app:name:ipad" content="YouTube"><meta property="app:name:iphone" content="YouTube"><meta property="app:url:googleplay" content="https://www.youtube.com/watch?v=Kauv7MVPcsA"><meta property="app:url:ipad" content="vnd.youtube://www.youtube.com/watch?v=Kauv7MVPcsA&amp;feature=applinks"><meta property="app:url:iphone" content="vnd.youtube://www.youtube.com/watch?v=Kauv7MVPcsA&amp;feature=applinks"><meta property="card" content="summary"><meta property="image" content="https://www.twitter.com/image/url"><meta property="player" content="https://www.youtube.com/watch?v=Kauv7MVPcsA"><meta property="player:height" content="555"><meta property="player:width" content="666"><meta property="site" content="@youtube"></head>
+
+<body style="padding:0;margin:0;overflow-x:hidden"><noscript><iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript><noscript>You need to enable JavaScript to run this
+    app.</noscript>
+  <div id="root"></div>
+
+
+</body></html>"
+`;
+
+exports[`builder Overwrites existing values with new values 1`] = `
 "<!DOCTYPE html><html lang="en"><head>
   <title>XYO 2.0</title>
   <meta property="og:image" content="https://example.com/newimage.jpg">
