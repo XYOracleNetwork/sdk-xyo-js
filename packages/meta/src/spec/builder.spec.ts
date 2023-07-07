@@ -1,6 +1,25 @@
 import { metaBuilder } from '../builder'
 import { Meta } from '../models'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type StringIndexable = { [key: string]: any }
+
+const createMetaPropertiesDict = (obj: StringIndexable, parentKey = ''): StringIndexable => {
+  let flatRecord: StringIndexable = {}
+  for (const key in obj) {
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      // If the value is another object, we want to iterate through its keys as well.
+      const childRecord = createMetaPropertiesDict(obj[key] as StringIndexable, `${parentKey}${key}:`)
+      flatRecord = { ...flatRecord, ...childRecord }
+    } else {
+      // Concatenate the key with its parent key.
+      const newKey = parentKey ? `${parentKey}${key}` : key
+      flatRecord[newKey] = obj[key]
+    }
+  }
+  return flatRecord
+}
+
 const meta: Meta = {
   description: 'Updated description',
   og: {
@@ -127,6 +146,10 @@ describe('builder', () => {
     const output = metaBuilder(html, meta)
     expect(output).toContain(meta.description)
     expect(output).toContain(`<title>${meta.title}</title>`)
+    const metaProperties = createMetaPropertiesDict(meta)
+    Object.entries(metaProperties).forEach(([property, content]) => {
+      expect(output).toContain(`<meta property="${property}" content="${content}">`)
+    })
     expect(output).toMatchSnapshot()
   })
   it('Overwrites the existing values with the new value', () => {
