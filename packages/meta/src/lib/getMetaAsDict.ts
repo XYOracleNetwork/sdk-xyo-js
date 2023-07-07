@@ -11,7 +11,8 @@ export const getMetaAsDict = (obj: StringIndexable, parentKey = ''): StringIndex
     } else {
       // Concatenate the key with its parent key.
       const newKey = parentKey ? `${parentKey}${key}` : key
-      flatRecord[newKey] = obj[key]
+      const trimmed = newKey.endsWith(':') ? newKey.slice(0, -1) : newKey
+      flatRecord[trimmed] = obj[key]
     }
   }
   return flatRecord
