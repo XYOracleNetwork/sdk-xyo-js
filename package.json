@@ -67,5 +67,8 @@
   "resolutions": {
     "uuid": "^8"
   },
+  "scripts": {
+    "test": "yarn jest"
+  },
   "sideEffects": false
 }
