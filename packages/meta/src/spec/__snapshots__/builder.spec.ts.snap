@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`builder Adds meta Open Graph (OG) 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon"
+          href="/favicon.ico"
+    >
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <meta name="theme-color"
+          content="#000000"
+    >
+    <meta name="description"
+          content="Own your piece of XYO's Decentralized Digital World!"
+    >
+    <link rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+    >
+    <link rel="manifest"
+          href="/manifest.json"
+    >
+    <title>
+      Death Valley Wilderness: Wilderness Light
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap"
+          rel="stylesheet"
+    >
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-795QBPW744"
+    >
+    </script>
+    <script>
+      function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-795QBPW744")
+    </script>
+    <style>
+      html {
+      overflow-y: auto;
+      overflow-x: hidden
+    }
+
+    #root,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0
+    }
+    </style>
+    <script defer="defer"
+            src="/static/js/main.ae7f7033.js"
+    >
+    </script>
+    <link href="/static/css/main.026e3fe6.css"
+          rel="stylesheet"
+    >
+    <meta property="description"
+          content="Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w..."
+    >
+    <meta property="title"
+          content="Death Valley Wilderness: Wilderness Light"
+    >
+    <meta property="og:description"
+          content="Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w..."
+    >
+    <meta property="og:image"
+          content="https://i.ytimg.com/vi/Kauv7MVPcsA/maxresdefault.jpg"
+    >
+    <meta property="og:image:height"
+          content="720"
+    >
+    <meta property="og:image:width"
+          content="1280"
+    >
+    <meta property="og:site_name"
+          content="YouTube"
+    >
+    <meta property="og:title"
+          content="Death Valley Wilderness: Wilderness Light"
+    >
+    <meta property="og:type"
+          content="video.other"
+    >
+    <meta property="og:url"
+          content="https://www.youtube.com/watch?v=Kauv7MVPcsA"
+    >
+    <meta property="og:video:height"
+          content="720"
+    >
+    <meta property="og:video:secure_url"
+          content="https://www.youtube.com/embed/Kauv7MVPcsA"
+    >
+    <meta property="og:video:type"
+          content="text/html"
+    >
+    <meta property="og:video:url"
+          content="https://www.youtube.com/embed/Kauv7MVPcsA"
+    >
+    <meta property="og:video:width"
+          content="1280"
+    >
+  </head>
+  <body style="padding:0;margin:0;overflow-x:hidden">
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL"
+              height="0"
+              width="0"
+              style="display:none;visibility:hidden"
+      >
+      </iframe>
+    </noscript>
+    <noscript>
+      You need to enable JavaScript to run this
+    app.
+    </noscript>
+    <div id="root">
+    </div>
+  </body>
+</html>
+`;
+
+exports[`builder Adds meta Twitter 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon"
+          href="/favicon.ico"
+    >
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
+    >
+    <meta name="theme-color"
+          content="#000000"
+    >
+    <meta name="description"
+          content="Own your piece of XYO's Decentralized Digital World!"
+    >
+    <link rel="apple-touch-icon"
+          href="/apple-touch-icon.png"
+    >
+    <link rel="manifest"
+          href="/manifest.json"
+    >
+    <title>
+      Death Valley Wilderness: Wilderness Light
+    </title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap"
+          rel="stylesheet"
+    >
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id=G-795QBPW744"
+    >
+    </script>
+    <script>
+      function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "G-795QBPW744")
+    </script>
+    <style>
+      html {
+      overflow-y: auto;
+      overflow-x: hidden
+    }
+
+    #root,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0
+    }
+    </style>
+    <script defer="defer"
+            src="/static/js/main.ae7f7033.js"
+    >
+    </script>
+    <link href="/static/css/main.026e3fe6.css"
+          rel="stylesheet"
+    >
+    <meta property="description"
+          content="Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w..."
+    >
+    <meta property="title"
+          content="Death Valley Wilderness: Wilderness Light"
+    >
+    <meta property="twitter:app:id:googleplay"
+          content="com.google.android.youtube"
+    >
+    <meta property="twitter:app:id:ipad"
+          content="544007664"
+    >
+    <meta property="twitter:app:id:iphone"
+          content="544007664"
+    >
+    <meta property="twitter:app:name:googleplay"
+          content="YouTube"
+    >
+    <meta property="twitter:app:name:ipad"
+          content="YouTube"
+    >
+    <meta property="twitter:app:name:iphone"
+          content="YouTube"
+    >
+    <meta property="twitter:app:url:googleplay"
+          content="https://www.youtube.com/watch?v=Kauv7MVPcsA"
+    >
+    <meta property="twitter:app:url:ipad"
+          content="vnd.youtube://www.youtube.com/watch?v=Kauv7MVPcsA&amp;feature=applinks"
+    >
+    <meta property="twitter:app:url:iphone"
+          content="vnd.youtube://www.youtube.com/watch?v=Kauv7MVPcsA&amp;feature=applinks"
+    >
+    <meta property="twitter:card"
+          content="summary"
+    >
+    <meta property="twitter:description"
+          content="Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w..."
+    >
+    <meta property="twitter:image"
+          content="https://www.twitter.com/image/url"
+    >
+    <meta property="twitter:player"
+          content="https://www.youtube.com/watch?v=Kauv7MVPcsA"
+    >
+    <meta property="twitter:player:height"
+          content="720"
+    >
+    <meta property="twitter:player:width"
+          content="1028"
+    >
+    <meta property="twitter:site"
+          content="@youtube"
+    >
+    <meta property="twitter:title"
+          content="Death Valley Wilderness: Wilderness Light"
+    >
+  </head>
+  <body style="padding:0;margin:0;overflow-x:hidden">
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL"
+              height="0"
+              width="0"
+              style="display:none;visibility:hidden"
+      >
+      </iframe>
+    </noscript>
+    <noscript>
+      You need to enable JavaScript to run this
+    app.
+    </noscript>
+    <div id="root">
+    </div>
+  </body>
+</html>
+`;
+
+exports[`builder Overwrites existing values with new values 1`] = `
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      XYO 2.0
+    </title>
+    <meta property="og:image"
+          content="https://example.com/newimage.jpg"
+    >
+    <meta property="twitter:image"
+          content="https://example.com/newimage.jpg"
+    >
+  </head>
+  <body>
+  </body>
+</html>
+`;

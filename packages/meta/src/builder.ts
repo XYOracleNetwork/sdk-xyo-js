@@ -1,12 +1,19 @@
 import { CheerioAPI, load } from 'cheerio'
 
+import { getMetaAsDict } from './lib'
 import { Meta } from './models'
 
 /* test change */
 
 const addMetaToHead = ($: CheerioAPI, name: string, value: string | object) => {
   if (typeof value === 'string') {
-    $('head').append(`<meta property="${name}" content="${value}" />`)
+    const newMeta = `<meta property="${name}" content="${value}" />`
+    const existingMeta = $(`head meta[property="${name}"]`)
+    if (existingMeta?.length) {
+      existingMeta.replaceWith(newMeta)
+    } else {
+      $('head').append(newMeta)
+    }
   } else if (Array.isArray(value)) {
     value.map((item) => addMetaToHead($, `${name}`, item))
   } else if (typeof value === 'object') {
@@ -24,16 +31,13 @@ const addMetaToHead = ($: CheerioAPI, name: string, value: string | object) => {
 
 export const metaBuilder = (html: string, meta: Meta) => {
   const $ = load(html)
-  if (meta.og) {
-    Object.entries(meta.og).map(([key, value]) => {
-      addMetaToHead($, `og:${key}`, value)
-    })
-  }
-  if (meta.twitter) {
-    Object.entries(meta.twitter).map(([key, value]) => {
-      addMetaToHead($, `twitter:${key}`, value)
-    })
-  }
+  // NOTE: This assumes unique meta properties (no duplicates)
+  // which is generally the case, but not always (you can have
+  // multiple og:video:tag tags, for example)
+  const metaProperties = getMetaAsDict(meta)
+  Object.entries(metaProperties).forEach(([key, value]) => {
+    if (value) addMetaToHead($, key, value)
+  })
   if (meta.description) {
     addMetaToHead($, 'description', meta.description)
   }

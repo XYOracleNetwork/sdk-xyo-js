@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Jest",
+      "type": "node",
+      "request": "launch",
+      "osx": {
+        "program": "${workspaceRoot}/node_modules/.bin/jest"
+      },
+      "windows": {
+        "program": "${workspaceRoot}/node_modules/jest/bin/jest.js"
+      },
+      "args": [
+        "--forceExit",
+        "--runInBand",
+        "--testTimeout=120000",
+        "packages/meta/src/spec/builder.spec.ts"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
