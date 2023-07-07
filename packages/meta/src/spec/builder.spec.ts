@@ -1,5 +1,3 @@
-import { prop } from 'cheerio/lib/api/attributes'
-
 import { metaBuilder } from '../builder'
 import { Meta } from '../models'
 
@@ -171,7 +169,7 @@ describe('builder', () => {
           </body></html>"
     `)
   })
-  it.only('Overwrites the existing values with the new value', () => {
+  it('Overwrites the existing values with the new value', () => {
     const oldImage = 'https://example.com/oldimage.jpg'
     const newImage = 'https://example.com/newimage.jpg'
     const html = `
