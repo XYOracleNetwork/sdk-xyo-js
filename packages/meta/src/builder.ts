@@ -6,7 +6,13 @@ import { Meta } from './models'
 
 const addMetaToHead = ($: CheerioAPI, name: string, value: string | object) => {
   if (typeof value === 'string') {
-    $('head').append(`<meta property="${name}" content="${value}" />`)
+    const newMeta = `<meta property="${name}" content="${value}" />`
+    const existingMeta = $(`head meta[property="${name}"]`)
+    if (existingMeta?.length) {
+      existingMeta.replaceWith(newMeta)
+    } else {
+      $('head').append(newMeta)
+    }
   } else if (Array.isArray(value)) {
     value.map((item) => addMetaToHead($, `${name}`, item))
   } else if (typeof value === 'object') {
