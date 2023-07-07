@@ -5,5 +5,10 @@
   "ignoreWords": [],
   "import": [],
   "version": "0.2",
-  "words": ["googleplay"]
+  "words": [
+    "googleplay",
+    "iframe",
+    "noscript",
+    "stylesheet"
+  ]
 }
