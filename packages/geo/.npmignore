@@ -1,10 +1,11 @@
+*.tsconfig.*
 .*
-tsconfig*
-rollup.config.ts
-jest.config.js
-rollup.config.ts
-yarn.lock
-
+.eslintcache
 .pnp.*
 .yarn/*
+jest.config.js
 packages
+packages/*
+rollup.config.ts
+tsconfig*
+yarn.lock
