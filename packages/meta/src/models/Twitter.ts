@@ -1,13 +1,3 @@
-export interface OpenGraphStructured {
-  ''?: string
-  alt?: string
-  height?: number
-  secure_url?: string
-  type?: string
-  url?: string
-  width?: number
-}
-
 /**
  * https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/player-card
  */
@@ -50,21 +40,9 @@ export interface TwitterApp {
   }
 }
 
-export type OpenGraphStructuredProperty = string | OpenGraphStructured | (string | OpenGraphStructured)[]
-
-export interface OpenGraphMeta {
-  audio?: OpenGraphStructuredProperty
-  description?: string
-  determiner?: string
-  image?: OpenGraphStructuredProperty
-  locale?: string | string[]
-  site_name?: string
-  title?: string
-  type?: string
-  url?: string
-  video?: OpenGraphStructuredProperty
-}
-
+/**
+ * https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
+ */
 export interface TwitterMeta {
   app?: TwitterApp
   /**
@@ -125,14 +103,4 @@ export interface TwitterMeta {
    * summary_large_image, player cards. Fallback: og:title.
    */
   title?: string
-}
-
-export interface Meta {
-  description?: string
-  og?: OpenGraphMeta
-  title?: string
-  /**
-   * https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
-   */
-  twitter?: TwitterMeta
 }
