@@ -3,7 +3,7 @@ import { join } from 'path'
 
 import { metaBuilder } from '../builder'
 import { getMetaAsDict } from '../lib'
-import { Meta } from '../models'
+import { Meta, OpenGraphMeta, TwitterMeta } from '../models'
 
 const title = 'Death Valley Wilderness: Wilderness Light'
 const description =
@@ -11,7 +11,7 @@ const description =
 
 const meta: Meta = { description, title }
 
-const openGraphMeta = {
+const og: OpenGraphMeta = {
   description,
   image: {
     '': 'https://i.ytimg.com/vi/Kauv7MVPcsA/maxresdefault.jpg',
@@ -33,7 +33,7 @@ const openGraphMeta = {
   },
 }
 
-const twitterMeta = {
+const twitter: TwitterMeta = {
   app: {
     id: {
       googleplay: 'com.google.android.youtube',
@@ -58,8 +58,8 @@ const twitterMeta = {
   },
   player: {
     '': 'https://www.youtube.com/watch?v=Kauv7MVPcsA',
-    height: 555,
-    width: 666,
+    height: 720,
+    width: 1028,
   },
   site: {
     '': '@youtube',
@@ -80,8 +80,8 @@ describe('builder', () => {
       html = await readFile(template, { encoding: 'utf-8' })
     })
     const cases: [title: string, meta: Meta][] = [
-      ['Open Graph (OG)', { ...meta, ...openGraphMeta }],
-      ['Twitter', { ...meta, ...twitterMeta }],
+      ['Open Graph (OG)', { ...meta, og }],
+      ['Twitter', { ...meta, twitter }],
     ]
     it.each(cases)('%s', (_, meta) => {
       const output = metaBuilder(html, meta)
