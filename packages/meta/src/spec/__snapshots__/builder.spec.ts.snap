@@ -41,3 +41,14 @@ exports[`builder Adds OG & Twitter data 1`] = `
 
     </body></html>"
 `;
+
+exports[`builder Overwrites the existing values with the new value 1`] = `
+"<!DOCTYPE html><html lang="en"><head>
+  <title>XYO 2.0</title>
+  <meta property="og:image" content="https://example.com/newimage.jpg">
+  <meta property="twitter:image" content="https://example.com/newimage.jpg">
+</head>
+<body>
+
+    </body></html>"
+`;
