@@ -30,16 +30,13 @@ const addMetaToHead = ($: CheerioAPI, name: string, value: string | object) => {
 
 export const metaBuilder = (html: string, meta: Meta) => {
   const $ = load(html)
-  if (meta.og) {
-    Object.entries(meta.og).map(([key, value]) => {
-      addMetaToHead($, `og:${key}`, value)
-    })
-  }
-  if (meta.twitter) {
-    Object.entries(meta.twitter).map(([key, value]) => {
-      addMetaToHead($, `twitter:${key}`, value)
-    })
-  }
+  // NOTE: This assumes unique meta properties (no duplicates)
+  // which is generally the case, but not always (you can have
+  // multiple og:video:tag tags, for example)
+  const metaProperties = createMetaPropertiesDict(meta)
+  Object.entries(metaProperties).forEach(([key, value]) => {
+    if (value) addMetaToHead($, key, value)
+  })
   if (meta.description) {
     addMetaToHead($, 'description', meta.description)
   }
@@ -48,4 +45,23 @@ export const metaBuilder = (html: string, meta: Meta) => {
     $('head title').html(meta.title)
   }
   return $.html()
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export type StringIndexable = { [key: string]: any }
+
+export const createMetaPropertiesDict = (obj: StringIndexable, parentKey = ''): StringIndexable => {
+  let flatRecord: StringIndexable = {}
+  for (const key in obj) {
+    if (typeof obj[key] === 'object' && obj[key] !== null) {
+      // If the value is another object, we want to iterate through its keys as well.
+      const childRecord = createMetaPropertiesDict(obj[key] as StringIndexable, `${parentKey}${key}:`)
+      flatRecord = { ...flatRecord, ...childRecord }
+    } else {
+      // Concatenate the key with its parent key.
+      const newKey = parentKey ? `${parentKey}${key}` : key
+      flatRecord[newKey] = obj[key]
+    }
+  }
+  return flatRecord
 }
