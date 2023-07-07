@@ -1,14 +1,7 @@
-export interface OpenGraphStructured {
-  ''?: string
-  alt?: string
-  height?: number
-  secure_url?: string
-  type?: string
-  url?: string
-  width?: number
-}
+import { OpenGraphStructuredProperty } from './OpenGraphStructuredProperty'
 
-export type OpenGraphStructuredProperty = string | OpenGraphStructured | (string | OpenGraphStructured)[]
+// TODO: There is slightly different fields for video/image/audio and we should create
+// separate interfaces for each
 
 export interface OpenGraphMeta {
   audio?: OpenGraphStructuredProperty
