@@ -1,3 +1,5 @@
+import { prop } from 'cheerio/lib/api/attributes'
+
 import { metaBuilder } from '../builder'
 import { Meta } from '../models'
 
@@ -168,5 +170,39 @@ describe('builder', () => {
 
           </body></html>"
     `)
+  })
+  it.only('Overwrites the existing values with the new value', () => {
+    const oldImage = 'https://example.com/oldimage.jpg'
+    const newImage = 'https://example.com/newimage.jpg'
+    const html = `
+<!doctype html>
+<html lang="en">
+<head>
+  <title>XYO 2.0</title>
+  <meta property="og:image" content="${oldImage}">
+  <meta property="twitter:image" content="${oldImage}">
+</head>
+<body></body>
+</html>
+    `
+    const meta: Meta = {
+      og: {
+        image: newImage,
+      },
+      twitter: {
+        image: {
+          url: newImage,
+        },
+      },
+    }
+    const properties = ['og:image', 'twitter:image']
+    properties.forEach((property) => {
+      expect(html).toContain(`<meta property="${property}" content="${oldImage}">`)
+    })
+    const output = metaBuilder(html, meta)
+    properties.forEach((property) => {
+      expect(output).not.toContain(`<meta property="${property}" content="${oldImage}">`)
+      expect(output).toContain(`<meta property="${property}" content="${newImage}">`)
+    })
   })
 })
