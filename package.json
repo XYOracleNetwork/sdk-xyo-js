@@ -53,7 +53,7 @@
     "@xyo-network/sdk-geo": "workspace:^"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.2",
+    "@types/jest": "^29.5.3",
     "@types/mocha": "^10.0.1",
     "@xylabs/eslint-config": "^2.18.7",
     "@xylabs/ts-scripts-yarn3": "^2.18.7",
