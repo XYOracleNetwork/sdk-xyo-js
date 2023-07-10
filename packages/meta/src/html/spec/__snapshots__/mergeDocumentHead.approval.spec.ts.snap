@@ -51,15 +51,30 @@ exports[`mergeDocumentHead with real documents 1`] = `
     <link href="\\&quot;/static/css/main.004a73ac.css\\&quot;"
           rel="\\&quot;stylesheet\\&quot;"
     >
-    <meta name="\\&quot;viewport\\&quot;"
-          content="\\&quot;width=device-width,"
-          initial-scale="1\\&quot;"
+    <meta content="\\&quot;website\\&quot;"
+          property="\\&quot;og:type\\&quot;"
+          data-react-helmet="\\&quot;true\\&quot;"
     >
-    <meta name="\\&quot;description\\&quot;"
-          content="\\&quot;Your"
-          data,
-          forever
-          long.\\"
+    <meta property="\\&quot;og:image\\&quot;"
+          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    >
+    <meta property="\\&quot;og:image:height\\&quot;"
+          content="\\&quot;900\\&quot;"
+    >
+    <meta property="\\&quot;og:image:secure_url\\&quot;"
+          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    >
+    <meta property="\\&quot;og:image:type\\&quot;"
+          content="\\&quot;image/png\\&quot;"
+    >
+    <meta property="\\&quot;og:image:url\\&quot;"
+          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    >
+    <meta property="\\&quot;og:image:width\\&quot;"
+          content="\\&quot;1600\\&quot;"
+    >
+    <meta property="\\&quot;twitter:image\\&quot;"
+          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
     >
   </head>
   <body style="\\&quot;padding:0;margin:0;overflow-x:hidden;font-family:Lexend"

@@ -12,9 +12,9 @@ export const mergeDocumentHead = (destination: string, source: string) => {
 
       // Special case for meta tags: We want to match them by the name attribute
       if (el[0].tagName === 'meta') {
-        const name = el.attr('name')
+        const name = el.attr('property')
         if (name) {
-          const match = $destination(`head > meta[name="${name}"]`)
+          const match = $destination(`head > meta[property="${name}"]`)
 
           // If it exists, replace it, otherwise append it
           if (match.length > 0) {
@@ -23,17 +23,18 @@ export const mergeDocumentHead = (destination: string, source: string) => {
           } else {
             $destination('head').append(el)
           }
-        } else {
-          // For all other elements, just check if the same element exists in the first HTML string
-          const match = $destination(el[0].tagName)
-
-          // If it exists, replace it, otherwise append it
-          if (match.length > 0) {
-            match.replaceWith(el)
-          } else {
-            $destination('head').append(el)
-          }
         }
+        // else {
+        //   // For all other elements, just check if the same element exists in the first HTML string
+        //   const match = $destination(el[0].tagName)
+
+        //   // If it exists, replace it, otherwise append it
+        //   if (match.length > 0) {
+        //     match.replaceWith(el)
+        //   } else {
+        //     $destination('head').append(el)
+        //   }
+        // }
       }
     })
 
