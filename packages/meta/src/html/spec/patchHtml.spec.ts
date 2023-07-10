@@ -1,14 +1,28 @@
 import { mergeDocumentHeads } from '../patchHtml'
 
 describe('patchHtml', () => {
-  const cases: [string, string, string][] = [
-    [
-      '<html><head></head><body></body></html>',
-      '<html><head><meta name="description" content="test"></head><body>',
-      '<html><head><meta name="description" content="test"></head><body></body></html>',
-    ],
-  ]
-  it.each(cases)('Generates head meta', (a: string, b: string, expected: string) => {
-    expect(mergeDocumentHeads(a, b)).toBe(expected)
+  describe('creates new fields', () => {
+    const cases: [string, string, string][] = [
+      [
+        '<html><head></head><body></body></html>',
+        '<html><head><meta name="description" content="updated"></head><body></body></html>',
+        '<html><head><meta name="description" content="updated"></head><body></body></html>',
+      ],
+    ]
+    it.each(cases)('matches expected', (a: string, b: string, expected: string) => {
+      expect(mergeDocumentHeads(a, b)).toBe(expected)
+    })
+  })
+  describe('overwrites existing fields', () => {
+    const cases: [string, string, string][] = [
+      [
+        '<html><head><meta name="description" content="original"></head><body></body></html>',
+        '<html><head><meta name="description" content="updated"></head><body></body></html>',
+        '<html><head><meta name="description" content="updated"></head><body></body></html>',
+      ],
+    ]
+    it.each(cases)('matches expected', (a: string, b: string, expected: string) => {
+      expect(mergeDocumentHeads(a, b)).toBe(expected)
+    })
   })
 })
