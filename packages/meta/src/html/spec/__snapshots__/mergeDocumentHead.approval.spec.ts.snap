@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mergeDocumentHead with real documents 1`] = `
+<!DOCTYPE html>
+<html lang="\\&quot;en\\&quot;">
+  <head>
+    <meta charset="\\&quot;utf-8\\&quot;">
+    <link rel="\\&quot;icon\\&quot;"
+          href="\\&quot;/favicon.ico\\&quot;"
+    >
+    <meta name="\\&quot;viewport\\&quot;"
+          content="\\&quot;width=device-width,initial-scale=1\\&quot;"
+    >
+    <meta name="\\&quot;theme-color\\&quot;"
+          content="\\&quot;#000000\\&quot;"
+    >
+    <link rel="\\&quot;apple-touch-icon\\&quot;"
+          href="\\&quot;/apple-touch-icon.png\\&quot;"
+    >
+    <link rel="\\&quot;manifest\\&quot;"
+          href="\\&quot;/manifest.json\\&quot;"
+    >
+    <link href="\\&quot;https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap\\&quot;"
+          rel="\\&quot;stylesheet\\&quot;"
+    >
+    <script async
+            src="\\&quot;https://www.googletagmanager.com/gtag/js?id=G-795QBPW744\\&quot;"
+    >
+    </script>
+    <script>
+      function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag(\\"js\\",new Date),gtag(\\"config\\",\\"G-795QBPW744\\")
+    </script>
+    <style>
+      html {
+      overflow-y: auto;
+      overflow-x: hidden
+    }
+
+    #root,
+    body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0
+    }
+    </style>
+    <script defer="\\&quot;defer\\&quot;"
+            src="\\&quot;/static/js/main.b649507b.js\\&quot;"
+    >
+    </script>
+    <link href="\\&quot;/static/css/main.004a73ac.css\\&quot;"
+          rel="\\&quot;stylesheet\\&quot;"
+    >
+    <meta name="\\&quot;viewport\\&quot;"
+          content="\\&quot;width=device-width,"
+          initial-scale="1\\&quot;"
+    >
+    <meta name="\\&quot;description\\&quot;"
+          content="\\&quot;Your"
+          data,
+          forever
+          long.\\"
+    >
+  </head>
+  <body style="\\&quot;padding:0;margin:0;overflow-x:hidden;font-family:Lexend"
+        deca,helvetica,sans-serif\\"
+  >
+    <noscript>
+      <iframe src="\\"https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL\\""
+              height="\\"0\\""
+              width="\\"0\\""
+              style="\\"display:none;visibility:hidden\\""
+      >
+      </iframe>
+    </noscript>
+    <noscript>
+      You need to enable JavaScript to run this
+    app.
+    </noscript>
+    <div id="\\&quot;root\\&quot;">
+    </div>
+  </body>
+</html>
+`;
