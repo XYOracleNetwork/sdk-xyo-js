@@ -1,7 +1,9 @@
-import { readFile } from 'fs/promises'
+import { readFile, writeFile } from 'fs/promises'
 import { join } from 'path'
 
 import { mergeDocumentHead } from '../mergeDocumentHead'
+
+const writeDebugFile = false
 
 describe('mergeDocumentHead', () => {
   let destination: string
@@ -10,7 +12,9 @@ describe('mergeDocumentHead', () => {
     destination = await readFile(join(__dirname, 'destination.html'), { encoding: 'utf-8' })
     source = await readFile(join(__dirname, 'source.html'), { encoding: 'utf-8' })
   })
-  it('with real documents', () => {
-    expect(mergeDocumentHead(destination, source)).toMatchSnapshot()
+  it('with real documents', async () => {
+    const result = mergeDocumentHead(destination, source)
+    expect(result).toMatchSnapshot()
+    if (writeDebugFile) await writeFile(join(__dirname, 'result.html'), result)
   })
 })

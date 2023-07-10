@@ -2,97 +2,72 @@
 
 exports[`mergeDocumentHead with real documents 1`] = `
 <!DOCTYPE html>
-<html lang="\\&quot;en\\&quot;">
+<html lang="en">
   <head>
-    <meta charset="\\&quot;utf-8\\&quot;">
-    <link rel="\\&quot;icon\\&quot;"
-          href="\\&quot;/favicon.ico\\&quot;"
+    <meta charset="utf-8">
+    <link rel="icon"
+          href="/favicon.ico"
     >
-    <meta name="\\&quot;viewport\\&quot;"
-          content="\\&quot;width=device-width,initial-scale=1\\&quot;"
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1"
     >
-    <meta name="\\&quot;theme-color\\&quot;"
-          content="\\&quot;#000000\\&quot;"
+    <meta name="description"
+          content="Your Data, Forever Long."
     >
-    <link rel="\\&quot;apple-touch-icon\\&quot;"
-          href="\\&quot;/apple-touch-icon.png\\&quot;"
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com"
     >
-    <link rel="\\&quot;manifest\\&quot;"
-          href="\\&quot;/manifest.json\\&quot;"
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin
     >
-    <link href="\\&quot;https://fonts.googleapis.com/css?family=Nunito+Sans|Lexend+Deca|Rock+Salt|Source+Code+Pro&amp;display=swap\\&quot;"
-          rel="\\&quot;stylesheet\\&quot;"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500;600;800&amp;display=swap"
+          rel="stylesheet"
     >
-    <script async
-            src="\\&quot;https://www.googletagmanager.com/gtag/js?id=G-795QBPW744\\&quot;"
+    <link rel="apple-touch-icon"
+          href="/foreventory-logo-icon-black.png"
     >
-    </script>
-    <script>
-      function gtag() { dataLayer.push(arguments) } window.dataLayer = window.dataLayer || [], gtag(\\"js\\",new Date),gtag(\\"config\\",\\"G-795QBPW744\\")
-    </script>
-    <style>
-      html {
-      overflow-y: auto;
-      overflow-x: hidden
-    }
-
-    #root,
-    body {
-      height: 100%;
-      width: 100%;
-      margin: 0;
-      padding: 0
-    }
-    </style>
-    <script defer="\\&quot;defer\\&quot;"
-            src="\\&quot;/static/js/main.b649507b.js\\&quot;"
+    <link rel="manifest"
+          href="/manifest.json"
+    >
+    <title>
+      Foreventory
+    </title>
+    <script defer="defer"
+            src="/static/js/main.297e104a.js"
     >
     </script>
-    <link href="\\&quot;/static/css/main.004a73ac.css\\&quot;"
-          rel="\\&quot;stylesheet\\&quot;"
+    <meta content="website"
+          property="og:type"
+          data-react-helmet="true"
     >
-    <meta content="\\&quot;website\\&quot;"
-          property="\\&quot;og:type\\&quot;"
-          data-react-helmet="\\&quot;true\\&quot;"
+    <meta property="og:image"
+          content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"
     >
-    <meta property="\\&quot;og:image\\&quot;"
-          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    <meta property="og:image:height"
+          content="900"
     >
-    <meta property="\\&quot;og:image:height\\&quot;"
-          content="\\&quot;900\\&quot;"
+    <meta property="og:image:secure_url"
+          content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"
     >
-    <meta property="\\&quot;og:image:secure_url\\&quot;"
-          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    <meta property="og:image:type"
+          content="image/png"
     >
-    <meta property="\\&quot;og:image:type\\&quot;"
-          content="\\&quot;image/png\\&quot;"
+    <meta property="og:image:url"
+          content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"
     >
-    <meta property="\\&quot;og:image:url\\&quot;"
-          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    <meta property="og:image:width"
+          content="1600"
     >
-    <meta property="\\&quot;og:image:width\\&quot;"
-          content="\\&quot;1600\\&quot;"
-    >
-    <meta property="\\&quot;twitter:image\\&quot;"
-          content="\\&quot;/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\\&quot;"
+    <meta property="twitter:image"
+          content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"
     >
   </head>
-  <body style="\\&quot;padding:0;margin:0;overflow-x:hidden;font-family:Lexend"
-        deca,helvetica,sans-serif\\"
-  >
+  <body>
     <noscript>
-      <iframe src="\\"https://www.googletagmanager.com/ns.html?id=GTM-W2TFNXL\\""
-              height="\\"0\\""
-              width="\\"0\\""
-              style="\\"display:none;visibility:hidden\\""
-      >
-      </iframe>
+      You need to enable JavaScript to run this app.
     </noscript>
-    <noscript>
-      You need to enable JavaScript to run this
-    app.
-    </noscript>
-    <div id="\\&quot;root\\&quot;">
+    <div id="root">
     </div>
   </body>
 </html>

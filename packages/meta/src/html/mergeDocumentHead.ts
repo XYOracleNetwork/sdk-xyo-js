@@ -1,8 +1,7 @@
 import { load } from 'cheerio'
-
 export const mergeDocumentHead = (destination: string, source: string) => {
-  const $destination = load(destination)
-  const $source = load(source)
+  const $destination = load(destination, { decodeEntities: false })
+  const $source = load(source, { decodeEntities: false })
 
   // For each child node of the source head
   $source('head')
@@ -39,5 +38,5 @@ export const mergeDocumentHead = (destination: string, source: string) => {
     })
 
   // Return the merged HTML
-  return $destination.html()
+  return $destination.html({ decodeEntities: false })
 }
