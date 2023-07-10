@@ -1,0 +1,2744 @@
+<!DOCTYPE html>
+<html lang=\"en\">
+
+<head>
+  <meta charset=\"utf-8\">
+  <link rel=\"icon\" href=\"/favicon.ico\">
+  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">
+  <meta name=\"description\" content=\"Your Data, Forever Long.\">
+  <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">
+  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin=\"\">
+  <link href=\"https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500;600;800&amp;display=swap\"
+    rel=\"stylesheet\">
+  <link rel=\"apple-touch-icon\" href=\"/foreventory-logo-icon-black.png\">
+  <link rel=\"manifest\" href=\"/manifest.json\">
+  <title>Foreventory: Your Data, Forever | Foreventory</title>
+  <script defer=\"\" src=\"/static/js/bundle.js\"></script>
+  <style data-emotion=\"css-global\" data-s=\"\">
+    html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      box-sizing: border-box;
+      -webkit-text-size-adjust: 100%;
+    }
+  </style>
+  <style data-emotion=\"css-global\" data-s=\"\">
+    *,
+    *::before,
+    *::after {
+      box-sizing: inherit;
+    }
+  </style>
+  <style data-emotion=\"css-global\" data-s=\"\">
+    strong,
+    b {
+      font-weight: 700;
+    }
+  </style>
+  <style data-emotion=\"css-global\" data-s=\"\">
+    body {
+      margin: 0;
+      color: #f7f8fc;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: Roboto Flex, sans-serif;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      background-color: #121212;
+    }
+  </style>
+  <style data-emotion=\"css-global\" data-s=\"\">
+    @media print {
+      body {
+        background-color: #fff;
+      }
+    }
+  </style>
+  <style data-emotion=\"css-global\" data-s=\"\">
+    body::backdrop {
+      background-color: #121212;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-ciamxw {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      overflow: hidden;
+      height: 100vh;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1d4kvxj-MuiAppBar-root {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: static;
+      background-color: inherit;
+      color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1d4kvxj-MuiAppBar-root backgroundColor {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1d4kvxj-MuiAppBar-root color {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1anjpez-MuiPaper-root-MuiAppBar-root {
+      background-color: #121212;
+      color: #f7f8fc;
+      -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      box-shadow: none;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 100%;
+      box-sizing: border-box;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      position: static;
+      background-color: inherit;
+      color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1anjpez-MuiPaper-root-MuiAppBar-root backgroundColor {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1anjpez-MuiPaper-root-MuiAppBar-root color {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-sqznlb {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-box-flex-wrap: nowrap;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1gtnaxq-MuiToolbar-root {
+      position: relative;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 24px;
+      padding-right: 24px;
+      min-height: 56px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1gtnaxq-MuiToolbar-root {
+        padding-left: 36px;
+        padding-right: 36px;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:0px) {
+      @media (orientation: landscape) {
+        .css-1gtnaxq-MuiToolbar-root {
+          min-height: 48px;
+        }
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1gtnaxq-MuiToolbar-root {
+        min-height: 64px;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-15lzidy {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      width: 100%;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-brwdmv-MuiLink-root {
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+      text-decoration-color: rgba(175, 175, 249, 0.4);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-brwdmv-MuiLink-root:hover {
+      text-decoration-color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1rchtbd-MuiTypography-root-MuiLink-root {
+      margin: 0;
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: inherit;
+      color: #afaff9;
+      line-height: 0;
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+      text-decoration-color: rgba(175, 175, 249, 0.4);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1rchtbd-MuiTypography-root-MuiLink-root:hover {
+      text-decoration-color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1ds9s6v-MuiTypography-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      letter-spacing: 0.01071em;
+      padding-left: 36px;
+      font-weight: 300;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1jwqgu8 {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-pjl4gl-MuiStack-root {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-pjl4gl-MuiStack-root>:not(style)~:not(style) {
+      margin: 0;
+      margin-left: 12px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-53cylf {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1uw0iz-MuiIconButton-root {
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: #fff;
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1uw0iz-MuiIconButton-root:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (hover: none) {
+      .css-1uw0iz-MuiIconButton-root:hover {
+        background-color: transparent;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1uw0iz-MuiIconButton-root.Mui-disabled {
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-b57xgn-MuiButtonBase-root-MuiIconButton-root {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      text-align: center;
+      -webkit-flex: 0 0 auto;
+      -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+      font-size: 1.5rem;
+      padding: 8px;
+      border-radius: 50%;
+      overflow: visible;
+      color: #fff;
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-b57xgn-MuiButtonBase-root-MuiIconButton-root::-moz-focus-inner {
+      border-style: none;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-b57xgn-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media print {
+      .css-b57xgn-MuiButtonBase-root-MuiIconButton-root {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-b57xgn-MuiButtonBase-root-MuiIconButton-root:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (hover: none) {
+      .css-b57xgn-MuiButtonBase-root-MuiIconButton-root:hover {
+        background-color: transparent;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-b57xgn-MuiButtonBase-root-MuiIconButton-root.Mui-disabled {
+      background-color: transparent;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-i4bv87-MuiSvgIcon-root {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      fill: currentColor;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      font-size: 1.5rem;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1nd76yy {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      overflow: hidden;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1a7itrj {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-28wwcs {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      height: 100%;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-3l0b0b {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: start;
+      justify-content: start;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-h4y409-MuiList-root {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      min-width: 0;
+      box-sizing: border-box;
+      text-align: left;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root:hover {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (hover: none) {
+      .css-m2hpzk-MuiListItemButton-root:hover {
+        background-color: transparent;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root.Mui-selected {
+      background-color: rgba(175, 175, 249, 0.16);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root.Mui-selected.Mui-focusVisible {
+      background-color: rgba(175, 175, 249, 0.28);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root.Mui-selected:hover {
+      background-color: rgba(175, 175, 249, 0.24);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (hover: none) {
+      .css-m2hpzk-MuiListItemButton-root.Mui-selected:hover {
+        background-color: rgba(175, 175, 249, 0.16);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root.Mui-focusVisible {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-m2hpzk-MuiListItemButton-root.Mui-disabled {
+      opacity: 0.38;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root {
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      position: relative;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+      background-color: transparent;
+      outline: 0;
+      border: 0;
+      margin: 0;
+      border-radius: 0;
+      padding: 0;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      vertical-align: middle;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      color: inherit;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: relative;
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      min-width: 0;
+      box-sizing: border-box;
+      text-align: left;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      -webkit-transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: background-color 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root::-moz-focus-inner {
+      border-style: none;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-disabled {
+      pointer-events: none;
+      cursor: default;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media print {
+      .css-19gw652-MuiButtonBase-root-MuiListItemButton-root {
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root:hover {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (hover: none) {
+      .css-19gw652-MuiButtonBase-root-MuiListItemButton-root:hover {
+        background-color: transparent;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-selected {
+      background-color: rgba(175, 175, 249, 0.16);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-selected.Mui-focusVisible {
+      background-color: rgba(175, 175, 249, 0.28);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-selected:hover {
+      background-color: rgba(175, 175, 249, 0.24);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (hover: none) {
+      .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-selected:hover {
+        background-color: rgba(175, 175, 249, 0.16);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-focusVisible {
+      background-color: rgba(255, 255, 255, 0.12);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19gw652-MuiButtonBase-root-MuiListItemButton-root.Mui-disabled {
+      opacity: 0.38;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-tlelie-MuiListItemText-root {
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+      min-width: 0;
+      margin-top: 4px;
+      margin-bottom: 4px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1wh5nua-MuiTypography-root {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: Roboto Flex, sans-serif;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      display: block;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-qxpac0 {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      height: 100%;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1s96krw-WebAppPage-root {
+      inset: 0;
+      position: absolute;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: start;
+      justify-content: start;
+      max-width: 100vw;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (max-width:599.95px) {
+      .css-1s96krw-WebAppPage-root {
+        inset: 0;
+        position: absolute;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-si8z4x-WebAppPage-root {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      inset: 0;
+      position: absolute;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: start;
+      justify-content: start;
+      max-width: 100vw;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (max-width:599.95px) {
+      .css-si8z4x-WebAppPage-root {
+        inset: 0;
+        position: absolute;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1g6buxu-WebAppBody-root {
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      gap: 12px;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      overflow: scroll;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (max-width:599.95px) {
+      .css-1g6buxu-WebAppBody-root {
+        overflow: scroll;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-u786my-WebAppBody-root {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      padding-left: 12px;
+      padding-right: 12px;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      gap: 12px;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: flex-start;
+      justify-content: flex-start;
+      overflow: scroll;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (max-width:599.95px) {
+      .css-u786my-WebAppBody-root {
+        overflow: scroll;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-19wv7j6-WebAppBody-scrollableWrapper {
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1atvl7e-WebAppBody-scrollableWrapper {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-s3ljs1-WebAppBody-scrollable {
+      inset: unset;
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: start;
+      justify-content: start;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (max-width:599.95px) {
+      .css-s3ljs1-WebAppBody-scrollable {
+        inset: unset;
+        position: relative;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-12romep-WebAppBody-scrollable {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      inset: unset;
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: start;
+      justify-content: start;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (max-width:599.95px) {
+      .css-12romep-WebAppBody-scrollable {
+        inset: unset;
+        position: relative;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1pi8xg4-MuiGrid2-root {
+      --Grid-columns: 12;
+      --Grid-columnSpacing: 0px;
+      --Grid-rowSpacing: 0px;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      min-width: 0;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: calc(var(--Grid-rowSpacing) / -2) calc(var(--Grid-columnSpacing) / -2);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1wt76lp {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      padding: 24px;
+      gap: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-gj0rah-MuiGrid2-root {
+      --Grid-columns: 12;
+      --Grid-columnSpacing: 36px;
+      --Grid-rowSpacing: 36px;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      min-width: 0;
+      box-sizing: border-box;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: calc(var(--Grid-rowSpacing) / -2) calc(var(--Grid-columnSpacing) / -2);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-16fnxy3-MuiGrid2-root {
+      -webkit-box-flex: 0;
+      -webkit-flex-grow: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0;
+      -webkit-flex-basis: auto;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+      width: calc(100% * 12 / var(--Grid-columns));
+      min-width: 0;
+      box-sizing: border-box;
+      padding: calc(var(--Grid-rowSpacing) / 2) calc(var(--Grid-columnSpacing) / 2);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1vru454-OverviewStatGroupCard-root {
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-p5ttbs-InsightCard-root-OverviewStatGroupCard-root {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 6px;
+      line-height: 1;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-q4x5my-MuiCard-root-InsightCard-root-OverviewStatGroupCard-root {
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 6px;
+      line-height: 1;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1pk86bx-MuiPaper-root-MuiCard-root-InsightCard-root-OverviewStatGroupCard-root {
+      background-color: #121212;
+      color: #f7f8fc;
+      -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      border-radius: 4px;
+      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 6px;
+      line-height: 1;
+      padding-bottom: 24px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-top: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-jupljh-InsightCardContent-root {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1ikl4xn-MuiCardContent-root-InsightCardContent-root {
+      padding: 16px;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      gap: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1ikl4xn-MuiCardContent-root-InsightCardContent-root:last-child {
+      padding-bottom: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1evpiyl {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+      -webkit-justify-content: space-around;
+      justify-content: space-around;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      gap: 15.600000000000001px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-ltnt6s {
+      position: relative;
+      -webkit-align-items: start;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: start;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1l1z4pv-InsightValue-root {
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1l1z4pv-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1l1z4pv-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1l1z4pv-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1l1z4pv-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-yk5u2y-MuiTypography-root-InsightValue-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      color: #afaff9;
+      font-weight: 600;
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-yk5u2y-MuiTypography-root-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-yk5u2y-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-yk5u2y-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-yk5u2y-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1sxpngu-InsightUnit-root {
+      font-size: var(--insightUnitFontSize, 22.200000000000003px);
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1sxpngu-InsightUnit-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1sxpngu-InsightUnit-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.57);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1sxpngu-InsightUnit-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.35);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1to297f-MuiTypography-root-InsightUnit-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      font-size: var(--insightUnitFontSize, 22.200000000000003px);
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1to297f-MuiTypography-root-InsightUnit-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1to297f-MuiTypography-root-InsightUnit-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.57);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1to297f-MuiTypography-root-InsightUnit-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.35);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1fkfyyp-InsightValueContext-root {
+      --baseFontSize: 12px;
+      font-size: var(--baseFontSize);
+      font-weight: 300;
+      letter-spacing: 0;
+      opacity: 0.3;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1fkfyyp-InsightValueContext-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1fkfyyp-InsightValueContext-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.46);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1fkfyyp-InsightValueContext-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.3);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-6mep9t-MuiTypography-root-InsightValueContext-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      --baseFontSize: 12px;
+      font-size: var(--baseFontSize);
+      font-weight: 300;
+      letter-spacing: 0;
+      opacity: 0.3;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-6mep9t-MuiTypography-root-InsightValueContext-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-6mep9t-MuiTypography-root-InsightValueContext-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.46);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-6mep9t-MuiTypography-root-InsightValueContext-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.3);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1kpnj7b-MuiDivider-root {
+      margin: 0;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      border-width: 0;
+      border-style: solid;
+      border-color: rgba(255, 255, 255, 0.12);
+      border-bottom-width: 0;
+      height: auto;
+      border-right-width: thin;
+      -webkit-align-self: stretch;
+      -ms-flex-item-align: stretch;
+      align-self: stretch;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1l8ht2t-MuiTypography-root-InsightValue-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      color: #6bcd23;
+      font-weight: 600;
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1l8ht2t-MuiTypography-root-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1l8ht2t-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1l8ht2t-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1l8ht2t-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1drslf9-MuiTypography-root-InsightValue-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      color: #90c2f8;
+      font-weight: 600;
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1drslf9-MuiTypography-root-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1drslf9-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1drslf9-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1drslf9-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1u8eiqx-MuiTypography-root-InsightValue-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      color: #fd4a6b;
+      font-weight: 600;
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1u8eiqx-MuiTypography-root-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1u8eiqx-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1u8eiqx-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1u8eiqx-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1v64nd2-MuiTypography-root-InsightValue-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      color: rgb(255, 211, 55);
+      font-weight: 600;
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1v64nd2-MuiTypography-root-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1v64nd2-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1v64nd2-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1v64nd2-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-unk89q {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:0px) {
+      .css-unk89q {
+        -webkit-box-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-unk89q {
+        -webkit-box-flex-wrap: nowrap;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-jej7df-InsightCard-root {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 6px;
+      line-height: 1;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1pacbrm-MuiCard-root-InsightCard-root {
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 6px;
+      line-height: 1;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-sw47uj-MuiPaper-root-MuiCard-root-InsightCard-root {
+      background-color: #121212;
+      color: #f7f8fc;
+      -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      border-radius: 4px;
+      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+      background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05));
+      overflow: hidden;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 6px;
+      line-height: 1;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-pq5fgq-InsightCardHeader-root {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-pq5fgq-InsightCardHeader-root .MuiCardHeader-action {
+      margin-right: 0;
+      margin-top: 3px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-pq5fgq-InsightCardHeader-root .MuiCardHeader-action img {
+      margin: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-pq5fgq-InsightCardHeader-root.MuiCardHeader-root .MuiCardHeader-subheader {
+      opacity: 0.5;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-ko1l8i-MuiCardHeader-root-InsightCardHeader-root {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 16px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-ko1l8i-MuiCardHeader-root-InsightCardHeader-root .MuiCardHeader-action {
+      margin-right: 0;
+      margin-top: 3px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-ko1l8i-MuiCardHeader-root-InsightCardHeader-root .MuiCardHeader-action img {
+      margin: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-ko1l8i-MuiCardHeader-root-InsightCardHeader-root.MuiCardHeader-root .MuiCardHeader-subheader {
+      opacity: 0.5;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1qbkelo-MuiCardHeader-content {
+      -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+      flex: 1 1 auto;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-xlq5nl-MuiTypography-root {
+      margin: 0;
+      font-size: 1.25rem;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      line-height: 1.334;
+      letter-spacing: 0em;
+      display: block;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-xlq5nl-MuiTypography-root {
+        font-size: 1.3118rem;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-xlq5nl-MuiTypography-root {
+        font-size: 1.4993rem;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-xlq5nl-MuiTypography-root {
+        font-size: 1.4993rem;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1q6cjxa-InsightTitle-root {
+      --baseFontSize: 4vw;
+      font-size: var(--baseFontSize);
+      letter-spacing: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1q6cjxa-InsightTitle-root {
+        font-size: calc(var(--baseFontSize) * 0.63);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1q6cjxa-InsightTitle-root {
+        font-size: calc(var(--baseFontSize) * 0.53);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1q6cjxa-InsightTitle-root {
+        font-size: calc(var(--baseFontSize) * 0.37);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-9rlk2o-MuiTypography-root-InsightTitle-root {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: Roboto Flex, sans-serif;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      --baseFontSize: 4vw;
+      font-size: var(--baseFontSize);
+      letter-spacing: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-9rlk2o-MuiTypography-root-InsightTitle-root {
+        font-size: calc(var(--baseFontSize) * 0.63);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-9rlk2o-MuiTypography-root-InsightTitle-root {
+        font-size: calc(var(--baseFontSize) * 0.53);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-9rlk2o-MuiTypography-root-InsightTitle-root {
+        font-size: calc(var(--baseFontSize) * 0.37);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-46bh2p-MuiCardContent-root {
+      padding: 16px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-46bh2p-MuiCardContent-root:last-child {
+      padding-bottom: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1sbj7e5 {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      -webkit-justify-content: start;
+      justify-content: start;
+      gap: 24px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1g0mloo {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      gap: 48px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1muyadp-MuiTypography-root-InsightValue-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.75rem;
+      line-height: 1.66;
+      letter-spacing: 0.03333em;
+      font-size: var(--insightValueFontSize, 39px);
+      letter-spacing: 0;
+      line-height: 1;
+      margin-right: 6px;
+      white-space: nowrap;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1muyadp-MuiTypography-root-InsightValue-root.responsive-font-sizes {}
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-1muyadp-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.95);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-1muyadp-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.72);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:1200px) {
+      .css-1muyadp-MuiTypography-root-InsightValue-root.responsive-font-sizes {
+        font-size: calc(var(--baseFontSize) * 0.62);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1dxb3bi {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      gap: 18px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1ymui5h-InsightTable-root {
+      margin-bottom: 18px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1f4lctq-MuiTable-root-InsightTable-root {
+      display: table;
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      margin-bottom: 18px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1f4lctq-MuiTable-root-InsightTable-root caption {
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      letter-spacing: 0.01071em;
+      padding: 24px;
+      color: #daddf2;
+      text-align: left;
+      caption-side: bottom;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-15wwp11-MuiTableHead-root {
+      display: table-header-group;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-v90db4-MuiTableRow-root {
+      color: inherit;
+      display: table-row;
+      vertical-align: middle;
+      outline: 0;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-v90db4-MuiTableRow-root.MuiTableRow-hover:hover {
+      background-color: rgba(255, 255, 255, 0.08);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-v90db4-MuiTableRow-root.Mui-selected {
+      background-color: rgba(175, 175, 249, 0.16);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-v90db4-MuiTableRow-root.Mui-selected:hover {
+      background-color: rgba(175, 175, 249, 0.24);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-xvf3ef-MuiTableCell-root {
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 500;
+      font-size: 0.875rem;
+      line-height: 1.5rem;
+      letter-spacing: 0.01071em;
+      display: table-cell;
+      vertical-align: inherit;
+      border-bottom: 1px solid rgba(81, 81, 81, 1);
+      text-align: left;
+      padding: 16px;
+      color: #f7f8fc;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-apqrd9-MuiTableBody-root {
+      display: table-row-group;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-15bwumy {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex: 1;
+      -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:0px) {
+      .css-15bwumy {
+        min-width: 100%;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:900px) {
+      .css-15bwumy {
+        min-width: 420px;
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-8ywo0j {
+      position: relative;
+      -webkit-align-items: stretch;
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-hzamlr-MuiPaper-root {
+      background-color: #121212;
+      color: #f7f8fc;
+      -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+      background-image: linear-gradient(rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09));
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1cwzjk7 {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1s0yzfg {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      text-transform: uppercase;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-dgcae6-MuiTypography-root-MuiLink-root {
+      margin: 0;
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      letter-spacing: 0.01071em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #afaff9;
+      margin: 0px;
+      padding-left: 12px;
+      padding-right: 12px;
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+      text-decoration-color: rgba(175, 175, 249, 0.4);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-dgcae6-MuiTypography-root-MuiLink-root:hover {
+      text-decoration-color: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-7qcdi0 {
+      position: relative;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1ipvwpm-MuiSvgIcon-root {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      fill: currentColor;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      font-size: 1.25rem;
+      color: #afaff9;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-zzms1-MuiSnackbar-root {
+      z-index: 1400;
+      position: fixed;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      left: 8px;
+      right: 8px;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 8px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    @media (min-width:600px) {
+      .css-zzms1-MuiSnackbar-root {
+        top: 24px;
+        left: 50%;
+        right: auto;
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1qf1ea7-MuiAlert-root {
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      letter-spacing: 0.01071em;
+      background-color: rgb(13, 21, 7);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 6px 16px;
+      color: rgb(207, 239, 184);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1qf1ea7-MuiAlert-root .MuiAlert-icon {
+      color: #6bcd23;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1uk7md7-MuiPaper-root-MuiAlert-root {
+      background-color: #121212;
+      color: #f7f8fc;
+      -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      border-radius: 4px;
+      box-shadow: none;
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+      font-family: Roboto Flex, sans-serif;
+      font-weight: 400;
+      font-size: 0.875rem;
+      line-height: 1.43;
+      letter-spacing: 0.01071em;
+      background-color: rgb(13, 21, 7);
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 6px 16px;
+      color: rgb(207, 239, 184);
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1uk7md7-MuiPaper-root-MuiAlert-root .MuiAlert-icon {
+      color: #6bcd23;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1ytlwq5-MuiAlert-icon {
+      margin-right: 12px;
+      padding: 7px 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 22px;
+      opacity: 0.9;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1vooibu-MuiSvgIcon-root {
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      width: 1em;
+      height: 1em;
+      display: inline-block;
+      fill: currentColor;
+      -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -webkit-transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      font-size: inherit;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1pxa9xg-MuiAlert-message {
+      padding: 8px 0;
+      min-width: 0;
+      overflow: auto;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-zwr1uk-MuiAlertTitle-root {
+      font-weight: 500;
+      margin-top: -2px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-1v70ukc-MuiTypography-root-MuiAlertTitle-root {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 300;
+      font-family: Roboto Flex, sans-serif;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      margin-bottom: 0.35em;
+      font-weight: 500;
+      margin-top: -2px;
+    }
+  </style>
+  <style data-emotion=\"css\" data-s=\"\">
+    .css-8je8zh-MuiTouchRipple-root {
+      overflow: hidden;
+      pointer-events: none;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: inherit;
+    }
+  </style>
+  <meta content=\"website\" property=\"og:type\" data-react-helmet=\"true\">
+  <meta property=\"og:image\"
+    content=\"/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\">
+  <meta property=\"og:image:height\" content=\"900\">
+  <meta property=\"og:image:secure_url\"
+    content=\"/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\">
+  <meta property=\"og:image:type\" content=\"image/png\">
+  <meta property=\"og:image:url\"
+    content=\"/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\">
+  <meta property=\"og:image:width\" content=\"1600\">
+  <meta property=\"twitter:image\"
+    content=\"/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900\">
+</head>
+
+<body> <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id=\"root\">
+    <div role=\"presentation\" class=\"MuiSnackbar-root MuiSnackbar-anchorOriginTopCenter css-zzms1-MuiSnackbar-root\">
+      <div class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root
+        MuiAlert-standardSuccess MuiAlert-standard css-1uk7md7-MuiPaper-root-MuiAlert-root\" role=\"alert\"
+        direction=\"down\" style=\"opacity: 1; transform: none; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1)
+        0ms, transform 150ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;\">
+        <div class=\"MuiAlert-icon css-1ytlwq5-MuiAlert-icon\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeInherit
+            css-1vooibu-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"
+            data-testid=\"SuccessOutlinedIcon\">
+            <path d=\"M20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4C12.76,4 13.5,4.11 14.2,
+              4.31L15.77,2.74C14.61,2.26 13.34,2 12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0, 0
+              22,12M7.91,10.08L6.5,11.5L11,16L21,6L19.59,4.58L11,13.17L7.91,10.08Z\"></path>
+          </svg></div>
+        <div class=\"MuiAlert-message css-1pxa9xg-MuiAlert-message\">
+          <div class=\"MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom MuiAlertTitle-root
+            css-1v70ukc-MuiTypography-root-MuiAlertTitle-root\">Default Seed Phrase Generated</div>Go to application
+          settings to save it.
+        </div>
+      </div>
+    </div>
+    <div class=\"MuiBox-root css-ciamxw\" id=\"web-chrome-flex\" title=\"Foreventory: Your Data, Forever\">
+      <header class=\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiAppBar-root MuiAppBar-colorPrimary
+        MuiAppBar-positionStatic css-1anjpez-MuiPaper-root-MuiAppBar-root\">
+        <div class=\"MuiBox-root css-sqznlb\">
+          <div class=\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1gtnaxq-MuiToolbar-root\">
+            <div class=\"MuiBox-root css-15lzidy\"><a class=\"MuiTypography-root MuiTypography-inherit MuiLink-root
+                MuiLink-underlineAlways css-1rchtbd-MuiTypography-root-MuiLink-root\" rel=\"noopener noreferrer\"
+                href=\"/\"><img src=\"/static/media/forventory-logo-full-white.55c342a885a9c075bc9c876195a82b33.svg\"
+                  height=\"40\"></a>
+              <p class=\"MuiTypography-root MuiTypography-body2 css-1ds9s6v-MuiTypography-root\">(For · ev · en · tory)
+              </p>
+            </div>
+          </div>
+          <div class=\"MuiBox-root css-1jwqgu8\"></div>
+          <div class=\"MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-1gtnaxq-MuiToolbar-root\">
+            <div class=\"MuiStack-root css-pjl4gl-MuiStack-root\">
+              <div class=\"MuiBox-root css-53cylf\">
+                <div style=\"backface-visibility: hidden; display: inline-block; transform: none;\"><button
+                    class=\"MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-sizeMedium
+                    css-b57xgn-MuiButtonBase-root-MuiIconButton-root\" tabindex=\"0\" type=\"button\"><svg
+                      class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root\" focusable=\"false\"
+                      aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"DarkModeRoundedIcon\">
+                      <path d=\"M11.01 3.05C6.51 3.54 3 7.36 3 12c0 4.97 4.03 9 9 9 4.63 0 8.45-3.5 8.95-8
+                        .09-.79-.78-1.42-1.54-.95-.84.54-1.84.85-2.91.85-2.98 0-5.4-2.42-5.4-5.4
+                        0-1.06.31-2.06.84-2.89.45-.67-.04-1.63-.93-1.56z\"></path>
+                    </svg><span class=\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\"></span></button></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class=\"MuiBox-root css-1nd76yy\" id=\"sidebar-nav-flex\">
+        <div class=\"MuiBox-root css-1a7itrj\" id=\"main-flex\">
+          <div class=\"MuiBox-root css-28wwcs\">
+            <div class=\"MuiBox-root css-3l0b0b\">
+              <ul class=\"MuiList-root MuiList-padding css-h4y409-MuiList-root\">
+                <div class=\"MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root
+                  MuiListItemButton-gutters css-19gw652-MuiButtonBase-root-MuiListItemButton-root\" tabindex=\"0\"
+                  role=\"button\" style=\"opacity: 0.5;\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium
+                    css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"
+                    data-testid=\"HomeRoundedIcon\">
+                    <path d=\"M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67
+                      3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45
+                      1-1z\"></path>
+                  </svg>
+                  <div class=\"MuiListItemText-root css-tlelie-MuiListItemText-root\"><span class=\"MuiTypography-root
+                      MuiTypography-body1 MuiListItemText-primary css-1wh5nua-MuiTypography-root\">Home</span></div>
+                  <span class=\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\"></span>
+                </div>
+                <div class=\"MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root
+                  MuiListItemButton-gutters css-19gw652-MuiButtonBase-root-MuiListItemButton-root\" tabindex=\"0\"
+                  role=\"button\" style=\"opacity: 0.5;\"><svg class=\"MuiSvgIcon-root MuiSvgIcon-fontSizeMedium
+                    css-i4bv87-MuiSvgIcon-root\" focusable=\"false\" aria-hidden=\"true\" viewBox=\"0 0 24 24\"
+                    data-testid=\"Person2RoundedIcon\">
+                    <path d=\"M18.39 14.56C16.71 13.7 14.53 13 12 13s-4.71.7-6.39 1.56C4.61 15.07 4 16.1 4 17.22V18c0
+                      1.1.9 2 2 2h12c1.1 0 2-.9 2-2v-.78c0-1.12-.61-2.15-1.61-2.66zM9.78 12h4.44c1.21 0 2.14-1.06
+                      1.98-2.26l-.32-2.45C15.57 5.39 13.92 4 12 4S8.43 5.39 8.12 7.29L7.8 9.74c-.16 1.2.77 2.26 1.98
+                      2.26z\"></path>
+                  </svg>
+                  <div class=\"MuiListItemText-root css-tlelie-MuiListItemText-root\"><span class=\"MuiTypography-root
+                      MuiTypography-body1 MuiListItemText-primary css-1wh5nua-MuiTypography-root\">Profiles</span></div>
+                  <span class=\"MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root\"></span>
+                </div>
+              </ul>
+            </div>
+            <div class=\"MuiBox-root css-qxpac0\">
+              <div class=\"MuiBox-root css-si8z4x-WebAppPage-root\">
+                <div class=\"MuiBox-root css-u786my-WebAppBody-root\">
+                  <div class=\"MuiBox-root css-1atvl7e-WebAppBody-scrollableWrapper\">
+                    <div class=\"MuiBox-root css-12romep-WebAppBody-scrollable\">
+                      <div class=\"MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row
+                        css-1pi8xg4-MuiGrid2-root\">
+                        <div class=\"MuiBox-root css-1wt76lp\">
+                          <div class=\"MuiGrid2-root MuiGrid2-container MuiGrid2-direction-xs-row MuiGrid2-spacing-xs-3
+                            css-gj0rah-MuiGrid2-root\" id=\"center-column\">
+                            <div class=\"MuiGrid2-root MuiGrid2-direction-xs-row MuiGrid2-grid-xs-12
+                              css-16fnxy3-MuiGrid2-root\">
+                              <div class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1
+                                MuiCard-root
+                                css-1pk86bx-MuiPaper-root-MuiCard-root-InsightCard-root-OverviewStatGroupCard-root\">
+                                <div class=\"MuiCardContent-root
+                                  css-1ikl4xn-MuiCardContent-root-InsightCardContent-root\">
+                                  <div class=\"MuiBox-root css-1evpiyl\">
+                                    <div class=\"MuiBox-root css-ltnt6s\"><span><span class=\"MuiTypography-root
+                                          MuiTypography-caption
+                                          css-yk5u2y-MuiTypography-root-InsightValue-root\"></span><span
+                                          class=\"MuiTypography-root MuiTypography-caption
+                                          css-1to297f-MuiTypography-root-InsightUnit-root\"></span></span><span
+                                        class=\"MuiTypography-root MuiTypography-caption
+                                        css-6mep9t-MuiTypography-root-InsightValueContext-root\">total dollars spent on
+                                        Netflix</span></div>
+                                    <hr class=\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical
+                                      MuiDivider-flexItem css-1kpnj7b-MuiDivider-root\">
+                                    <div class=\"MuiBox-root css-ltnt6s\"><span><span class=\"MuiTypography-root
+                                          MuiTypography-caption
+                                          css-1l8ht2t-MuiTypography-root-InsightValue-root\">0.00</span><span
+                                          class=\"MuiTypography-root MuiTypography-caption
+                                          css-1to297f-MuiTypography-root-InsightUnit-root\">undefined/hr</span></span><span
+                                        class=\"MuiTypography-root MuiTypography-caption
+                                        css-6mep9t-MuiTypography-root-InsightValueContext-root\">Netflix subscription
+                                        cost per hour watched</span></div>
+                                    <hr class=\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical
+                                      MuiDivider-flexItem css-1kpnj7b-MuiDivider-root\">
+                                    <div class=\"MuiBox-root css-ltnt6s\"><span><span class=\"MuiTypography-root
+                                          MuiTypography-caption
+                                          css-1drslf9-MuiTypography-root-InsightValue-root\"></span><span
+                                          class=\"MuiTypography-root MuiTypography-caption
+                                          css-1to297f-MuiTypography-root-InsightUnit-root\">years</span></span><span
+                                        class=\"MuiTypography-root MuiTypography-caption
+                                        css-6mep9t-MuiTypography-root-InsightValueContext-root\">of Netflix in account
+                                        lifetime</span></div>
+                                    <hr class=\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical
+                                      MuiDivider-flexItem css-1kpnj7b-MuiDivider-root\">
+                                    <div class=\"MuiBox-root css-ltnt6s\"><span><span class=\"MuiTypography-root
+                                          MuiTypography-caption
+                                          css-1u8eiqx-MuiTypography-root-InsightValue-root\">0</span><span
+                                          class=\"MuiTypography-root MuiTypography-caption
+                                          css-1to297f-MuiTypography-root-InsightUnit-root\">ratings</span></span><span
+                                        class=\"MuiTypography-root MuiTypography-caption
+                                        css-6mep9t-MuiTypography-root-InsightValueContext-root\">shows rated on
+                                        Netflix</span></div>
+                                    <hr class=\"MuiDivider-root MuiDivider-fullWidth MuiDivider-vertical
+                                      MuiDivider-flexItem css-1kpnj7b-MuiDivider-root\">
+                                    <div class=\"MuiBox-root css-ltnt6s\"><span><span class=\"MuiTypography-root
+                                          MuiTypography-caption
+                                          css-1v64nd2-MuiTypography-root-InsightValue-root\"></span><span
+                                          class=\"MuiTypography-root MuiTypography-caption
+                                          css-1to297f-MuiTypography-root-InsightUnit-root\">hrs</span></span><span
+                                        class=\"MuiTypography-root MuiTypography-caption
+                                        css-6mep9t-MuiTypography-root-InsightValueContext-root\">spent on favorite
+                                        show</span></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class=\"MuiBox-root css-unk89q\">
+                            <div class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1
+                              MuiCard-root css-sw47uj-MuiPaper-root-MuiCard-root-InsightCard-root\">
+                              <div class=\"MuiCardHeader-root css-ko1l8i-MuiCardHeader-root-InsightCardHeader-root\">
+                                <div class=\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\"><span
+                                    class=\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title
+                                    css-xlq5nl-MuiTypography-root\">
+                                    <p class=\"MuiTypography-root MuiTypography-body1
+                                      css-9rlk2o-MuiTypography-root-InsightTitle-root\">Viewing Activity</p>
+                                  </span></div>
+                              </div>
+                              <div class=\"MuiCardContent-root
+                                css-1ikl4xn-MuiCardContent-root-InsightCardContent-root\">
+                                <div class=\"MuiCardContent-root css-46bh2p-MuiCardContent-root\">
+                                  <div class=\"MuiBox-root css-1sbj7e5\">
+                                    <div class=\"MuiBox-root css-1g0mloo\">
+                                      <div class=\"MuiBox-root css-ltnt6s\"><span><span class=\"MuiTypography-root
+                                            MuiTypography-caption
+                                            css-1muyadp-MuiTypography-root-InsightValue-root\"></span><span
+                                            class=\"MuiTypography-root MuiTypography-caption
+                                            css-1to297f-MuiTypography-root-InsightUnit-root\"></span></span></div>
+                                      <div class=\"MuiBox-root css-1dxb3bi\"></div>
+                                    </div>
+                                    <table class=\"MuiTable-root css-1f4lctq-MuiTable-root-InsightTable-root\"
+                                      style=\"table-layout: fixed;\">
+                                      <thead class=\"MuiTableHead-root css-15wwp11-MuiTableHead-root\">
+                                        <tr class=\"MuiTableRow-root MuiTableRow-head css-v90db4-MuiTableRow-root\">
+                                          <th class=\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium
+                                            css-xvf3ef-MuiTableCell-root\" scope=\"col\" style=\"border: none; opacity:
+                                            0.3; width: 10%;\"></th>
+                                          <th class=\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium
+                                            css-xvf3ef-MuiTableCell-root\" scope=\"col\" style=\"border: none; opacity:
+                                            0.3; width: 65%;\"></th>
+                                          <th class=\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium
+                                            css-xvf3ef-MuiTableCell-root\" scope=\"col\" style=\"border: none; opacity:
+                                            0.3; width: 25%;\"></th>
+                                        </tr>
+                                      </thead>
+                                      <tbody class=\"MuiTableBody-root css-apqrd9-MuiTableBody-root\"></tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=\"MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1
+                              MuiCard-root css-sw47uj-MuiPaper-root-MuiCard-root-InsightCard-root\">
+                              <div class=\"MuiCardHeader-root css-ko1l8i-MuiCardHeader-root-InsightCardHeader-root\">
+                                <div class=\"MuiCardHeader-content css-1qbkelo-MuiCardHeader-content\"><span
+                                    class=\"MuiTypography-root MuiTypography-h5 MuiCardHeader-title
+                                    css-xlq5nl-MuiTypography-root\">
+                                    <p class=\"MuiTypography-root MuiTypography-body1
+                                      css-9rlk2o-MuiTypography-root-InsightTitle-root\">Most Watched Shows</p>
+                                  </span></div>
+                              </div>
+                              <div class=\"MuiCardContent-root
+                                css-1ikl4xn-MuiCardContent-root-InsightCardContent-root\">
+                                <div class=\"MuiCardContent-root css-46bh2p-MuiCardContent-root\">
+                                  <div class=\"MuiBox-root css-1sbj7e5\">
+                                    <table class=\"MuiTable-root css-1f4lctq-MuiTable-root-InsightTable-root\"
+                                      style=\"table-layout: fixed;\">
+                                      <thead class=\"MuiTableHead-root css-15wwp11-MuiTableHead-root\">
+                                        <tr class=\"MuiTableRow-root MuiTableRow-head css-v90db4-MuiTableRow-root\">
+                                          <th class=\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium
+                                            css-xvf3ef-MuiTableCell-root\" scope=\"col\" style=\"border: none; opacity:
+                                            0.3; width: 15%;\">Rank</th>
+                                          <th class=\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium
+                                            css-xvf3ef-MuiTableCell-root\" scope=\"col\" style=\"border: none; opacity:
+                                            0.3; width: 60%;\">Title</th>
+                                          <th class=\"MuiTableCell-root MuiTableCell-head MuiTableCell-sizeMedium
+                                            css-xvf3ef-MuiTableCell-root\" scope=\"col\" style=\"border: none; opacity:
+                                            0.3; width: 25%;\">Total Hours</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody class=\"MuiTableBody-root css-apqrd9-MuiTableBody-root\"></tbody>
+                                    </table>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class=\"MuiBox-root css-15bwumy\"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=\"MuiBox-root css-8ywo0j\" id=\"footer-flex\">
+        <div class=\"MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 css-hzamlr-MuiPaper-root\">
+          <div class=\"MuiBox-root css-8ywo0j\">
+            <div class=\"MuiBox-root css-1cwzjk7\">
+              <div class=\"MuiBox-root css-1s0yzfg\" style=\"opacity: 0.6;\"><a class=\"MuiTypography-root
+                  MuiTypography-body2 MuiTypography-noWrap MuiLink-root MuiLink-underlineAlways
+                  css-dgcae6-MuiTypography-root-MuiLink-root\" href=\"https://xylabs.com/\" target=\"_blank\"
+                  title=\"Copyright © 2023 XY Labs, Inc.\"><small>Copyright © 2023 XY Labs, Inc.</small></a><a
+                  class=\"MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root
+                  MuiLink-underlineAlways css-dgcae6-MuiTypography-root-MuiLink-root\" href=\"https://xyo.network/\"
+                  target=\"_blank\" title=\"XYO Foundation\"><small>XYO Foundation</small></a><a
+                  class=\"MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root
+                  MuiLink-underlineAlways css-dgcae6-MuiTypography-root-MuiLink-root\"
+                  href=\"https://xylabs.com/privacy/\" target=\"_blank\" title=\"Privacy\"><small>Privacy</small></a><a
+                  class=\"MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root
+                  MuiLink-underlineAlways css-dgcae6-MuiTypography-root-MuiLink-root\"
+                  href=\"https://xylabs.com/terms/\" target=\"_blank\" title=\"Terms\"><small>Terms</small></a><a
+                  class=\"MuiTypography-root MuiTypography-body2 MuiTypography-noWrap MuiLink-root
+                  MuiLink-underlineAlways css-dgcae6-MuiTypography-root-MuiLink-root\" href=\"https://xylabs.com/jobs\"
+                  target=\"_blank\" title=\"Careers\"><small>Careers</small></a>
+                <div class=\"MuiBox-root css-7qcdi0\" style=\"cursor: pointer;\"><svg class=\"MuiSvgIcon-root
+                    MuiSvgIcon-colorPrimary MuiSvgIcon-fontSizeSmall css-1ipvwpm-MuiSvgIcon-root\" focusable=\"false\"
+                    aria-hidden=\"true\" viewBox=\"0 0 24 24\" data-testid=\"MoreHorizIcon\">
+                    <path d=\"M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9
+                      2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z\"></path>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
