@@ -1,6 +1,7 @@
 import { load } from 'cheerio'
 
-const opts = { decodeEntities: false }
+const opts = {}
+// const opts = { decodeEntities: false }
 
 export const mergeDocumentHead = (destination: string, source: string) => {
   const $destination = load(destination, opts)
