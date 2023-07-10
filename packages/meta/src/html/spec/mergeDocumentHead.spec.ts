@@ -1,4 +1,4 @@
-import { mergeDocumentHeads } from '../patchHtml'
+import { mergeDocumentHead } from '../mergeDocumentHead'
 
 describe('patchHtml', () => {
   const cases: [string, string, string, string][] = [
@@ -40,6 +40,6 @@ describe('patchHtml', () => {
     ],
   ]
   it.each(cases)('%s', (_, a: string, b: string, expected: string) => {
-    expect(mergeDocumentHeads(a, b)).toBe(expected)
+    expect(mergeDocumentHead(a, b)).toBe(expected)
   })
 })

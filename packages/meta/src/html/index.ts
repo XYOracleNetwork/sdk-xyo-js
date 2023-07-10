@@ -1,1 +1,1 @@
-export * from './patchHtml'
+export * from './mergeDocumentHead'

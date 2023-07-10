@@ -1,8 +1,8 @@
 import { load } from 'cheerio'
 
-export const mergeDocumentHeads = (html1: string, html2: string) => {
-  const $ = load(html1)
-  const $2 = load(html2)
+export const mergeDocumentHead = (destination: string, source: string) => {
+  const $ = load(destination)
+  const $2 = load(source)
 
   // For each child node of the second head
   $2('head')
