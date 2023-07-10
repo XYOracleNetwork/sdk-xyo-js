@@ -12,9 +12,9 @@ export const mergeDocumentHead = (destination: string, source: string) => {
 
       // Special case for meta tags: We want to match them by the name attribute
       if (el[0].tagName === 'meta') {
-        const name = el.attr('property')
-        if (name) {
-          const match = $destination(`head > meta[property="${name}"]`)
+        const property = el.attr('property')
+        if (property) {
+          const match = $destination(`head meta[property="${property}"]`)
 
           // If it exists, replace it, otherwise append it
           if (match.length > 0) {
