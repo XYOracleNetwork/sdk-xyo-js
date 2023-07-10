@@ -15,7 +15,7 @@
         "--forceExit",
         "--runInBand",
         "--testTimeout=120000",
-        "packages/meta/src/html/spec/patchHtml.spec.ts"
+        "packages/meta/src/html/spec/mergeDocumentHead.approval.spec.ts"
       ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
