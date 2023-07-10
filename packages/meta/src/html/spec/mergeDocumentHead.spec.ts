@@ -1,6 +1,6 @@
 import { mergeDocumentHead } from '../mergeDocumentHead'
 
-describe('patchHtml', () => {
+describe('mergeDocumentHead', () => {
   const cases: [string, string, string, string][] = [
     [
       'Overwrites existing elements',
