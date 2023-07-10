@@ -1,27 +1,45 @@
 import { load } from 'cheerio'
 
-export const mergeDocumentHeads = (destination: string, source: string) => {
-  const destinationDocument = load(destination)
-  const sourceDocument = load(source)
+export const mergeDocumentHeads = (html1: string, html2: string) => {
+  const $ = load(html1)
+  const $2 = load(html2)
 
-  const destinationHead = destinationDocument('head')
-  const sourceHead = sourceDocument('head')
+  // This assumes that both HTML strings have a head tag.
+  // If that's not the case, you should adjust the code accordingly.
 
-  // For each child node of the second body
-  sourceHead.children().each((_, element) => {
-    const el = destinationDocument(element)
+  // For each child node of the second head
+  $2('head')
+    .children()
+    .each((_, element) => {
+      const el = $(element)
 
-    // Check if the same element exists in the first HTML string
-    const match = destinationDocument(el[0].tagName)
+      // Special case for meta tags: We want to match them by the name attribute
+      if (el[0].tagName === 'meta') {
+        const name = el.attr('name')
+        if (name) {
+          const match = $(`head > meta[name="${name}"]`)
 
-    // If it exists, replace it, otherwise append it
-    if (match.length > 0) {
-      match.replaceWith(el)
-    } else {
-      destinationDocument('head').append(el)
-    }
-  })
+          // If it exists, replace it, otherwise append it
+          if (match.length > 0) {
+            match.replaceWith(el)
+            return
+          } else {
+            $('head').append(el)
+          }
+        }
+      } else {
+        // For all other elements, just check if the same element exists in the first HTML string
+        const match = $(el[0].tagName)
+
+        // If it exists, replace it, otherwise append it
+        if (match.length > 0) {
+          match.replaceWith(el)
+        } else {
+          $('head').append(el)
+        }
+      }
+    })
 
   // Return the merged HTML
-  return destinationDocument.html()
+  return $.html()
 }
