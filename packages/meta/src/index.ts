@@ -1,2 +1,2 @@
-export * from './builder'
+export * from './meta'
 export * from './models'

@@ -1,8 +1,8 @@
 import { readFile } from 'fs/promises'
 import { join } from 'path'
 
-import { metaBuilder } from '../builder'
 import { getMetaAsDict } from '../lib'
+import { metaBuilder } from '../meta/builder'
 import { Meta, OpenGraphMeta, TwitterMeta } from '../models'
 
 const title = 'Death Valley Wilderness: Wilderness Light'
