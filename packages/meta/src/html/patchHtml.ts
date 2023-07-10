@@ -4,9 +4,6 @@ export const mergeDocumentHeads = (html1: string, html2: string) => {
   const $ = load(html1)
   const $2 = load(html2)
 
-  // This assumes that both HTML strings have a head tag.
-  // If that's not the case, you should adjust the code accordingly.
-
   // For each child node of the second head
   $2('head')
     .children()
