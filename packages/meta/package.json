@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-meta",
-  "version": "2.9.2",
+  "version": "2.10.0",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -25,37 +25,33 @@
     "typescript",
     "esm"
   ],
-  "browser": "dist/esm/index.js",
   "docs": "dist/docs.json",
   "exports": {
     ".": {
       "node": {
-        "import": "./dist/esm/index.js",
-        "require": "./dist/cjs/index.js"
+        "import": "./dist/node/index.js",
+        "require": "./dist/node/index.cjs"
       },
       "browser": {
-        "import": "./dist/esm/index.js",
-        "require": "./dist/cjs/index.js"
-      },
-      "default": "./dist/esm/index.js"
-    },
-    "./dist/docs.json": {
-      "default": "./dist/docs.json"
+        "import": "./dist/browser/index.js",
+        "require": "./dist/browser/index.cjs"
+      }
     },
     "./package.json": "./package.json"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "types": "dist/types/index.d.ts",
+  "main": "dist/node/index.cjs",
+  "module": "dist/node/index.js",
+  "types": "dist/node/index.d.ts",
   "license": "LGPL-3.0",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^2.18.7",
-    "@xylabs/tsconfig": "^2.18.7",
+    "@xylabs/ts-scripts-yarn3": "^3.0.80",
+    "@xylabs/tsconfig": "^3.0.80",
     "jest-serializer-html": "^7.1.0"
   },
   "sideEffects": false,
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.0",
+  "type": "module"
 }
