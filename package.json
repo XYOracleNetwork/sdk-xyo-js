@@ -69,7 +69,7 @@
   },
   "scripts": {
     "test": "yarn jest",
-    "build-typedoc-site": "typedoc --options typedoc.site.json"
+    "build-typedoc-site": "xy gen-docs @xyo-network/sdk-xyo-js"
   },
   "sideEffects": false,
   "type": "module"
