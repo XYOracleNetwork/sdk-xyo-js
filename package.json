@@ -68,7 +68,8 @@
     "postcss": "^8.4.31"
   },
   "scripts": {
-    "test": "yarn jest"
+    "test": "yarn jest",
+    "build-typedoc-site": "typedoc --options typedoc.site.json"
   },
   "sideEffects": false,
   "type": "module"
