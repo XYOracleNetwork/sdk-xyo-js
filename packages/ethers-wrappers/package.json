@@ -49,7 +49,7 @@
     "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
     "@xylabs/sdk-js": "^2.12.14",
-    "@xyo-network/typechain": "^2.2.0"
+    "@xyo-network/typechain": "^2.2.4"
   },
   "devDependencies": {
     "@xylabs/ts-scripts-yarn3": "^3.0.80",
