@@ -3299,9 +3299,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/eslint-config@npm:^3.0.82":
-  version: 3.0.82
-  resolution: "@xylabs/eslint-config@npm:3.0.82"
+"@xylabs/eslint-config@npm:^3.0.88":
+  version: 3.0.88
+  resolution: "@xylabs/eslint-config@npm:3.0.88"
   dependencies:
     "@babel/core": ^7.23.0
     "@babel/eslint-parser": ^7.22.15
@@ -3326,7 +3326,7 @@ __metadata:
     typescript: ^5.2.2
   peerDependencies:
     eslint: ^8.23.0
-  checksum: 5249ed29e4e6c5b0a75a3ae5ac277d23559dc115d0e90008d65f0028690d99a41bb23057d0f1b8b8b42a1ceae97a9b31c6f3b111235c6dc8ae0fc5e780d2e0fc
+  checksum: 3a7c58a1bc9fb4ff16601091ff855f9432a5f247bb0e72c4145e0f3a9288a48100f8baa55da1eefb3c7206114880955583c0ceaa7088688e82154e38f18c0db6
   languageName: node
   linkType: hard
 
@@ -3384,9 +3384,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/ts-scripts-yarn3@npm:^3.0.82":
-  version: 3.0.82
-  resolution: "@xylabs/ts-scripts-yarn3@npm:3.0.82"
+"@xylabs/ts-scripts-yarn3@npm:^3.0.88":
+  version: 3.0.88
+  resolution: "@xylabs/ts-scripts-yarn3@npm:3.0.88"
   dependencies:
     "@babel/core": ^7.23.0
     "@babel/preset-env": ^7.22.20
@@ -3397,7 +3397,7 @@ __metadata:
     "@types/yargs": ^17.0.26
     "@typescript-eslint/eslint-plugin": ^6.7.3
     "@typescript-eslint/parser": ^6.7.3
-    "@xylabs/tsconfig": ~3.0.82
+    "@xylabs/tsconfig": ~3.0.88
     chalk: ^4.1.2
     cosmiconfig: ^8.3.6
     cpy: ^8.1.2
@@ -3483,25 +3483,25 @@ __metadata:
     xy: dist/bin/xy.js
     xy-ts: src/bin/xy-ts.ts
     yarn3only: dist/bin/yarn3only.js
-  checksum: b0aa9c41c3636879abf569b8dbeff1419ab3db5be8afd7a01096129b885d3fd516b7ef4aefd43175d562a783bdaf2bbd5554e99a2937b9bf965ffd93cf862731
+  checksum: c7e2d58702ec88fc258ff4094a2849a9c8c54d5720ff608f98c526ccaf3560d28a47b876d936b92ed7554ec95e14e8f3a9a37863b9ba04680b05c4d80eee20c1
   languageName: node
   linkType: hard
 
-"@xylabs/tsconfig-jest@npm:^3.0.82":
-  version: 3.0.82
-  resolution: "@xylabs/tsconfig-jest@npm:3.0.82"
+"@xylabs/tsconfig-jest@npm:^3.0.88":
+  version: 3.0.88
+  resolution: "@xylabs/tsconfig-jest@npm:3.0.88"
   dependencies:
-    "@xylabs/tsconfig": ~3.0.82
+    "@xylabs/tsconfig": ~3.0.88
   peerDependencies:
     typescript: ^5
-  checksum: 9ff4ae08b06c505e59e7090a4c8c93131ec79adfa16f794ceab93c4ef089395f05d3ac1a879eb96755d08748d872f969cd869708097c8db4906d6c9a2512ee3b
+  checksum: 789720e3b7d1ceedc0828b7f66991250ba79db47da13bed896adcc83f0417ca906cd82cbd224531b74c00da14f4868ab662950b9f5a619696ddb35973cad4d1b
   languageName: node
   linkType: hard
 
-"@xylabs/tsconfig@npm:^3.0.82, @xylabs/tsconfig@npm:~3.0.82":
-  version: 3.0.82
-  resolution: "@xylabs/tsconfig@npm:3.0.82"
-  checksum: 2f7da05700fb92ad0f59de89546b73bc6913f10d2d90388ee9366197ce923b57901ae6ef5e90990fcad65dbf22699ffa6a42ec72863447292d4c6cd3e8b152e4
+"@xylabs/tsconfig@npm:^3.0.88, @xylabs/tsconfig@npm:~3.0.88":
+  version: 3.0.88
+  resolution: "@xylabs/tsconfig@npm:3.0.88"
+  checksum: 7a717a3f96ccc2560891c55a4987f2922ffb832cf59bb523359f2e4457ea1035abc8296e38c4ec4356f9bc3bd31b9926fb8b782b44c160ade5845a9a2ae2e625
   languageName: node
   linkType: hard
 
@@ -3513,8 +3513,8 @@ __metadata:
     "@ethersproject/bignumber": ^5.7.0
     "@ethersproject/providers": ^5.7.2
     "@xylabs/sdk-js": ^2.12.14
-    "@xylabs/ts-scripts-yarn3": ^3.0.82
-    "@xylabs/tsconfig": ^3.0.82
+    "@xylabs/ts-scripts-yarn3": ^3.0.88
+    "@xylabs/tsconfig": ^3.0.88
     "@xyo-network/typechain": ^2.2.4
     ethers: ^5.7.2
   languageName: unknown
@@ -3525,8 +3525,8 @@ __metadata:
   resolution: "@xyo-network/sdk-geo@workspace:packages/geo"
   dependencies:
     "@types/mapbox-gl": ^2.7.15
-    "@xylabs/ts-scripts-yarn3": ^3.0.82
-    "@xylabs/tsconfig": ^3.0.82
+    "@xylabs/ts-scripts-yarn3": ^3.0.88
+    "@xylabs/tsconfig": ^3.0.88
     geojson: ^0.5.0
     mapbox-gl: ^2.15.0
   languageName: unknown
@@ -3536,8 +3536,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@xyo-network/sdk-meta@workspace:packages/meta"
   dependencies:
-    "@xylabs/ts-scripts-yarn3": ^3.0.82
-    "@xylabs/tsconfig": ^3.0.82
+    "@xylabs/ts-scripts-yarn3": ^3.0.88
+    "@xylabs/tsconfig": ^3.0.88
     cheerio: ^1.0.0-rc.12
     jest-serializer-html: ^7.1.0
   languageName: unknown
@@ -3549,10 +3549,10 @@ __metadata:
   dependencies:
     "@types/jest": ^29.5.5
     "@types/mocha": ^10.0.2
-    "@xylabs/eslint-config": ^3.0.82
-    "@xylabs/ts-scripts-yarn3": ^3.0.82
-    "@xylabs/tsconfig": ^3.0.82
-    "@xylabs/tsconfig-jest": ^3.0.82
+    "@xylabs/eslint-config": ^3.0.88
+    "@xylabs/ts-scripts-yarn3": ^3.0.88
+    "@xylabs/tsconfig": ^3.0.88
+    "@xylabs/tsconfig-jest": ^3.0.88
     "@xyo-network/ethers-wrappers": "workspace:^"
     "@xyo-network/sdk-geo": "workspace:^"
     dotenv: ^16.3.1

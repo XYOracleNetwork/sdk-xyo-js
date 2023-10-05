@@ -52,8 +52,8 @@
     "@xyo-network/typechain": "^2.2.4"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^3.0.82",
-    "@xylabs/tsconfig": "^3.0.82",
+    "@xylabs/ts-scripts-yarn3": "^3.0.88",
+    "@xylabs/tsconfig": "^3.0.88",
     "ethers": "^5.7.2"
   },
   "sideEffects": false,
