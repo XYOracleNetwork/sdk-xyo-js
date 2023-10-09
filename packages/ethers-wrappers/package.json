@@ -48,7 +48,7 @@
     "@ethersproject/abstract-signer": "^5.7.0",
     "@ethersproject/bignumber": "^5.7.0",
     "@ethersproject/providers": "^5.7.2",
-    "@xylabs/sdk-js": "^2.12.14",
+    "@xylabs/sdk-js": "^2.12.20",
     "@xyo-network/typechain": "^2.2.4"
   },
   "devDependencies": {
