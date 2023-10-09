@@ -1,7 +1,7 @@
 import { Signer } from '@ethersproject/abstract-signer'
 import { BigNumber as EthersBigNumber } from '@ethersproject/bignumber'
 import { Provider } from '@ethersproject/providers'
-import { BigNumber } from '@xylabs/sdk-js'
+import { BigNumber } from '@xylabs/bignumber'
 
 export class XyoEthersWrapperBase {
   protected provider: Provider

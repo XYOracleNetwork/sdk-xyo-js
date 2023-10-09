@@ -1,6 +1,8 @@
 import { Signer } from '@ethersproject/abstract-signer'
 import { Provider } from '@ethersproject/providers'
-import { assertEx, BigNumber, EthAddress } from '@xylabs/sdk-js'
+import { assertEx } from '@xylabs/assert'
+import { BigNumber } from '@xylabs/bignumber'
+import { EthAddress } from '@xylabs/eth-address'
 import { BurnableErc20, BurnableErc20__factory as BurnableErc20Factory } from '@xyo-network/typechain'
 
 import { XyoEthersWrapperBase } from './EthersBase'
