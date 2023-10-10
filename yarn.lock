@@ -2295,25 +2295,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@xylabs/assert@npm:^2.12.23, @xylabs/assert@npm:~2.12.23":
-  version: 2.12.23
-  resolution: "@xylabs/assert@npm:2.12.23"
-  checksum: db274da2e316c5389450bf67adcd21184c5f70469246e3f9e28b2127861fcf00f1a867a0e6faf6180fdebd60967acc53b3a5ac6d1b599ecccab4c3cc42d7094d
+"@xylabs/assert@npm:^2.12.24, @xylabs/assert@npm:~2.12.24":
+  version: 2.12.24
+  resolution: "@xylabs/assert@npm:2.12.24"
+  checksum: b614be519c3cc3ecdbea6b8e37a8a451c0d5abcc54b6ef718f07e68ab0c2526375e54a5e16258c2bc3bb18a64bdbb279acb6dd045324b4655c3ba2769e43dfce
   languageName: node
   linkType: hard
 
-"@xylabs/bignumber@npm:^2.12.23, @xylabs/bignumber@npm:~2.12.23":
-  version: 2.12.23
-  resolution: "@xylabs/bignumber@npm:2.12.23"
+"@xylabs/bignumber@npm:^2.12.24, @xylabs/bignumber@npm:~2.12.24":
+  version: 2.12.24
+  resolution: "@xylabs/bignumber@npm:2.12.24"
   dependencies:
     bn.js: ^5.2.1
-  checksum: f14c8ee0c3c17369705ac2e31b6a1e5fee4905011ca453cfc88657fe99413865b61513a4eb5aa2fe91bf0a1dc18a9b7e963537d36227e8b3bba472afdd258dd9
+  checksum: 692d2b6b854afcbaacd970e4d3c80fdc6b9a3b7ca4e541028e6cc5a646cb131dfdc3b258f114cf421cddc2c03104c6728b4e2140dab4c2b22446fb0fc8908118
   languageName: node
   linkType: hard
 
-"@xylabs/eslint-config@npm:^3.1.3":
-  version: 3.1.3
-  resolution: "@xylabs/eslint-config@npm:3.1.3"
+"@xylabs/eslint-config@npm:^3.1.9":
+  version: 3.1.9
+  resolution: "@xylabs/eslint-config@npm:3.1.9"
   dependencies:
     "@typescript-eslint/eslint-plugin": ^6.7.3
     "@typescript-eslint/parser": ^6.7.3
@@ -2336,23 +2336,23 @@ __metadata:
     typescript: ^5.2.2
   peerDependencies:
     eslint: ^8.23.0
-  checksum: fae2f3e15c1b5387b10a3d107cf2b5733ca2c2a6662d743050417c24fb63e2c2d4151997359f37839605c2dda3e66473e4801de68649f2e2f427e2cf97e64d11
+  checksum: 7a7f402a0cb151f7308592870721b24aff7526c29189594f886231374d950abee3e81f1eeefb036e4bd8f6b5793088a6b9d703930a1f28338fabc03efd4b65db
   languageName: node
   linkType: hard
 
-"@xylabs/eth-address@npm:^2.12.23":
-  version: 2.12.23
-  resolution: "@xylabs/eth-address@npm:2.12.23"
+"@xylabs/eth-address@npm:^2.12.24":
+  version: 2.12.24
+  resolution: "@xylabs/eth-address@npm:2.12.24"
   dependencies:
-    "@xylabs/assert": ~2.12.23
-    "@xylabs/bignumber": ~2.12.23
-  checksum: 551fe853e12d0c92a25d450789df5474267104cd99dfccc865832d6b4a201efc267631a0642ce759fa1e3c4d4983f75e78ce9a4a2e66eaeb5e1b04636dfd3981
+    "@xylabs/assert": ~2.12.24
+    "@xylabs/bignumber": ~2.12.24
+  checksum: 1634e4ce3d2b6cd1d61c2fb2d2dc23236388869a96c850ee84778759f73acbc97b589c6ae2142bf7cc4eadc50e20babb71b737a417633c7b803fa8aa4f49fe9e
   languageName: node
   linkType: hard
 
-"@xylabs/ts-scripts-yarn3@npm:^3.1.3":
-  version: 3.1.3
-  resolution: "@xylabs/ts-scripts-yarn3@npm:3.1.3"
+"@xylabs/ts-scripts-yarn3@npm:^3.1.9":
+  version: 3.1.9
+  resolution: "@xylabs/ts-scripts-yarn3@npm:3.1.9"
   dependencies:
     "@rollup/plugin-commonjs": ^25.0.4
     "@rollup/plugin-json": ^6.0.0
@@ -2361,7 +2361,7 @@ __metadata:
     "@types/yargs": ^17.0.26
     "@typescript-eslint/eslint-plugin": ^6.7.3
     "@typescript-eslint/parser": ^6.7.3
-    "@xylabs/tsconfig": ~3.1.3
+    "@xylabs/tsconfig": ~3.1.9
     chalk: ^4.1.2
     cosmiconfig: ^8.3.6
     cpy: ^8.1.2
@@ -2447,27 +2447,27 @@ __metadata:
     xy: dist/bin/xy.js
     xy-ts: src/bin/xy-ts.ts
     yarn3only: dist/bin/yarn3only.js
-  checksum: e51bb5e29f8b8b62270d157a334918010f83a2ab4a9a140a6c0a416ab8d1a9de6f782dfc2d0e00c96fabc601d2d7a2f9344f40acf289c014c6c00283bbfe5055
+  checksum: 2bb1beb1bdd1be1243747c61c1324eae569a9754a642edbf8c90bedf34b1d40f1c9f85609c75b41ecef315eda0aa0a44bd8d165478de0705840dbe7d8e40a8c4
   languageName: node
   linkType: hard
 
-"@xylabs/tsconfig-jest@npm:^3.1.3":
-  version: 3.1.3
-  resolution: "@xylabs/tsconfig-jest@npm:3.1.3"
+"@xylabs/tsconfig-jest@npm:^3.1.9":
+  version: 3.1.9
+  resolution: "@xylabs/tsconfig-jest@npm:3.1.9"
   dependencies:
-    "@xylabs/tsconfig": ~3.1.3
+    "@xylabs/tsconfig": ~3.1.9
     jest-extended: ^4.0.1
     jest-sorted: ^1.0.14
   peerDependencies:
     typescript: ^5
-  checksum: 3ee981d84b19544845b9d4278fa843303e1256e1d4a2711935498912d476b5207b872bd1d3f5f22d2768583b74859f8c5726dafbbc3df994ed1815ec6da158e6
+  checksum: 339883caf740ce7c3d694d819ca71e02bdc70aa070daca12beb6b73ace520db7d7b7bfeff64e977f7f04b80ecc2892fb06d3160ac642de3c6ed4fb90e977fc30
   languageName: node
   linkType: hard
 
-"@xylabs/tsconfig@npm:^3.1.3, @xylabs/tsconfig@npm:~3.1.3":
-  version: 3.1.3
-  resolution: "@xylabs/tsconfig@npm:3.1.3"
-  checksum: 7b1ecfba1726ba21cf7efa56c2d4be97aee7125ced2e8c78e85e78794f70afb43c5556847cccb2c7353976504c5842f367521fbcf41eaf8e10fda1572a07424e
+"@xylabs/tsconfig@npm:^3.1.9, @xylabs/tsconfig@npm:~3.1.9":
+  version: 3.1.9
+  resolution: "@xylabs/tsconfig@npm:3.1.9"
+  checksum: b85349b901a5986833ea9f30e580a2ae828a3e9a7282306c72438ef1a6a222ad46ac562eb5cb1e1a889c6b7ac6463b6ba15b3065cb3e5e9f9996e8429471dad7
   languageName: node
   linkType: hard
 
@@ -2478,13 +2478,14 @@ __metadata:
     "@ethersproject/abstract-signer": ^5.7.0
     "@ethersproject/bignumber": ^5.7.0
     "@ethersproject/providers": ^5.7.2
-    "@xylabs/assert": ^2.12.23
-    "@xylabs/bignumber": ^2.12.23
-    "@xylabs/eth-address": ^2.12.23
-    "@xylabs/ts-scripts-yarn3": ^3.1.3
-    "@xylabs/tsconfig": ^3.1.3
+    "@xylabs/assert": ^2.12.24
+    "@xylabs/bignumber": ^2.12.24
+    "@xylabs/eth-address": ^2.12.24
+    "@xylabs/ts-scripts-yarn3": ^3.1.9
+    "@xylabs/tsconfig": ^3.1.9
     "@xyo-network/typechain": ^2.2.9
     ethers: ^5.7.2
+    typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -2493,10 +2494,11 @@ __metadata:
   resolution: "@xyo-network/sdk-geo@workspace:packages/geo"
   dependencies:
     "@types/mapbox-gl": ^2.7.15
-    "@xylabs/ts-scripts-yarn3": ^3.1.3
-    "@xylabs/tsconfig": ^3.1.3
+    "@xylabs/ts-scripts-yarn3": ^3.1.9
+    "@xylabs/tsconfig": ^3.1.9
     geojson: ^0.5.0
     mapbox-gl: ^2.15.0
+    typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -2504,10 +2506,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@xyo-network/sdk-meta@workspace:packages/meta"
   dependencies:
-    "@xylabs/ts-scripts-yarn3": ^3.1.3
-    "@xylabs/tsconfig": ^3.1.3
+    "@xylabs/ts-scripts-yarn3": ^3.1.9
+    "@xylabs/tsconfig": ^3.1.9
     cheerio: ^1.0.0-rc.12
     jest-serializer-html: ^7.1.0
+    typescript: ^5.2.2
   languageName: unknown
   linkType: soft
 
@@ -2517,10 +2520,10 @@ __metadata:
   dependencies:
     "@types/jest": ^29.5.5
     "@types/mocha": ^10.0.2
-    "@xylabs/eslint-config": ^3.1.3
-    "@xylabs/ts-scripts-yarn3": ^3.1.3
-    "@xylabs/tsconfig": ^3.1.3
-    "@xylabs/tsconfig-jest": ^3.1.3
+    "@xylabs/eslint-config": ^3.1.9
+    "@xylabs/ts-scripts-yarn3": ^3.1.9
+    "@xylabs/tsconfig": ^3.1.9
+    "@xylabs/tsconfig-jest": ^3.1.9
     "@xyo-network/ethers-wrappers": "workspace:^"
     "@xyo-network/sdk-geo": "workspace:^"
     dotenv: ^16.3.1
