@@ -49,7 +49,7 @@
   ],
   "dependencies": {
     "@xyo-network/ethers-wrappers": "workspace:^",
-    "@xyo-network/sdk-geo": "workspace:^"
+    "@xyo-network/sdk-geo": "2.6.10"
   },
   "devDependencies": {
     "@types/jest": "^29.5.5",
