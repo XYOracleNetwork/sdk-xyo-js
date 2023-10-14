@@ -42,7 +42,7 @@
   "main": "dist/node/index.cjs",
   "module": "dist/node/index.js",
   "types": "dist/node/index.d.ts",
-  "license": "LGPL-3.0",
+  "license": "LGPL-3.0-only",
   "packageManager": "yarn@3.5.1",
   "workspaces": [
     "packages/*"
