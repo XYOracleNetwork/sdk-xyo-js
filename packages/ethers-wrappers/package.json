@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/ethers-wrappers",
-  "version": "2.10.1",
+  "version": "2.11.0",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -45,18 +45,16 @@
   "types": "dist/node/index.d.ts",
   "license": "LGPL-3.0-only",
   "dependencies": {
-    "@ethersproject/abstract-signer": "^5.7.0",
-    "@ethersproject/bignumber": "^5.7.0",
-    "@ethersproject/providers": "^5.7.2",
-    "@xylabs/assert": "^2.12.24",
-    "@xylabs/bignumber": "^2.12.24",
-    "@xylabs/eth-address": "^2.12.24",
-    "@xyo-network/typechain": "^2.2.9"
+    "@xylabs/assert": "^2.13.9",
+    "@xylabs/bignumber": "^2.13.9",
+    "@xylabs/eth-address": "^2.13.9",
+    "@xyo-network/typechain": "^3.0.0",
+    "ethers": "^6.8.1"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^3.1.9",
-    "@xylabs/tsconfig": "^3.1.9",
-    "ethers": "^5.7.2",
+    "@xylabs/ts-scripts-yarn3": "^3.2.2",
+    "@xylabs/tsconfig": "^3.2.2",
+    "ethers": "^6.8.1",
     "typescript": "^5.2.2"
   },
   "sideEffects": false,

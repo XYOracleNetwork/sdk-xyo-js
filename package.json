@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
-  "version": "2.10.1",
+  "version": "2.11.0",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -48,18 +48,18 @@
     "packages/*"
   ],
   "dependencies": {
-    "@xyo-network/ethers-wrappers": "workspace:^",
-    "@xyo-network/sdk-geo": "workspace:^"
+    "@xyo-network/ethers-wrappers": "workspace:~",
+    "@xyo-network/sdk-geo": "workspace:~"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.5",
-    "@types/mocha": "^10.0.2",
-    "@xylabs/eslint-config": "^3.1.9",
-    "@xylabs/ts-scripts-yarn3": "^3.1.9",
-    "@xylabs/tsconfig": "^3.1.9",
-    "@xylabs/tsconfig-jest": "^3.1.9",
+    "@types/jest": "^29.5.8",
+    "@types/mocha": "^10.0.4",
+    "@xylabs/eslint-config": "^3.2.2",
+    "@xylabs/ts-scripts-yarn3": "^3.2.2",
+    "@xylabs/tsconfig": "^3.2.2",
+    "@xylabs/tsconfig-jest": "^3.2.2",
     "dotenv": "^16.3.1",
-    "eslint": "^8.51.0",
+    "eslint": "^8.54.0",
     "jest": "^29.7.0",
     "typescript": "^5.2.2"
   },

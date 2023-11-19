@@ -1,9 +1,8 @@
-import { Signer } from '@ethersproject/abstract-signer'
-import { Provider } from '@ethersproject/providers'
 import { assertEx } from '@xylabs/assert'
 import { BigNumber } from '@xylabs/bignumber'
 import { EthAddress } from '@xylabs/eth-address'
 import { BurnableErc20, BurnableErc20__factory as BurnableErc20Factory } from '@xyo-network/typechain'
+import { Provider, Signer } from 'ethers'
 
 import { XyoEthersWrapperBase } from './EthersBase'
 
@@ -19,8 +18,8 @@ export class XyoErc20Wrapper extends XyoEthersWrapperBase {
     return await this.contract.approve(spender.toString(), amount.toString(10))
   }
 
-  public getAddress() {
-    return assertEx(EthAddress.fromString(this.contract.address))
+  public async getAddress() {
+    return assertEx(EthAddress.fromString(await this.contract.getAddress()))
   }
 
   public async getAllowance(spender: EthAddress, address: EthAddress) {
