@@ -6,6 +6,7 @@ import { Provider, Signer } from 'ethers'
 
 import { XyoEthersWrapperBase } from './EthersBase'
 
+/** @deprecated use @xyo-network/typechain instead*/
 export class XyoErc20Wrapper extends XyoEthersWrapperBase {
   public contract: BurnableErc20
 

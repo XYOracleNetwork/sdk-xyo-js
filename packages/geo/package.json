@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-geo",
-  "version": "2.11.0",
+  "version": "2.11.1",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -49,9 +49,9 @@
   },
   "devDependencies": {
     "@types/mapbox-gl": "^2.7.18",
-    "@xylabs/ts-scripts-yarn3": "^3.2.2",
-    "@xylabs/tsconfig": "^3.2.2",
-    "typescript": "^5.2.2"
+    "@xylabs/ts-scripts-yarn3": "^3.2.7",
+    "@xylabs/tsconfig": "^3.2.7",
+    "typescript": "^5.3.2"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0",
