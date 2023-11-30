@@ -1,5 +1,4 @@
 import { assertEx } from '@xylabs/assert'
-import { BigNumber } from '@xylabs/bignumber'
 import { EthAddress } from '@xylabs/eth-address'
 import { BurnableErc20, BurnableErc20__factory as BurnableErc20Factory } from '@xyo-network/typechain'
 import { Provider, Signer } from 'ethers'
@@ -15,8 +14,8 @@ export class XyoErc20Wrapper extends XyoEthersWrapperBase {
     this.contract = BurnableErc20Factory.connect(address.toString(), this.signer ?? this.provider)
   }
 
-  public async approve(spender: EthAddress, amount: BigNumber) {
-    return await this.contract.approve(spender.toString(), amount.toString(10))
+  public async approve(spender: EthAddress, amount: bigint) {
+    return await this.contract.approve(spender.toString(), amount)
   }
 
   public async getAddress() {
@@ -28,10 +27,10 @@ export class XyoErc20Wrapper extends XyoEthersWrapperBase {
   }
 
   public async getBalance(address: EthAddress) {
-    return new BigNumber((await this.contract.balanceOf(address.toString())).toString())
+    return await this.contract.balanceOf(address.toString())
   }
 
   public async getMaxBalance(address: EthAddress) {
-    return new BigNumber((await this.contract.balanceOf(address.toString())).toString())
+    return await this.contract.balanceOf(address.toString())
   }
 }

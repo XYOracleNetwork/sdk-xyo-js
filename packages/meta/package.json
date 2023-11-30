@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-meta",
-  "version": "2.11.1",
+  "version": "2.11.2",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -47,8 +47,8 @@
     "cheerio": "^1.0.0-rc.12"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^3.2.7",
-    "@xylabs/tsconfig": "^3.2.7",
+    "@xylabs/ts-scripts-yarn3": "^3.2.10",
+    "@xylabs/tsconfig": "^3.2.10",
     "jest-serializer-html": "^7.1.0",
     "typescript": "^5.3.2"
   },
