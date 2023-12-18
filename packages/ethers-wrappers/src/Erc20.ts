@@ -7,30 +7,30 @@ import { XyoEthersWrapperBase } from './EthersBase'
 
 /** @deprecated use @xyo-network/typechain instead*/
 export class XyoErc20Wrapper extends XyoEthersWrapperBase {
-  public contract: BurnableErc20
+  contract: BurnableErc20
 
   constructor(address: EthAddress, provider: Provider, signer?: Signer) {
     super(provider, signer)
     this.contract = BurnableErc20Factory.connect(address.toString(), this.signer ?? this.provider)
   }
 
-  public async approve(spender: EthAddress, amount: bigint) {
+  async approve(spender: EthAddress, amount: bigint) {
     return await this.contract.approve(spender.toString(), amount)
   }
 
-  public async getAddress() {
+  async getAddress() {
     return assertEx(EthAddress.fromString(await this.contract.getAddress()))
   }
 
-  public async getAllowance(spender: EthAddress, address: EthAddress) {
+  async getAllowance(spender: EthAddress, address: EthAddress) {
     return await this.contract.allowance(address.toString(), spender.toString())
   }
 
-  public async getBalance(address: EthAddress) {
+  async getBalance(address: EthAddress) {
     return await this.contract.balanceOf(address.toString())
   }
 
-  public async getMaxBalance(address: EthAddress) {
+  async getMaxBalance(address: EthAddress) {
     return await this.contract.balanceOf(address.toString())
   }
 }

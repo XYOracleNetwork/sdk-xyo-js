@@ -1,3 +1,1 @@
-import { tilesFromBoundingBox } from './boundingbox'
-
-export { tilesFromBoundingBox }
+export { tilesFromBoundingBox } from './boundingbox'

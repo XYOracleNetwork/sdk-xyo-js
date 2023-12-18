@@ -2,8 +2,8 @@
 import { AnyLayer, Map } from 'mapbox-gl'
 
 export abstract class LayerBase<T extends AnyLayer> {
-  public id: string
-  public source: string
+  id: string
+  source: string
 
   constructor(id: string, source: string) {
     this.id = id

@@ -2,8 +2,8 @@ import { MercatorTile } from '../types'
 import { tilesEqual } from './equal'
 
 const tilesHasTile = (tiles: MercatorTile[], tile: MercatorTile) => {
-  for (let i = 0; i < tiles.length; i++) {
-    if (tilesEqual(tiles[i], tile)) return true
+  for (const tileToCheck of tiles) {
+    if (tilesEqual(tileToCheck, tile)) return true
   }
   return false
 }

@@ -25,7 +25,7 @@ const addMetaToHead = ($: CheerioAPI, name: string, value: string | object) => {
       }
     })
   } else {
-    throw Error(`Invalid item type [${name}, ${typeof value}]`)
+    throw new TypeError(`Invalid item type [${name}, ${typeof value}]`)
   }
 }
 
@@ -35,9 +35,9 @@ export const metaBuilder = (html: string, meta: Meta) => {
   // which is generally the case, but not always (you can have
   // multiple og:video:tag tags, for example)
   const metaProperties = getMetaAsDict(meta)
-  Object.entries(metaProperties).forEach(([key, value]) => {
+  for (const [key, value] of Object.entries(metaProperties)) {
     if (value) addMetaToHead($, key, value)
-  })
+  }
   if (meta.description) {
     addMetaToHead($, 'description', meta.description)
   }

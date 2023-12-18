@@ -16,21 +16,21 @@ class GeoJson {
     this.quadkey = quadkey
   }
 
-  public static featureCollection(features: Feature[]): FeatureCollection {
+  static featureCollection(features: Feature[]): FeatureCollection {
     return {
       features,
       type: 'FeatureCollection',
     }
   }
 
-  public static featuresSource(data: FeatureCollection): GeoJSONSourceRaw {
+  static featuresSource(data: FeatureCollection): GeoJSONSourceRaw {
     return {
       data,
       type: 'geojson',
     }
   }
 
-  public static geometryFeature(geometry: Geometry): Feature {
+  static geometryFeature(geometry: Geometry): Feature {
     return {
       geometry,
       properties: {},
@@ -38,7 +38,7 @@ class GeoJson {
     }
   }
 
-  public center(): LngLat {
+  center(): LngLat {
     if (!this._lngLat) {
       const tile = tileFromQuadkey(this.quadkey)
       const bb = tileToBoundingBox(tile)
@@ -48,7 +48,7 @@ class GeoJson {
     return this._lngLat
   }
 
-  public point(): Point {
+  point(): Point {
     if (!this._point) {
       this._point = {
         coordinates: this.center().toArray(),
@@ -58,41 +58,41 @@ class GeoJson {
     return this._point
   }
 
-  public pointFeature(): Feature {
+  pointFeature(): Feature {
     return GeoJson.geometryFeature(this.point())
   }
 
-  public pointFeatureCollection(): FeatureCollection {
+  pointFeatureCollection(): FeatureCollection {
     return GeoJson.featureCollection([this.pointFeature()])
   }
 
-  public pointSource(): GeoJSONSourceRaw {
+  pointSource(): GeoJSONSourceRaw {
     return {
       data: this.pointFeatureCollection(),
       type: 'geojson',
     }
   }
 
-  public polygon(): Polygon {
+  polygon(): Polygon {
     if (!this._polygon) {
       this._polygon = boundingBoxToPolygon(tileToBoundingBox(tileFromQuadkey(this.quadkey))) as Polygon
     }
     return this._polygon
   }
 
-  public polygonFeature(): Feature {
+  polygonFeature(): Feature {
     return GeoJson.geometryFeature(this.polygon())
   }
 
-  public polygonFeatureCollection(): FeatureCollection {
+  polygonFeatureCollection(): FeatureCollection {
     return GeoJson.featureCollection([this.polygonFeature()])
   }
 
-  public polygonSource(): GeoJSONSourceRaw {
+  polygonSource(): GeoJSONSourceRaw {
     return GeoJson.featuresSource(this.polygonFeatureCollection())
   }
 
-  public zoom(): number {
+  zoom(): number {
     this._zoom = this._zoom ?? tileFromQuadkey(this.quadkey)[2]
     return this._zoom
   }

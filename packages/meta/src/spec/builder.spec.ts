@@ -1,5 +1,5 @@
-import { readFile } from 'fs/promises'
-import { join } from 'path'
+import { readFile } from 'node:fs/promises'
+import { join } from 'node:path'
 
 import { getMetaAsDict } from '../lib'
 import { metaBuilder } from '../meta'
@@ -77,7 +77,7 @@ describe('builder', () => {
     let html: string
     beforeAll(async () => {
       const template = join(__dirname, 'template.html')
-      html = await readFile(template, { encoding: 'utf-8' })
+      html = await readFile(template, { encoding: 'utf8' })
     })
     const cases: [title: string, meta: Meta][] = [
       ['Open Graph (OG)', { ...meta, og }],
@@ -88,9 +88,9 @@ describe('builder', () => {
       expect(output).toContain(meta.description)
       expect(output).toContain(`<title>${meta.title}</title>`)
       const metaProperties = getMetaAsDict(meta)
-      Object.entries(metaProperties).forEach(([property, content]) => {
+      for (const [property, content] of Object.entries(metaProperties)) {
         expect(output).toContain(`<meta property="${property}" content="${content}">`)
-      })
+      }
       expect(output).toMatchSnapshot()
     })
   })
@@ -119,14 +119,14 @@ describe('builder', () => {
       },
     }
     const properties = ['og:image', 'twitter:image']
-    properties.forEach((property) => {
+    for (const property of properties) {
       expect(html).toContain(`<meta property="${property}" content="${oldImage}">`)
-    })
+    }
     const output = metaBuilder(html, meta)
-    properties.forEach((property) => {
+    for (const property of properties) {
       expect(output).not.toContain(`<meta property="${property}" content="${oldImage}">`)
       expect(output).toContain(`<meta property="${property}" content="${newImage}">`)
-    })
+    }
     expect(output).toMatchSnapshot()
   })
 })

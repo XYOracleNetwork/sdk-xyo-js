@@ -1,4 +1,2 @@
-import { tileFromPoint } from './point'
-import { tileFromQuadkey } from './quadkey'
-
-export { tileFromPoint, tileFromQuadkey }
+export { tileFromPoint } from './point'
+export { tileFromQuadkey } from './quadkey'

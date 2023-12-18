@@ -1,9 +1,7 @@
-import { tileToBoundingBox } from './boundingbox'
-import { tileToChildren } from './children'
-import { tileToGeoJson } from './geoJson'
-import { tileToParent } from './parent'
-import { tileToPoint } from './point'
-import { tileToQuadkey } from './quadkey'
-import { tileToSiblings } from './siblings'
-
-export { tileToBoundingBox, tileToChildren, tileToGeoJson, tileToParent, tileToPoint, tileToQuadkey, tileToSiblings }
+export { tileToBoundingBox } from './boundingbox'
+export { tileToChildren } from './children'
+export { tileToGeoJson } from './geoJson'
+export { tileToParent } from './parent'
+export { tileToPoint } from './point'
+export { tileToQuadkey } from './quadkey'
+export { tileToSiblings } from './siblings'

@@ -1,6 +1,3 @@
-import { tilesEqual } from './equal'
-import { tilesHasTile } from './hasTile'
-
+export { tilesEqual } from './equal'
 export * from './from'
-
-export { tilesEqual, tilesHasTile }
+export { tilesHasTile } from './hasTile'

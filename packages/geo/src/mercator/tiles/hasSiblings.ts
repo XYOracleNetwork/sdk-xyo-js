@@ -4,8 +4,8 @@ import { tilesHasTile } from './hasTile'
 
 const hasSiblings = (tiles: MercatorTile[], tile: MercatorTile) => {
   const siblings = tileToSiblings(tile)
-  for (let i = 0; i < siblings.length; i++) {
-    if (!tilesHasTile(tiles, siblings[i])) return false
+  for (const sibling of siblings) {
+    if (!tilesHasTile(tiles, sibling)) return false
   }
   return true
 }
