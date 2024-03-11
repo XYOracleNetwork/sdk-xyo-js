@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "typeRoots": []
   },
+  "exclude": ["./node_modules", "./**/node_modules", "./dist", "./**/dist", "./**/docs", ".*"],
   "extends": "@xylabs/tsconfig"
 }

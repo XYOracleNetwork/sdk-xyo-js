@@ -43,7 +43,7 @@
   "module": "dist/node/index.js",
   "types": "dist/node/index.d.ts",
   "license": "LGPL-3.0-only",
-  "packageManager": "yarn@3.5.1",
+  "packageManager": "yarn@4.1.1",
   "workspaces": [
     "packages/*"
   ],
@@ -52,17 +52,17 @@
     "@xyo-network/sdk-geo": "workspace:~"
   },
   "devDependencies": {
-    "@types/jest": "^29.5.11",
+    "@types/jest": "^29.5.12",
     "@types/mocha": "^10.0.6",
-    "@xylabs/eslint-config": "^3.2.24",
-    "@xylabs/ts-scripts-yarn3": "^3.2.24",
-    "@xylabs/tsconfig": "^3.2.24",
-    "@xylabs/tsconfig-jest": "^3.2.24",
-    "dotenv": "^16.3.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-unicorn": "^49.0.0",
+    "@xylabs/eslint-config": "^3.5.2",
+    "@xylabs/ts-scripts-yarn3": "^3.5.2",
+    "@xylabs/tsconfig": "^3.5.2",
+    "@xylabs/tsconfig-jest": "^3.5.2",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "eslint-plugin-unicorn": "^51.0.1",
     "jest": "^29.7.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "scripts": {
     "test": "yarn jest",

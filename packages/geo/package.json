@@ -45,13 +45,13 @@
   "license": "LGPL-3.0-only",
   "dependencies": {
     "geojson": "^0.5.0",
-    "mapbox-gl": "^3.0.1"
+    "mapbox-gl": "^3.2.0"
   },
   "devDependencies": {
-    "@types/mapbox-gl": "^2.7.19",
-    "@xylabs/ts-scripts-yarn3": "^3.2.24",
-    "@xylabs/tsconfig": "^3.2.24",
-    "typescript": "^5.3.3"
+    "@types/mapbox-gl": "^2.7.21",
+    "@xylabs/ts-scripts-yarn3": "^3.5.2",
+    "@xylabs/tsconfig": "^3.5.2",
+    "typescript": "^5.4.2"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0",
