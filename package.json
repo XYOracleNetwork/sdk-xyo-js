@@ -48,7 +48,7 @@
     "packages/*"
   ],
   "dependencies": {
-    "@xyo-network/ethers-wrappers": "workspace:~",
+    "@xyo-network/ethers-wrappers": "2.6.17",
     "@xyo-network/sdk-geo": "workspace:~"
   },
   "devDependencies": {
