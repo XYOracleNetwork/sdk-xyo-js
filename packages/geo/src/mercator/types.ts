@@ -2,9 +2,9 @@
 import { LngLat, LngLatBounds } from 'mapbox-gl'
 
 type MercatorTile = number[]
-type MercatorBoundry = MercatorLngLat[]
+type MercatorBoundary = MercatorLngLat[]
 class MercatorBoundingBox extends LngLatBounds {}
 class MercatorLngLat extends LngLat {}
 
 export { MercatorBoundingBox, MercatorLngLat }
-export type { MercatorBoundry, MercatorTile }
+export type { MercatorBoundary, MercatorTile }

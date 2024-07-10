@@ -43,26 +43,29 @@
   "module": "dist/node/index.js",
   "types": "dist/node/index.d.ts",
   "license": "LGPL-3.0-only",
-  "packageManager": "yarn@4.1.1",
+  "packageManager": "yarn@4.3.1",
   "workspaces": [
     "packages/*"
   ],
   "dependencies": {
-    "@xyo-network/ethers-wrappers": "workspace:~",
-    "@xyo-network/sdk-geo": "workspace:~"
+    "@xyo-network/ethers-wrappers": "workspace:^",
+    "@xyo-network/sdk-geo": "workspace:^"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
-    "@types/mocha": "^10.0.6",
-    "@xylabs/eslint-config": "^3.5.2",
-    "@xylabs/ts-scripts-yarn3": "^3.5.2",
-    "@xylabs/tsconfig": "^3.5.2",
-    "@xylabs/tsconfig-jest": "^3.5.2",
+    "@types/mocha": "^10.0.7",
+    "@xylabs/eslint-config": "^3.11.12",
+    "@xylabs/ts-scripts-yarn3": "^3.11.12",
+    "@xylabs/tsconfig": "^3.11.12",
+    "@xylabs/tsconfig-jest": "^3.11.12",
     "dotenv": "^16.4.5",
-    "eslint": "^8.57.0",
-    "eslint-plugin-unicorn": "^51.0.1",
+    "eslint": "^9.6.0",
+    "eslint-plugin-unicorn": "^54.0.0",
     "jest": "^29.7.0",
-    "typescript": "^5.4.2"
+    "typescript": "^5.5.3"
+  },
+  "resolutions": {
+    "mapbox-gl": "~3.2"
   },
   "scripts": {
     "test": "yarn jest",

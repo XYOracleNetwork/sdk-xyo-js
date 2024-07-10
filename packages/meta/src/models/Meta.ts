@@ -1,5 +1,5 @@
-import { OpenGraphMeta } from './OpenGraph'
-import { TwitterMeta } from './Twitter'
+import { OpenGraphMeta } from './OpenGraph/index.js'
+import { TwitterMeta } from './Twitter/index.js'
 
 export interface Meta {
   description?: string

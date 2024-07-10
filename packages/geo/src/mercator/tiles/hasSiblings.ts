@@ -1,6 +1,6 @@
-import { tileToSiblings } from '../tile'
-import { MercatorTile } from '../types'
-import { tilesHasTile } from './hasTile'
+import { tileToSiblings } from '../tile/index.js'
+import { MercatorTile } from '../types.js'
+import { tilesHasTile } from './hasTile.js'
 
 const hasSiblings = (tiles: MercatorTile[], tile: MercatorTile) => {
   const siblings = tileToSiblings(tile)

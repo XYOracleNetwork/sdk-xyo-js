@@ -1,4 +1,4 @@
-import { OpenGraphStructuredProperty } from './OpenGraphStructuredProperty'
+import { OpenGraphStructuredProperty } from './OpenGraphStructuredProperty.js'
 
 // TODO: There is slightly different fields for video/image/audio and we should create
 // separate interfaces for each

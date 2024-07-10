@@ -1,3 +1,3 @@
-export { tilesEqual } from './equal'
-export * from './from'
-export { tilesHasTile } from './hasTile'
+export { tilesEqual } from './equal.js'
+export * from './from/index.js'
+export { tilesHasTile } from './hasTile.js'

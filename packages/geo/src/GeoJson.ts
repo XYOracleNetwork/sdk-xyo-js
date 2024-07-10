@@ -2,7 +2,7 @@ import { Feature, FeatureCollection, Geometry, Point, Polygon } from 'geojson'
 // eslint-disable-next-line no-restricted-imports
 import { GeoJSONSourceRaw, LngLat } from 'mapbox-gl'
 
-import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator'
+import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator/index.js'
 
 class GeoJson {
   private _lngLat?: LngLat

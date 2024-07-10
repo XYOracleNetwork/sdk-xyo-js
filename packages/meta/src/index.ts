@@ -1,3 +1,3 @@
-export * from './html'
-export * from './meta'
-export * from './models'
+export * from './html/index.js'
+export * from './meta/index.js'
+export * from './models/index.js'

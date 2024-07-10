@@ -1,7 +1,7 @@
 import { CheerioAPI, load } from 'cheerio'
 
-import { getMetaAsDict } from '../lib'
-import { Meta } from '../models'
+import { getMetaAsDict } from '../lib/index.js'
+import { Meta } from '../models/index.js'
 
 /* test change */
 

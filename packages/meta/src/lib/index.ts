@@ -1,1 +1,1 @@
-export * from './getMetaAsDict'
+export * from './getMetaAsDict.js'

@@ -1,2 +1,2 @@
-export { tileFromPoint } from './point'
-export { tileFromQuadkey } from './quadkey'
+export { tileFromPoint } from './point.js'
+export { tileFromQuadkey } from './quadkey.js'

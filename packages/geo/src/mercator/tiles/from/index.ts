@@ -1,1 +1,1 @@
-export { tilesFromBoundingBox } from './boundingbox'
+export { tilesFromBoundingBox } from './boundingbox.js'

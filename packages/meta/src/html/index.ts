@@ -1,1 +1,1 @@
-export * from './mergeDocumentHead'
+export * from './mergeDocumentHead.js'

@@ -1,3 +1,3 @@
-export * from './Twitter'
-export * from './TwitterApp'
-export * from './TwitterPlayer'
+export * from './Twitter.js'
+export * from './TwitterApp.js'
+export * from './TwitterPlayer.js'
