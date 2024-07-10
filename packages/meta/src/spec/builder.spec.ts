@@ -1,5 +1,5 @@
 import { readFile } from 'node:fs/promises'
-import { join } from 'node:path'
+import Path from 'node:path'
 
 import { getMetaAsDict } from '../lib'
 import { metaBuilder } from '../meta'
@@ -76,7 +76,7 @@ describe('builder', () => {
   describe('Adds meta', () => {
     let html: string
     beforeAll(async () => {
-      const template = join(__dirname, 'template.html')
+      const template = Path.join(__dirname, 'template.html')
       html = await readFile(template, { encoding: 'utf8' })
     })
     const cases: [title: string, meta: Meta][] = [

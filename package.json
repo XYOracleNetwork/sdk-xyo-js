@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
-  "version": "2.11.3",
+  "version": "2.11.4",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -65,6 +65,7 @@
     "typescript": "^5.5.3"
   },
   "resolutions": {
+    "eslint": "^8",
     "mapbox-gl": "~3.2"
   },
   "scripts": {
