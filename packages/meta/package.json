@@ -47,8 +47,8 @@
     "cheerio": "^1.0.0-rc.12"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^3.11.12",
-    "@xylabs/tsconfig": "^3.11.12",
+    "@xylabs/ts-scripts-yarn3": "^3.12.2",
+    "@xylabs/tsconfig": "^3.12.2",
     "jest-serializer-html": "^7.1.0",
     "typescript": "^5.5.3"
   },
