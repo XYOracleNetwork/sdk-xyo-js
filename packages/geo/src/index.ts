@@ -1,3 +1,3 @@
-export * from './GeoJson.js'
-export * from './LayerBase.js'
-export * from './mercator/index.js'
+export * from './GeoJson.ts'
+export * from './LayerBase.ts'
+export * from './mercator/index.ts'

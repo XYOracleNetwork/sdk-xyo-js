@@ -1,1 +1,1 @@
-export * from './getMetaAsDict.js'
+export * from './getMetaAsDict.ts'

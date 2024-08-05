@@ -1,5 +1,5 @@
-import { d2r } from '../../constants.js'
-import { MercatorLngLat } from '../../types.js'
+import { d2r } from '../../constants.ts'
+import { MercatorLngLat } from '../../types.ts'
 
 const pointToTileFraction = (point: MercatorLngLat, z: number) => {
   const sin = Math.sin(point.lat * d2r)

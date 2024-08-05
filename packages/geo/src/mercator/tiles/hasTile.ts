@@ -1,5 +1,5 @@
-import { MercatorTile } from '../types.js'
-import { tilesEqual } from './equal.js'
+import { MercatorTile } from '../types.ts'
+import { tilesEqual } from './equal.ts'
 
 const tilesHasTile = (tiles: MercatorTile[], tile: MercatorTile) => {
   for (const tileToCheck of tiles) {

@@ -30,31 +30,31 @@
   "exports": {
     ".": {
       "node": {
-        "import": "./dist/node/index.js",
+        "import": "./dist/node/index.mjs",
         "require": "./dist/node/index.cjs"
       },
       "browser": {
-        "import": "./dist/browser/index.js",
+        "import": "./dist/browser/index.mjs",
         "require": "./dist/browser/index.cjs"
       }
     },
     "./package.json": "./package.json"
   },
   "main": "dist/node/index.cjs",
-  "module": "dist/node/index.js",
+  "module": "dist/node/index.mjs",
   "types": "dist/node/index.d.ts",
   "license": "LGPL-3.0-only",
   "dependencies": {
-    "@xylabs/assert": "^3.6.1",
-    "@xylabs/eth-address": "^3.6.1",
-    "@xyo-network/typechain": "^3.0.5",
-    "ethers": "^6.13.1"
+    "@xylabs/assert": "^3.6.12",
+    "@xylabs/eth-address": "^3.6.12",
+    "@xyo-network/typechain": "^3.1.0",
+    "ethers": "^6.13.2"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^3.12.2",
-    "@xylabs/tsconfig": "^3.12.2",
-    "ethers": "^6.13.1",
-    "typescript": "^5.5.3"
+    "@xylabs/ts-scripts-yarn3": "^3.15.14",
+    "@xylabs/tsconfig": "^3.15.14",
+    "ethers": "^6.13.2",
+    "typescript": "^5.5.4"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0",

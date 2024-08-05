@@ -1,4 +1,4 @@
-import { MercatorTile } from '../../types.js'
+import { MercatorTile } from '../../types.ts'
 
 const tileToQuadkey = (tile: MercatorTile): string => {
   let index = ''

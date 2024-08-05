@@ -1,7 +1,7 @@
 import { Polygon } from 'geojson'
 
-import { MercatorBoundingBox, MercatorLngLat } from '../../types.js'
-import { boundingBoxToBoundary } from './boundary.js'
+import { MercatorBoundingBox, MercatorLngLat } from '../../types.ts'
+import { boundingBoxToBoundary } from './boundary.ts'
 
 export const boundingBoxToPolygon = (box: MercatorBoundingBox): Polygon => {
   const boundry = boundingBoxToBoundary(box)

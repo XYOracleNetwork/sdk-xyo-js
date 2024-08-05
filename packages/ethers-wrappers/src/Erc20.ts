@@ -3,9 +3,9 @@ import { EthAddress } from '@xylabs/eth-address'
 import { BurnableErc20, BurnableErc20__factory as BurnableErc20Factory } from '@xyo-network/typechain'
 import { Provider, Signer } from 'ethers'
 
-import { XyoEthersWrapperBase } from './EthersBase.js'
+import { XyoEthersWrapperBase } from './EthersBase.ts'
 
-/** @deprecated use @xyo-network/typechain instead*/
+/** @deprecated use @xyo-network/typechain instead */
 export class XyoErc20Wrapper extends XyoEthersWrapperBase {
   contract: BurnableErc20
 

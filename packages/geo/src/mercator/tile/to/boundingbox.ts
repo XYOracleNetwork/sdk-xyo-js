@@ -1,8 +1,7 @@
-// eslint-disable-next-line no-restricted-imports
 import { LngLat } from 'mapbox-gl'
 
-import { r2d } from '../../constants.js'
-import { MercatorBoundingBox, MercatorTile } from '../../types.js'
+import { r2d } from '../../constants.ts'
+import { MercatorBoundingBox, MercatorTile } from '../../types.ts'
 
 const toLongitude = (x: number, z: number): number => {
   return (x / Math.pow(2, z)) * 360 - 180

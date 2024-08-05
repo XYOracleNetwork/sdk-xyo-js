@@ -1,8 +1,7 @@
 import { Feature, FeatureCollection, Geometry, Point, Polygon } from 'geojson'
-// eslint-disable-next-line no-restricted-imports
-import { GeoJSONSourceRaw, LngLat } from 'mapbox-gl'
+import { GeoJSONSourceSpecification, LngLat } from 'mapbox-gl'
 
-import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator/index.js'
+import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator/index.ts'
 
 class GeoJson {
   private _lngLat?: LngLat
@@ -23,7 +22,7 @@ class GeoJson {
     }
   }
 
-  static featuresSource(data: FeatureCollection): GeoJSONSourceRaw {
+  static featuresSource(data: FeatureCollection): GeoJSONSourceSpecification {
     return {
       data,
       type: 'geojson',
@@ -66,7 +65,7 @@ class GeoJson {
     return GeoJson.featureCollection([this.pointFeature()])
   }
 
-  pointSource(): GeoJSONSourceRaw {
+  pointSource(): GeoJSONSourceSpecification {
     return {
       data: this.pointFeatureCollection(),
       type: 'geojson',
@@ -88,7 +87,7 @@ class GeoJson {
     return GeoJson.featureCollection([this.polygonFeature()])
   }
 
-  polygonSource(): GeoJSONSourceRaw {
+  polygonSource(): GeoJSONSourceSpecification {
     return GeoJson.featuresSource(this.polygonFeatureCollection())
   }
 

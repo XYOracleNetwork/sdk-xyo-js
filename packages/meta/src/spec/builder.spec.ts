@@ -1,13 +1,13 @@
 import { readFile } from 'node:fs/promises'
 import Path from 'node:path'
 
-import { getMetaAsDict } from '../lib'
-import { metaBuilder } from '../meta'
-import { Meta, OpenGraphMeta, TwitterMeta } from '../models'
+import { getMetaAsDict } from '../lib/index.ts'
+import { metaBuilder } from '../meta/index.ts'
+import { Meta, OpenGraphMeta, TwitterMeta } from '../models/index.ts'
 
 const title = 'Death Valley Wilderness: Wilderness Light'
-const description =
-  'Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w...'
+const description
+  = 'Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w...'
 
 const meta: Meta = { description, title }
 
@@ -15,8 +15,8 @@ const og: OpenGraphMeta = {
   description,
   image: {
     '': 'https://i.ytimg.com/vi/Kauv7MVPcsA/maxresdefault.jpg',
-    height: 720,
-    width: 1280,
+    'height': 720,
+    'width': 1280,
   },
   site_name: 'YouTube',
   title,
@@ -58,8 +58,8 @@ const twitter: TwitterMeta = {
   },
   player: {
     '': 'https://www.youtube.com/watch?v=Kauv7MVPcsA',
-    height: 720,
-    width: 1028,
+    'height': 720,
+    'width': 1028,
   },
   site: {
     '': '@youtube',

@@ -1,7 +1,7 @@
 import { CheerioAPI, load } from 'cheerio'
 
-import { getMetaAsDict } from '../lib/index.js'
-import { Meta } from '../models/index.js'
+import { getMetaAsDict } from '../lib/index.ts'
+import { Meta } from '../models/index.ts'
 
 /* test change */
 
@@ -15,7 +15,7 @@ const addMetaToHead = ($: CheerioAPI, name: string, value: string | object) => {
       $('head').append(newMeta)
     }
   } else if (Array.isArray(value)) {
-    value.map((item) => addMetaToHead($, `${name}`, item))
+    value.map(item => addMetaToHead($, `${name}`, item))
   } else if (typeof value === 'object') {
     Object.entries(value).map(([key, value]) => {
       if (key === 'url') {

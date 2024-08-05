@@ -1,2 +1,2 @@
-export * from './Erc20.js'
-export * from './EthersBase.js'
+export * from './Erc20.ts'
+export * from './EthersBase.ts'

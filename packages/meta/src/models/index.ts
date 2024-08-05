@@ -1,3 +1,3 @@
-export * from './Meta.js'
-export * from './OpenGraph/index.js'
-export * from './Twitter/index.js'
+export * from './Meta.ts'
+export * from './OpenGraph/index.ts'
+export * from './Twitter/index.ts'

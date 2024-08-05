@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-restricted-imports
 import { AnyLayer, Map } from 'mapbox-gl'
 
 export abstract class LayerBase<T extends AnyLayer> {

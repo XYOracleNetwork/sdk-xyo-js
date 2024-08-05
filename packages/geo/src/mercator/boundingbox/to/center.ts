@@ -1,4 +1,4 @@
-import { MercatorBoundingBox } from '../../types.js'
+import { MercatorBoundingBox } from '../../types.ts'
 
 export const boundingBoxToCenter = (boundingBox: MercatorBoundingBox, decimal = 6) => {
   const west = boundingBox.getWest()

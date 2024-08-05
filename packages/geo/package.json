@@ -29,29 +29,29 @@
   "exports": {
     ".": {
       "node": {
-        "import": "./dist/node/index.js",
+        "import": "./dist/node/index.mjs",
         "require": "./dist/node/index.cjs"
       },
       "browser": {
-        "import": "./dist/browser/index.js",
+        "import": "./dist/browser/index.mjs",
         "require": "./dist/browser/index.cjs"
       }
     },
     "./package.json": "./package.json"
   },
   "main": "dist/node/index.cjs",
-  "module": "dist/node/index.js",
+  "module": "dist/node/index.mjs",
   "types": "dist/node/index.d.ts",
   "license": "LGPL-3.0-only",
   "dependencies": {
     "geojson": "^0.5.0",
-    "mapbox-gl": "^3.5.1"
+    "mapbox-gl": "^3.5.2"
   },
   "devDependencies": {
-    "@types/mapbox-gl": "^3.1.0",
-    "@xylabs/ts-scripts-yarn3": "^3.12.2",
-    "@xylabs/tsconfig": "^3.12.2",
-    "typescript": "^5.5.3"
+    "@types/mapbox-gl": "^3.4.0",
+    "@xylabs/ts-scripts-yarn3": "^3.15.14",
+    "@xylabs/tsconfig": "^3.15.14",
+    "typescript": "^5.5.4"
   },
   "sideEffects": false,
   "packageManager": "yarn@3.2.0",

@@ -1,5 +1,5 @@
-import { TwitterApp } from './TwitterApp.js'
-import { TwitterPlayer } from './TwitterPlayer.js'
+import { TwitterApp } from './TwitterApp.ts'
+import { TwitterPlayer } from './TwitterPlayer.ts'
 
 /**
  * https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup
@@ -22,7 +22,7 @@ export interface TwitterMeta {
      * Twitter user ID of content creator. Used with summary,
      * summary_large_image cards
      */
-    id?: string
+    'id'?: string
   }
   /**
    * Description of content (maximum 200 characters). Used with summary,
@@ -42,7 +42,7 @@ export interface TwitterMeta {
      * an image to users who are visually impaired. Maximum 420
      * characters. Used with summary, summary_large_image, player cards
      */
-    alt?: string
+    'alt'?: string
   }
   player?: TwitterPlayer
   /**
@@ -57,7 +57,7 @@ export interface TwitterMeta {
      * twitter:site or twitter:site:id is required. Used with
      * summary, summary_large_image, player cards
      */
-    id?: string
+    'id'?: string
   }
   /**
    * Title of content (max 70 characters). Used with summary,

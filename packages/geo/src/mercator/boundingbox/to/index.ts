@@ -1,3 +1,3 @@
-export { boundingBoxToBoundary } from './boundary.js'
-export { boundingBoxToCenter } from './center.js'
-export { boundingBoxToPolygon } from './polygon.js'
+export { boundingBoxToBoundary } from './boundary.ts'
+export { boundingBoxToCenter } from './center.ts'
+export { boundingBoxToPolygon } from './polygon.ts'

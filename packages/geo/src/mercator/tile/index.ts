@@ -1,2 +1,2 @@
-export * from './from/index.js'
-export * from './to/index.js'
+export * from './from/index.ts'
+export * from './to/index.ts'

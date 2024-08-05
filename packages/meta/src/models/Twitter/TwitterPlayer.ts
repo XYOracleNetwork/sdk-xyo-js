@@ -11,13 +11,13 @@ export interface TwitterPlayer {
   /**
    * Height of iframe in pixels. Used with player card
    */
-  height?: number
+  'height'?: number
   /**
    * URL to raw video or audio stream. Used with player card
    */
-  stream?: string
+  'stream'?: string
   /**
    * Width of iframe in pixels. Used with player card
    */
-  width?: number
+  'width'?: number
 }

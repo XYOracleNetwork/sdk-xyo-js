@@ -1,3 +1,3 @@
-export * from './OpenGraphMeta.js'
-export * from './OpenGraphStructured.js'
-export * from './OpenGraphStructuredProperty.js'
+export * from './OpenGraphMeta.ts'
+export * from './OpenGraphStructured.ts'
+export * from './OpenGraphStructuredProperty.ts'

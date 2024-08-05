@@ -1,5 +1,5 @@
-import { tileFromPoint } from '../../tile/index.js'
-import { MercatorBoundingBox, MercatorTile } from '../../types.js'
+import { tileFromPoint } from '../../tile/index.ts'
+import { MercatorBoundingBox, MercatorTile } from '../../types.ts'
 
 const tilesFromBoundingBox = (box: MercatorBoundingBox, zoom: number): MercatorTile[] => {
   const nw = tileFromPoint(box.getNorthWest(), zoom)
@@ -11,7 +11,7 @@ const tilesFromBoundingBox = (box: MercatorBoundingBox, zoom: number): MercatorT
   let minY = nw[1]
   let maxY = se[1]
 
-  //in case of horizontal wrapping
+  // in case of horizontal wrapping
   if (minX >= maxX) {
     maxX = maxX + size
   }
