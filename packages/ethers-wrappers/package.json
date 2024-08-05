@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/ethers-wrappers",
-  "version": "2.11.4",
+  "version": "2.11.5",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
