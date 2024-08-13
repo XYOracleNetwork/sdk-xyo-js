@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-geo",
-  "version": "2.11.5",
+  "version": "3.0.0",
   "homepage": "https://xyo.network",
   "bugs": {
     "url": "https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
@@ -33,8 +33,8 @@
     },
     "./package.json": "./package.json"
   },
-  "module": "dist/node/index.mjs",
-  "types": "dist/node/index.d.ts",
+  "module": "dist/neutral/index.mjs",
+  "types": "dist/neutral/index.d.ts",
   "license": "LGPL-3.0-only",
   "dependencies": {
     "geojson": "^0.5.0",
