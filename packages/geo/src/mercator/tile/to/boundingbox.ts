@@ -1,4 +1,4 @@
-import { LngLat } from 'mapbox-gl'
+import MapBox from 'mapbox-gl'
 
 import { r2d } from '../../constants.ts'
 import { MercatorBoundingBox, MercatorTile } from '../../types.ts'
@@ -17,7 +17,7 @@ const tileToBoundingBox = (tile: MercatorTile): MercatorBoundingBox => {
   const w = toLongitude(tile[0], tile[2])
   const s = toLatitude(tile[1] + 1, tile[2])
   const n = toLatitude(tile[1], tile[2])
-  return new MercatorBoundingBox(new LngLat(w, s), new LngLat(e, n))
+  return new MercatorBoundingBox(new MapBox.LngLat(w, s), new MapBox.LngLat(e, n))
 }
 
 export { tileToBoundingBox }

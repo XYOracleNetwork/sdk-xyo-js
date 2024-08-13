@@ -1,6 +1,6 @@
-import { AnyLayer, Map } from 'mapbox-gl'
+import MapBox from 'mapbox-gl'
 
-export abstract class LayerBase<T extends AnyLayer> {
+export abstract class LayerBase<T extends MapBox.Layer> {
   id: string
   source: string
 
@@ -9,7 +9,7 @@ export abstract class LayerBase<T extends AnyLayer> {
     this.source = source
   }
 
-  update(map: Map, show = true) {
+  update(map: MapBox.Map, show = true) {
     if (map.getLayer(this.id)) {
       map.removeLayer(this.id)
     }

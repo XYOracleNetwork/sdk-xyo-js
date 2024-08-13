@@ -1,10 +1,10 @@
 import { Feature, FeatureCollection, Geometry, Point, Polygon } from 'geojson'
-import { GeoJSONSourceSpecification, LngLat } from 'mapbox-gl'
+import MapBox from 'mapbox-gl'
 
 import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator/index.ts'
 
 class GeoJson {
-  private _lngLat?: LngLat
+  private _lngLat?: MapBox.LngLat
   private _point?: Point
   private _polygon?: Polygon
   private _zoom?: number
@@ -22,7 +22,7 @@ class GeoJson {
     }
   }
 
-  static featuresSource(data: FeatureCollection): GeoJSONSourceSpecification {
+  static featuresSource(data: FeatureCollection): MapBox.GeoJSONSourceSpecification {
     return {
       data,
       type: 'geojson',
@@ -37,12 +37,12 @@ class GeoJson {
     }
   }
 
-  center(): LngLat {
+  center(): MapBox.LngLat {
     if (!this._lngLat) {
       const tile = tileFromQuadkey(this.quadkey)
       const bb = tileToBoundingBox(tile)
       const point = boundingBoxToCenter(bb)
-      this._lngLat = new LngLat(point[0], point[1])
+      this._lngLat = new MapBox.LngLat(point[0], point[1])
     }
     return this._lngLat
   }
@@ -65,7 +65,7 @@ class GeoJson {
     return GeoJson.featureCollection([this.pointFeature()])
   }
 
-  pointSource(): GeoJSONSourceSpecification {
+  pointSource(): MapBox.GeoJSONSourceSpecification {
     return {
       data: this.pointFeatureCollection(),
       type: 'geojson',
@@ -87,7 +87,7 @@ class GeoJson {
     return GeoJson.featureCollection([this.polygonFeature()])
   }
 
-  polygonSource(): GeoJSONSourceSpecification {
+  polygonSource(): MapBox.GeoJSONSourceSpecification {
     return GeoJson.featuresSource(this.polygonFeatureCollection())
   }
 
