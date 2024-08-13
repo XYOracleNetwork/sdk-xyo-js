@@ -1,4 +1,26 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`mergeDocumentHead > with real documents 1`] = `
+"<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Your Data, Forever Long.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500;600;800&amp;display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" href="/foreventory-logo-icon-black.png">
+  <link rel="manifest" href="/manifest.json">
+  <title>Foreventory</title>
+  <script defer="defer" src="/static/js/main.297e104a.js"></script>
+<meta content="website" property="og:type" data-react-helmet="true"><meta property="og:image" content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"><meta property="og:image:height" content="900"><meta property="og:image:secure_url" content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"><meta property="og:image:type" content="image/png"><meta property="og:image:url" content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"><meta property="og:image:width" content="1600"><meta property="twitter:image" content="/netflix/insights/6f088236519e8e0c9ab9294c2e59fb2b8b434091a7559401ae860ff445fb1355/share/1600/900"></head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+
+
+</body></html>"
+`;
 
 exports[`mergeDocumentHead with real documents 1`] = `
 "<!DOCTYPE html><html lang="en"><head>
