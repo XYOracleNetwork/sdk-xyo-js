@@ -1,31 +1,30 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
-  "version": "3.0.1",
-  "homepage": "https://xyo.network",
-  "bugs": {
-    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
-    "email": "support@xyo.network"
-  },
+  "version": "3.0.2",
   "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
-  "author": {
-    "name": "XYO Development Team",
-    "url": "https://xyo.network",
-    "email": "support@xyo.network"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "xyo",
     "utility",
     "typescript",
     "esm"
   ],
-  "docs": "dist/docs.json",
+  "homepage": "https://xyo.network",
+  "bugs": {
+    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
+    "email": "support@xyo.network"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js.git"
+  },
+  "license": "LGPL-3.0-only",
+  "author": {
+    "name": "XYO Development Team",
+    "email": "support@xyo.network",
+    "url": "https://xyo.network"
+  },
+  "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/neutral/index.d.ts",
@@ -35,11 +34,13 @@
   },
   "module": "dist/neutral/index.mjs",
   "types": "dist/neutral/index.d.ts",
-  "license": "LGPL-3.0-only",
-  "packageManager": "yarn@4.4.1",
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "build-typedoc-site": "xy gen-docs @xyo-network/sdk-xyo-js",
+    "test": "yarn jest"
+  },
   "dependencies": {
     "@xyo-network/ethers-wrappers": "workspace:^",
     "@xyo-network/sdk-geo": "workspace:^"
@@ -64,10 +65,9 @@
     "typescript": "^5.5.4",
     "vitest": "^2.0.5"
   },
-  "scripts": {
-    "test": "yarn jest",
-    "build-typedoc-site": "xy gen-docs @xyo-network/sdk-xyo-js"
+  "packageManager": "yarn@4.4.1",
+  "publishConfig": {
+    "access": "public"
   },
-  "sideEffects": false,
-  "type": "module"
+  "docs": "dist/docs.json"
 }

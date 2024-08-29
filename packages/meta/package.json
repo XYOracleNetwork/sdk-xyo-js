@@ -1,31 +1,30 @@
 {
   "name": "@xyo-network/sdk-meta",
-  "version": "3.0.1",
-  "homepage": "https://xyo.network",
-  "bugs": {
-    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
-    "email": "support@xyo.network"
-  },
+  "version": "3.0.2",
   "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
-  "author": {
-    "name": "XYO Development Team",
-    "url": "https://xyo.network",
-    "email": "support@xyo.network"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js.git"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
   "keywords": [
     "xyo",
     "utility",
     "typescript",
     "esm"
   ],
-  "docs": "dist/docs.json",
+  "homepage": "https://xyo.network",
+  "bugs": {
+    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js/issues",
+    "email": "support@xyo.network"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XYOracleNetwork/sdk-xyo-js.git"
+  },
+  "license": "LGPL-3.0-only",
+  "author": {
+    "name": "XYO Development Team",
+    "email": "support@xyo.network",
+    "url": "https://xyo.network"
+  },
+  "sideEffects": false,
+  "type": "module",
   "exports": {
     ".": {
       "types": "./dist/neutral/index.d.ts",
@@ -35,7 +34,6 @@
   },
   "module": "dist/neutral/index.mjs",
   "types": "dist/neutral/index.d.ts",
-  "license": "LGPL-3.0-only",
   "dependencies": {
     "cheerio": "^1.0.0"
   },
@@ -45,7 +43,9 @@
     "jest-serializer-html": "^7.1.0",
     "typescript": "^5.5.4"
   },
-  "sideEffects": false,
   "packageManager": "yarn@3.2.0",
-  "type": "module"
+  "publishConfig": {
+    "access": "public"
+  },
+  "docs": "dist/docs.json"
 }
