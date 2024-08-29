@@ -1,4 +1,4 @@
-import { MercatorTile } from '../../types.ts'
+import type { MercatorTile } from '../../types.ts'
 
 const tileToChildren = (tile: MercatorTile) => {
   return [

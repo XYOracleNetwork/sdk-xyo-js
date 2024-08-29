@@ -1,4 +1,4 @@
-import { Provider, Signer } from 'ethers'
+import type { Provider, Signer } from 'ethers'
 
 export class XyoEthersWrapperBase {
   protected provider: Provider

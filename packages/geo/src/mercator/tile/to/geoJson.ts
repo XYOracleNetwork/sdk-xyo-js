@@ -1,6 +1,6 @@
-import { Polygon, Position } from 'geojson'
+import type { Polygon, Position } from 'geojson'
 
-import { MercatorTile } from '../../types.ts'
+import type { MercatorTile } from '../../types.ts'
 import { tileToBoundingBox } from './boundingbox.ts'
 
 const tileToGeoJson = (tile: MercatorTile): Polygon => {

@@ -1,4 +1,4 @@
-import { MercatorTile } from '../types.ts'
+import type { MercatorTile } from '../types.ts'
 import { tilesEqual } from './equal.ts'
 
 const tilesHasTile = (tiles: MercatorTile[], tile: MercatorTile) => {

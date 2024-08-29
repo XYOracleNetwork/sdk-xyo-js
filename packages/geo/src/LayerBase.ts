@@ -1,4 +1,4 @@
-import MapBox from 'mapbox-gl'
+import type MapBox from 'mapbox-gl'
 
 export abstract class LayerBase<T extends MapBox.Layer> {
   id: string

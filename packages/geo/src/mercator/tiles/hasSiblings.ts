@@ -1,5 +1,5 @@
 import { tileToSiblings } from '../tile/index.ts'
-import { MercatorTile } from '../types.ts'
+import type { MercatorTile } from '../types.ts'
 import { tilesHasTile } from './hasTile.ts'
 
 const hasSiblings = (tiles: MercatorTile[], tile: MercatorTile) => {

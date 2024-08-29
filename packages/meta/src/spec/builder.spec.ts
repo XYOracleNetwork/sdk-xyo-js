@@ -3,10 +3,13 @@ import Path from 'node:path'
 
 import { getMetaAsDict } from '../lib/index.ts'
 import { metaBuilder } from '../meta/index.ts'
-import { Meta, OpenGraphMeta, TwitterMeta } from '../models/index.ts'
+import type {
+  Meta, OpenGraphMeta, TwitterMeta,
+} from '../models/index.ts'
 
 const title = 'Death Valley Wilderness: Wilderness Light'
 const description
+  // eslint-disable-next-line @stylistic/max-len
   = 'Follow the course of light through the Death Valley Wilderness and observe the obvious and subtle changes across the landscape.Produced by Sylvia JohnsonTo w...'
 
 const meta: Meta = { description, title }
@@ -53,17 +56,13 @@ const twitter: TwitterMeta = {
   },
   card: 'summary',
   description,
-  image: {
-    '': 'https://www.twitter.com/image/url',
-  },
+  image: { '': 'https://www.twitter.com/image/url' },
   player: {
     '': 'https://www.youtube.com/watch?v=Kauv7MVPcsA',
     'height': 720,
     'width': 1028,
   },
-  site: {
-    '': '@youtube',
-  },
+  site: { '': '@youtube' },
   title,
 }
 
@@ -109,14 +108,8 @@ describe('builder', () => {
 </html>
     `
     const meta: Meta = {
-      og: {
-        image: newImage,
-      },
-      twitter: {
-        image: {
-          '': newImage,
-        },
-      },
+      og: { image: newImage },
+      twitter: { image: { '': newImage } },
     }
     const properties = ['og:image', 'twitter:image']
     for (const property of properties) {

@@ -1,7 +1,11 @@
-import { Feature, FeatureCollection, Geometry, Point, Polygon } from 'geojson'
+import type {
+  Feature, FeatureCollection, Geometry, Point, Polygon,
+} from 'geojson'
 import MapBox from 'mapbox-gl'
 
-import { boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox } from './mercator/index.ts'
+import {
+  boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox,
+} from './mercator/index.ts'
 
 class GeoJson {
   private _lngLat?: MapBox.LngLat

@@ -1,7 +1,8 @@
 import { assertEx } from '@xylabs/assert'
 import { EthAddress } from '@xylabs/eth-address'
-import { BurnableErc20, BurnableErc20__factory as BurnableErc20Factory } from '@xyo-network/typechain'
-import { Provider, Signer } from 'ethers'
+import type { BurnableErc20 } from '@xyo-network/typechain'
+import { BurnableErc20__factory as BurnableErc20Factory } from '@xyo-network/typechain'
+import type { Provider, Signer } from 'ethers'
 
 import { XyoEthersWrapperBase } from './EthersBase.ts'
 

@@ -1,4 +1,4 @@
-import { MercatorTile } from '../../types.ts'
+import type { MercatorTile } from '../../types.ts'
 import { tileToChildren } from './children.ts'
 import { tileToParent } from './parent.ts'
 

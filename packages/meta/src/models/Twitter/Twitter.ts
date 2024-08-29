@@ -1,5 +1,5 @@
-import { TwitterApp } from './TwitterApp.ts'
-import { TwitterPlayer } from './TwitterPlayer.ts'
+import type { TwitterApp } from './TwitterApp.ts'
+import type { TwitterPlayer } from './TwitterPlayer.ts'
 
 /**
  * https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup

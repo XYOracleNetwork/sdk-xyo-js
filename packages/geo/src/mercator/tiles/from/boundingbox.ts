@@ -1,5 +1,5 @@
 import { tileFromPoint } from '../../tile/index.ts'
-import { MercatorBoundingBox, MercatorTile } from '../../types.ts'
+import type { MercatorBoundingBox, MercatorTile } from '../../types.ts'
 
 const tilesFromBoundingBox = (box: MercatorBoundingBox, zoom: number): MercatorTile[] => {
   const nw = tileFromPoint(box.getNorthWest(), zoom)

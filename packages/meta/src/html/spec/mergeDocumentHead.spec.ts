@@ -1,4 +1,5 @@
-import { mergeDocumentHead } from '../mergeDocumentHead'
+/* eslint-disable @stylistic/max-len */
+import { mergeDocumentHead } from '../mergeDocumentHead.ts'
 
 describe('mergeDocumentHead', () => {
   const cases: [string, string, string, string][] = [

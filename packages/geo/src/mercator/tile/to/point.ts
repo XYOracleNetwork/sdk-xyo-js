@@ -1,4 +1,4 @@
-import { MercatorLngLat, MercatorTile } from '../../types.ts'
+import type { MercatorLngLat, MercatorTile } from '../../types.ts'
 import { tileToBoundingBox } from './boundingbox.ts'
 
 const tileToPoint = (tile: MercatorTile): MercatorLngLat => {

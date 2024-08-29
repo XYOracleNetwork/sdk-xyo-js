@@ -1,7 +1,8 @@
 import MapBox from 'mapbox-gl'
 
 import { r2d } from '../../constants.ts'
-import { MercatorBoundingBox, MercatorTile } from '../../types.ts'
+import type { MercatorTile } from '../../types.ts'
+import { MercatorBoundingBox } from '../../types.ts'
 
 const toLongitude = (x: number, z: number): number => {
   return (x / Math.pow(2, z)) * 360 - 180

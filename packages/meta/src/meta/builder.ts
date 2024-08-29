@@ -1,7 +1,8 @@
-import { CheerioAPI, load } from 'cheerio'
+import type { CheerioAPI } from 'cheerio'
+import { load } from 'cheerio'
 
 import { getMetaAsDict } from '../lib/index.ts'
-import { Meta } from '../models/index.ts'
+import type { Meta } from '../models/index.ts'
 
 /* test change */
 
