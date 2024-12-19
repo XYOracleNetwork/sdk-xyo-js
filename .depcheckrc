@@ -1,9 +1,6 @@
 ignores: [
-  "@types/jest",
-  "@types/mocha",
   "@xylabs/ts-scripts-yarn3",
   "@xylabs/tsconfig",
-  "jest",
   "typescript",
   "dotenv"
 ]

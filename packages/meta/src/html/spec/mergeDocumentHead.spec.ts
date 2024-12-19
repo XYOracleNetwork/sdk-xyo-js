@@ -1,4 +1,8 @@
 /* eslint-disable @stylistic/max-len */
+import {
+  describe, expect, it,
+} from 'vitest'
+
 import { mergeDocumentHead } from '../mergeDocumentHead.ts'
 
 describe('mergeDocumentHead', () => {

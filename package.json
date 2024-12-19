@@ -38,34 +38,29 @@
     "packages/*"
   ],
   "scripts": {
-    "build-typedoc-site": "xy gen-docs @xyo-network/sdk-xyo-js",
-    "test": "yarn jest"
+    "build-typedoc-site": "xy gen-docs @xyo-network/sdk-xyo-js"
   },
   "dependencies": {
     "@xyo-network/ethers-wrappers": "workspace:^",
     "@xyo-network/sdk-geo": "workspace:^"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^2.7.1",
-    "@types/jest": "^29.5.12",
-    "@types/mocha": "^10.0.7",
+    "@stylistic/eslint-plugin": "^2.12.1",
     "@types/supertest": "^6.0.2",
-    "@typescript-eslint/eslint-plugin": "^8.3.0",
-    "@typescript-eslint/parser": "^8.3.0",
-    "@xylabs/eslint-config-flat": "^4.0.7",
-    "@xylabs/forget": "^4.0.9",
-    "@xylabs/ts-scripts-yarn3": "^4.0.7",
-    "@xylabs/tsconfig": "^4.0.7",
-    "@xylabs/tsconfig-jest": "^4.0.7",
-    "dotenv": "^16.4.5",
-    "eslint": "^9.9.1",
-    "eslint-import-resolver-typescript": "^3.6.3",
-    "jest": "^29.7.0",
+    "@typescript-eslint/eslint-plugin": "^8.18.1",
+    "@typescript-eslint/parser": "^8.18.1",
+    "@xylabs/eslint-config-flat": "^4.2.6",
+    "@xylabs/forget": "^4.4.25",
+    "@xylabs/ts-scripts-yarn3": "^4.2.6",
+    "@xylabs/tsconfig": "^4.2.6",
+    "dotenv": "^16.4.7",
+    "eslint": "^9.17.0",
+    "eslint-import-resolver-typescript": "^3.7.0",
     "supertest": "^7.0.0",
-    "typescript": "^5.5.4",
-    "vitest": "^2.0.5"
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
-  "packageManager": "yarn@4.4.1",
+  "packageManager": "yarn@4.5.3",
   "publishConfig": {
     "access": "public"
   },

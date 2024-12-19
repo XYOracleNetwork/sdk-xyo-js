@@ -2,25 +2,33 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Jest",
-      "type": "node",
+      "name": "Vite",
       "request": "launch",
-      "osx": {
-        "program": "${workspaceRoot}/node_modules/.bin/jest"
-      },
-      "windows": {
-        "program": "${workspaceRoot}/node_modules/jest/bin/jest.js"
-      },
+      "type": "node",
+      "program": "${workspaceFolder}/node_modules/vitest/vitest.mjs",
       "args": [
-        "--forceExit",
-        "--runInBand",
+        "--run",
+        "--inspect-brk",
+        "--no-file-parallelism",
         "--testTimeout=120000",
         "packages/meta/src/html/spec/mergeDocumentHead.approval.spec.ts"
       ],
+      "sourceMaps": true,
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "**/node_modules/**"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/dist/**/*.*",
+        "${workspaceFolder}/node_modules/**/*.*"
+      ],
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen",
-      "cwd": "${workspaceFolder}",
-      "envFile": "${workspaceFolder}/.env"
+      "cwd": "${workspaceRoot}",
+      "env": {
+        "NODE_ENV": "test"
+      },
+      "envFile": "${workspaceRoot}/.env",
     }
   ]
 }

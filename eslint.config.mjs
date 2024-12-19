@@ -10,7 +10,7 @@ import {
 
 export default [
   { ignores:
-    ['.yarn/**', 'jest.config.cjs', '**/dist/**', 'dist', 'build/**', 'node_modules/**', 'public', '.storybook', 'storybook-static', 'eslint.config.mjs'] },
+    ['.yarn/**', '**/dist/**', 'dist', 'build/**', 'node_modules/**', 'public', '.storybook', 'storybook-static', 'eslint.config.mjs'] },
   unicornConfig,
   workspacesConfig,
   rulesConfig,

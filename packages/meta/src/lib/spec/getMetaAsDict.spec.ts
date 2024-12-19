@@ -1,5 +1,9 @@
-import type { Meta } from '../../models'
-import { getMetaAsDict } from '../getMetaAsDict'
+import {
+  describe, expect, it,
+} from 'vitest'
+
+import type { Meta } from '../../models/index.ts'
+import { getMetaAsDict } from '../getMetaAsDict.ts'
 
 describe('getMetaAsDict', () => {
   const cases: Meta[] = [

@@ -3,7 +3,6 @@
 .eslintcache
 .pnp.*
 .yarn/*
-jest.config.js
 packages/*
 rollup.config.ts
 tsconfig*

@@ -38,10 +38,10 @@
     "cheerio": "^1.0.0"
   },
   "devDependencies": {
-    "@xylabs/ts-scripts-yarn3": "^4.0.7",
-    "@xylabs/tsconfig": "^4.0.7",
-    "jest-serializer-html": "^7.1.0",
-    "typescript": "^5.5.4"
+    "@xylabs/ts-scripts-yarn3": "^4.2.6",
+    "@xylabs/tsconfig": "^4.2.6",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
   },
   "packageManager": "yarn@3.2.0",
   "publishConfig": {

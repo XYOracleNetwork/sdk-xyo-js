@@ -1,6 +1,10 @@
 import { readFile } from 'node:fs/promises'
 import Path from 'node:path'
 
+import {
+  beforeAll, describe, expect, it,
+} from 'vitest'
+
 import { getMetaAsDict } from '../lib/index.ts'
 import { metaBuilder } from '../meta/index.ts'
 import type {

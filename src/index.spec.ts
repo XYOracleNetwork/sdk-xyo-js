@@ -1,4 +1,8 @@
-import { GeoJson } from './index'
+import {
+  describe, expect, it,
+} from 'vitest'
+
+import { GeoJson } from './index.ts'
 
 describe('index', () => {
   it('constructor', () => {

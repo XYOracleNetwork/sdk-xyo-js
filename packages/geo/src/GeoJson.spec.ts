@@ -1,4 +1,8 @@
-import { GeoJson } from './GeoJson'
+import {
+  describe, expect, it,
+} from 'vitest'
+
+import { GeoJson } from './GeoJson.ts'
 
 describe('GeoJson', () => {
   it('constructor', () => {
