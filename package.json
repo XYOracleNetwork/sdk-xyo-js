@@ -1,6 +1,6 @@
 {
   "name": "@xyo-network/sdk-xyo-js",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "description": "Base functionality used throughout XYO TypeScript/JavaScript libraries",
   "keywords": [
     "xyo",
