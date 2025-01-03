@@ -3,7 +3,8 @@ import type { Polygon, Position } from 'geojson'
 import type { MercatorTile } from '../../types.ts'
 import { tileToBoundingBox } from './boundingbox.ts'
 
-const tileToGeoJson = (tile: MercatorTile): Polygon => {
+/** @deprecated use form @xylabs/geo */
+export const tileToGeoJson = (tile: MercatorTile): Polygon => {
   const box = tileToBoundingBox(tile)
   const poly: Polygon = {
     coordinates: [
@@ -19,5 +20,3 @@ const tileToGeoJson = (tile: MercatorTile): Polygon => {
   }
   return poly
 }
-
-export { tileToGeoJson }

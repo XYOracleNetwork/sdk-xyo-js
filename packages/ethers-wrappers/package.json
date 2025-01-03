@@ -36,8 +36,8 @@
   "module": "dist/neutral/index.mjs",
   "types": "dist/neutral/index.d.ts",
   "dependencies": {
-    "@xylabs/assert": "^4.4.25",
-    "@xylabs/eth-address": "^4.4.25",
+    "@xylabs/assert": "^4.4.34",
+    "@xylabs/eth-address": "^4.4.34",
     "@xyo-network/typechain": "^3.3.2",
     "ethers": "^6.13.4"
   },

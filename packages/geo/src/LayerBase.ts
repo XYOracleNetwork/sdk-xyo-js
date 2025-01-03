@@ -1,5 +1,6 @@
 import type MapBox from 'mapbox-gl'
 
+/** @deprecated use form @xylabs/geo */
 export abstract class LayerBase<T extends MapBox.Layer> {
   id: string
   source: string

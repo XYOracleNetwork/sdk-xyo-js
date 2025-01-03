@@ -1,7 +1,8 @@
 import { tileFromPoint } from '../../tile/index.ts'
 import type { MercatorBoundingBox, MercatorTile } from '../../types.ts'
 
-const tilesFromBoundingBox = (box: MercatorBoundingBox, zoom: number): MercatorTile[] => {
+/** @deprecated use form @xylabs/geo */
+export const tilesFromBoundingBox = (box: MercatorBoundingBox, zoom: number): MercatorTile[] => {
   const nw = tileFromPoint(box.getNorthWest(), zoom)
   const se = tileFromPoint(box.getSouthEast(), zoom)
   const size = Math.pow(2, zoom)
@@ -33,5 +34,3 @@ const tilesFromBoundingBox = (box: MercatorBoundingBox, zoom: number): MercatorT
 
   return result
 }
-
-export { tilesFromBoundingBox }

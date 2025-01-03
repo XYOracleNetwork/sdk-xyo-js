@@ -47,10 +47,10 @@
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.12.1",
     "@types/supertest": "^6.0.2",
-    "@typescript-eslint/eslint-plugin": "^8.18.1",
-    "@typescript-eslint/parser": "^8.18.1",
+    "@typescript-eslint/eslint-plugin": "^8.19.0",
+    "@typescript-eslint/parser": "^8.19.0",
     "@xylabs/eslint-config-flat": "^4.2.6",
-    "@xylabs/forget": "^4.4.25",
+    "@xylabs/forget": "^4.4.34",
     "@xylabs/ts-scripts-yarn3": "^4.2.6",
     "@xylabs/tsconfig": "^4.2.6",
     "dotenv": "^16.4.7",
@@ -60,7 +60,7 @@
     "typescript": "^5.7.2",
     "vitest": "^2.1.8"
   },
-  "packageManager": "yarn@4.5.3",
+  "packageManager": "yarn@4.6.0",
   "publishConfig": {
     "access": "public"
   },

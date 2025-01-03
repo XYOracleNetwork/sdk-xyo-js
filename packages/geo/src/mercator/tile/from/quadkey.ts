@@ -1,4 +1,5 @@
-const tileFromQuadkey = (quadkey: string) => {
+/** @deprecated use form @xylabs/geo */
+export const tileFromQuadkey = (quadkey: string) => {
   let x = 0
   let y = 0
   const z = quadkey.length
@@ -15,5 +16,3 @@ const tileFromQuadkey = (quadkey: string) => {
   }
   return [x, y, z]
 }
-
-export { tileFromQuadkey }

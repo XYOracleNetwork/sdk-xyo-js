@@ -1,5 +1,6 @@
 import type { MercatorBoundingBox } from '../../types.ts'
 
+/** @deprecated use form @xylabs/geo */
 export const boundingBoxToCenter = (boundingBox: MercatorBoundingBox, decimal = 6) => {
   const west = boundingBox.getWest()
   const south = boundingBox.getSouth()

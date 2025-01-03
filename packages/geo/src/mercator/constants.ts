@@ -1,4 +1,5 @@
-const d2r = Math.PI / 180
-const r2d = 180 / Math.PI
+/** @deprecated use form @xylabs/geo */
+export const d2r = Math.PI / 180
 
-export { d2r, r2d }
+/** @deprecated use form @xylabs/geo */
+export const r2d = 180 / Math.PI

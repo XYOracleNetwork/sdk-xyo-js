@@ -1,6 +1,7 @@
 import type { MercatorTile } from '../../types.ts'
 
-const tileToQuadkey = (tile: MercatorTile): string => {
+/** @deprecated use form @xylabs/geo */
+export const tileToQuadkey = (tile: MercatorTile): string => {
   let index = ''
   for (let z = tile[2]; z > 0; z--) {
     let b = 0
@@ -11,5 +12,3 @@ const tileToQuadkey = (tile: MercatorTile): string => {
   }
   return index
 }
-
-export { tileToQuadkey }

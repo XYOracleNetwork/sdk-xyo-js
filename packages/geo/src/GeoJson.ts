@@ -7,7 +7,8 @@ import {
   boundingBoxToCenter, boundingBoxToPolygon, tileFromQuadkey, tileToBoundingBox,
 } from './mercator/index.ts'
 
-class GeoJson {
+/** @deprecated use form @xylabs/geo */
+export class GeoJson {
   private _lngLat?: MapBox.LngLat
   private _point?: Point
   private _polygon?: Polygon
@@ -100,5 +101,3 @@ class GeoJson {
     return this._zoom
   }
 }
-
-export { GeoJson }

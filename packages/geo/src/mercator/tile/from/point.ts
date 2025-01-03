@@ -13,7 +13,8 @@ const pointToTileFraction = (point: MercatorLngLat, z: number) => {
   return [x, y, z]
 }
 
-const tileFromPoint = (point: MercatorLngLat, z: number) => {
+/** @deprecated use form @xylabs/geo */
+export const tileFromPoint = (point: MercatorLngLat, z: number) => {
   const tile = pointToTileFraction(point, z)
   tile[0] = Math.floor(tile[0])
   tile[1] = Math.floor(tile[1])
@@ -25,5 +26,3 @@ const tileFromPoint = (point: MercatorLngLat, z: number) => {
   }
   return tile
 }
-
-export { tileFromPoint }
